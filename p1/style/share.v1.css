@@ -1,0 +1,38 @@
+iframe[data-productid]{
+    max-width:414px;
+
+    width: 100%;
+    margin:auto;
+    display: block;
+}
+
+titlesmall,h6{
+    position:relative;
+    display:block;
+    padding-left:10px;
+}
+titlesmall,titlesmall *,h6,h6 * {
+    font-weight:100!important;
+    color:#000 !important;
+    font-size:17px !important;
+    font-family:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif !important;
+    margin: 25px 0 0 0 !important;
+}
+titlesmall:before,h6:before{
+    display:block;
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    height:5px;
+    width:5px;
+    left:0px;
+    top:50%;
+    margin-top:-4px;
+    background: #ed4f37;
+}
+h6 + p ,titlesmall + p{
+    margin-top: 0px;
+}
+style + titlesmall,style + h6 {
+    margin-top: 0!important;
+}

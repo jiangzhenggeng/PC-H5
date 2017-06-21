@@ -1,0 +1,362 @@
+.loginUser {
+    top: 5px;
+	background: #FFFFFF;
+}
+.listCon .tab .tabCon .more a.g-no-data{
+	color:#a3a3a3;
+}
+#message,#message img{
+	border-radius:0;
+	border:none;
+}
+#message img{
+	background-image:url(http://cdn.jiguo.com/p1/i/user-center/message.png);
+	background-position: center center;
+    background-repeat: no-repeat;
+	width:27px;
+	height:21px;
+	position: relative;
+    left: 10px;
+    top: 13px;
+}
+.jiguo-user-canter li{
+	position:relative;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-left: 10px;
+	float:left;
+	margin-top:11px;
+}
+.jiguo-user-canter li>a.avt{
+	display:block;
+	width:48px;
+	height:48px;
+	border:none;
+}
+.jiguo-user-canter li .jiguo-user-down {
+    top: 57px;
+	width:170px;
+	position: absolute;
+    right: 0;
+	display:none;
+}
+.jiguo-user-down-list dd{
+	height:48px;
+	line-height:48px;
+	border-bottom:1px solid #e0e0e0;
+}
+.jiguo-user-canter dl,.jiguo-user-has-msg .jiguo-user-down-list{
+	z-index: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+	background:#FFFFFF;
+    -webkit-box-shadow: 0 0 7px #939393;
+    -moz-box-shadow: 0 0 7px #939393;
+    -ms-box-shadow: 0 0 7px #939393;
+    -o-box-shadow: 0 0 7px #939393;
+    box-shadow: 0 0 7px #939393;
+	overflow:hidden;
+}
+.jiguo-user-canter li .jiguo-user-down>i{
+	display: block;
+    height: 11px;
+    background-image: url(http://cdn.jiguo.com/p1/i/user-center/arrow.png);
+    background-position: -8px center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -11px;
+    width: 100%;
+}
+.jiguo-user-has-msg{
+	position: absolute;
+    width: 220px;
+    right: 60px;
+    top: 80px;
+}
+.jiguo-user-has-msg>i{
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -7px;
+    top: -7px;
+    background-color: #e0e0e0;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+	font-size: 20px;
+}
+.jiguo-user-has-msg>i:hover{
+	color:#FFFFFF;
+	background-color:#fe5341;
+}
+.msg-number,.look-dital{
+	padding:0 5px;
+}
+.look-dital{
+	color:#fe5341;
+}
+.jiguo-user-down-list dd:last-child{
+	border:none;
+}
+.jiguo-user-down-list dd:hover{
+	background-color:#f7f7f7;
+}
+.jiguo-user-down-list dd a{
+	display:block;
+    color: #464646;
+    font-size: 14px;
+	padding:0 20px;
+}
+
+.jiguo-badge {
+    color: #ffffff;
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 14px;
+    line-height: 1;
+    background-color: #fe5341;
+    border-radius: 100px;
+}
+.jiguo-badge font{
+	font-weight: bold;
+}
+.jiguo-user-canter li .jiguo-badge {
+    float: right;
+    top: 14px;
+    position: relative;
+}
+.jiguo-badge.jiguo-badge-dian {
+    padding: 6px;
+	content:'';
+}
+.jiguo-user-canter li .jiguo-badge.jiguo-badge-dian{
+	top:18px;
+} 
+a#message .jiguo-badge {
+	position:absolute;
+	right:3px;
+	top:3px;
+}
+a#message .jiguo-badge.jiguo-badge-dian {
+	position:absolute;
+	right:6px;
+	top:6px;
+}
+/*<!-- 我的消息样式 ---------------->*/
+#has-message-list,#has-message-list ul,#has-message-list ul li{
+	margin:0;
+	padding:0;
+}
+#has-message-list ul li{
+	border-bottom:1px dashed #e0e0e0;
+	padding:20px;
+}
+#has-message-list ul:not(#has-message-list-ul) li.pointer:hover{
+	background-color:#f7f7f7;
+	cursor:pointer;
+}
+#has-message-list ul:not(#has-message-list-ul) li.has-bg:hover{
+	background-color:#f7f7f7;
+}
+#has-message-list ul li:first-child{
+	border-top:1px dashed #e0e0e0;
+}
+#has-message-list .user-face{
+	float:left;
+	margin-right: 20px;
+}
+#has-message-list .user-face > a {
+	display:block;
+}
+.clear{
+	clear:both;
+	display:block;
+	height:0;
+}
+#has-message-list .user-face img{
+	border-radius:50%;
+}
+.user-msg-detail{
+    margin-left: 68px;
+	font-size:15px;
+}
+.user-msg-detail .user{
+	color:#a3a3a3;
+}
+.user-msg-detail .name.blue {
+    color: #4f81bd;
+}
+time.time{
+	float:right;
+}
+.content-show{
+	font-size:16px;
+	margin: 15px 0;
+}
+.content-show .show-open-all{
+	display:none;
+}
+.content-query,.content-query a{
+	color: #a3a3a3;
+	font-size: 12px;
+}
+.content-query .zan-replay{
+	float:right;
+}
+.content-query span[class]{
+	cursor:pointer;
+	line-height:14px;
+	padding: 0 0 0 15px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.content-query span.zan{
+	background: url(../i/zan.png) no-repeat;
+}
+.content-query span.zan.zans{
+	background: url(../i/zanb.png) no-repeat;
+}
+.content-query .baogao-title{
+	color: #a3a3a3;
+}
+.content-query a.baogao-title:hover{
+	text-decoration:underline;
+}
+.replay-comment{
+	margin-top:15px;
+	display:none;
+}
+.replay-comment .replay-comment-box{
+	border:1px solid #e0e0e0;
+	background-color:#f7f7f7;
+	border-radius:5px;
+	padding:10px;
+}
+.replay-comment .replay-comment-box textarea{
+	background-color:transparent;
+	display: block;
+    width: 100%;
+	height:50px;
+	font-size:14px;
+}
+.content-show-my-replay{
+	color: #a3a3a3;
+    font-size: 12px;
+}
+.replay-comment-submit{
+	margin-top:10px;
+	text-align:right;
+}
+.replay-comment-submit .btn{
+    background: #fe5341;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+p.open-btn {
+    color: #4f81bd;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user-msg-detail.zan-list{
+	line-height:48px;
+}
+.look-detail-box{
+	float:right;
+}
+.look-detail-box span.time{
+	float:none;
+	color:#a3a3a3;
+	cursor:pointer;
+}
+.look-detail-box span.time.look-detail ~ span.time{
+	margin-left:10px;
+	display:inline-block;
+	width:70px;
+	text-align:right;
+}
+#msg-integral .user-msg-detail .user{
+	color:#474747;
+}
+#msg-integral .user-msg-detail .user .time{
+	color:#a3a3a3;
+}
+.no-face-show{
+	display:block;
+	height: 28px;
+    width: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    padding: 8px;
+    border: none;
+}
+.no-face-show.guobi-add{
+	background-image:url(../i/user-center/icon-guobi-add.png);
+	background-color:#46b692;
+}
+.no-face-show.guobi-sub{
+	background-image:url(../i/user-center/icon-guobi-sub.png);
+	background-color:#e24555;
+}
+.no-face-show.apply-success{
+	background-image:url(../i/user-center/icon-gou.png);
+	background-color:#aadeb5;
+}
+.no-face-show.apply-fail{
+	background-image:url(../i/user-center/icon-cha.png);
+	background-color:#f3a5a4;
+}
+.green{
+	color:#46b692;
+}
+
+.user-msg-view .time{
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+.myset-event .content {
+	background: #f3f2f8;
+}
+.myset-event .content .list .botton a {
+	display: inline;
+}
+.myset-event .wrapper .botton .btn {
+	display: inline-block;
+	font-size: 12px;
+	padding: 4px 7px;
+}
+.myset-event #list {
+	padding-top: 1px;
+	margin-top: -10px
+}
+.myset-event #list dd {
+	margin-top: 21px;
+}
+.myset-event .content .list dd, .myset-event .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+.myset-event .wrapper .submitBtn {
+	margin: 20px 0 10px
+}
+.myset-event .content .desc .botton {
+	margin: 15px 0 0
+}
+.myset-list #list {
+	padding-top: 1px;
+	margin-top: -10px
+}
+.myset-list #list dd {
+	margin-top: 21px;
+}
+.myset-list .content .list dd, .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+.myset-list #list .desc .optBtn {
+	margin-top: 10px
+}
+.myset-product #list dd {
+	margin-top: 21px;
+}
+.myset-product #list {
+	padding-top: 1px;
+	margin-top: -10px
+}
+.myset-product .content .list dd, .myset-product .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+.myset-product #list .desc .optBtn {
+	margin-top: 10px
+}
+.myset-product .content .desc .tag span {
+	margin-top: 5px;
+}

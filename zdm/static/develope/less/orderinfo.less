@@ -1,0 +1,97 @@
+body{
+  background-color: #f7f7f7;
+  color: #6c6c6c;
+}
+.Z-order-wrapper{
+  position: relative;
+  padding: 20px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #fff;
+  border: #edf0f0 1px solid;
+  overflow: hidden;
+  &:last-child{
+    margin-bottom: 50px;
+  }
+}
+.Z-order-img{
+  float: left;
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.Z-order-desc{
+  margin-left: 290px;
+  color: #262626;
+}
+.Z-order-name{
+  font-size: 24px;
+}
+.Z-order-id{
+  position: absolute;
+  bottom: 20px;
+}
+.Z-order-title{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #6c6c6c;
+  border-bottom: 1px solid #ebebeb;
+  font-weight: 100;
+  line-height: 40px;
+}
+.Z-order-info{
+  margin: 15px 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  li{
+    height: 30px;
+    margin: 20px 0;
+    background: url("../images/i-payment-list-bg.png") repeat-x center;
+  }
+}
+.info-name{
+  display: inline-block;
+  min-width: 70px;
+  margin-right: 15px;
+  text-align: justify;
+}
+.price-name{
+  float: left;
+}
+.price-info{
+  float: right;
+}
+.price-all{
+  text-align: right;
+  span{
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+.order-pay{
+  position: relative;
+  width: 130px;
+  height: 30px;
+  padding: 10px 25px;
+  border: 1px solid #ff0000;
+  line-height: 30px;
+  img{
+    width: 100px;
+    vertical-align: middle;
+  }
+  i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 8px solid #ff0000;
+    border-left: 8px solid transparent;
+    border-top: 8px solid transparent;
+  }
+}

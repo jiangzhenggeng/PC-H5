@@ -1,0 +1,415 @@
+@import "base";
+
+body{
+  background-color: #fff;
+}
+.main-wrap{
+  width: 940px;
+  margin:50px auto 30px;
+  .main-left{
+    width: 200px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    padding: 22px 20px;
+    text-align: center;
+    .title{
+      line-height: 40px;
+      border-bottom: 1px solid #bfbfbf;
+      h1{
+        font-size: 20px;
+      }
+    }
+    .menu{
+      padding-top: 10px;
+      li{
+        color: #4c4c4c;
+        height: 25px;
+        font-size: 18px;
+        margin-top: 10px;
+        position: relative;
+        &.on{
+          a{
+            color: #fe584d;
+          }
+        }
+        .badge{
+          top: 5px;
+          right: 0px;
+        }
+      }
+    }
+  }
+  .main-right{
+    width: 650px;
+    min-height: 725px;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+  }
+}
+//意见反馈表单提交
+.feedback-problem{
+  width: 580px;
+  min-height:673px;
+  padding: 26px 35px;
+  font-size: 14px;
+  color: #808080;
+  .tips{
+    line-height: 38px;
+  }
+  .problem-form{
+    padding-bottom: 18px;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+  }
+}
+.problem-row{
+  line-height: 24px;
+  margin-top: 18px;
+  &.problem-type{
+    .problem-title{
+      width: 112px;
+    }
+    .problem-content{
+      margin-left: 125px;
+    }
+  }
+  &.tel{
+    .problem-title{
+      letter-spacing: 0.6px;
+    }
+  }
+  .problem-title{
+    color: #4d4d4d;
+    width: 70px;
+    display: block;
+    float: left;
+    white-space: pre;
+    .pic-count-tips{
+      color: #808080;
+    }
+  }
+  .problem-content{
+    margin-left: 75px;
+    label{
+      display: block;
+      min-width: 80px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #6c6c6c;
+      float: left;
+      margin-right: 40px;
+      &:last-of-type{
+        margin-right: 0px;
+      }
+      input[type="radio"]{
+        position: relative;
+        top:0px;
+        margin-right: 5px;
+        display: inline-block;
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 0;
+        outline: 0!important;
+        &:before{
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background-color: #fff;
+          border: 1px solid #979797;
+          *display: inline;
+          *zoom: 1;
+          border-radius: 100%;
+          position: relative;
+          top: 3px;
+        }
+        &:checked{
+          &:before{
+            background: url("../images/cir-gray.png") no-repeat center center;
+            background-size: 8px 8px;
+          }
+        }
+      }
+    }
+    input[type='text']{
+      width: 496px;
+      height: 24px;
+      background-color: #ffffff;
+      border: solid 1px #bfbfbf;
+      padding-left: 9px;
+    }
+  }
+  .user-phone{
+    input[type='text']{
+      width: 172px;
+      font-size: 14px;
+    }
+  }
+  .problem-code{
+    input[type='text']{
+      width: 128px;
+      font-size: 14px;
+    }
+    .code{
+      width: 51px;
+      height: 24px;
+      margin-left: 10px;
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+    .refresh-code{
+      margin-left: 10px;
+      color: #4a90e2;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
+.problem-content-wrap{
+  width: 481px;
+  height: 238px;
+  padding: 0 12px;
+  border: solid 1px #bfbfbf;
+  position: relative;
+  background-color: #fff;
+  textarea{
+    width: 481px;
+    height: 212px;
+    border: none;
+    outline: none;
+  }
+  .font-count{
+    position: absolute;
+    bottom: 0px;
+    right: 12px;
+  }
+}
+.problem-pic{
+  .problem-pic-list{
+    display: inline-block;
+    .problem-pic-item{
+      float: left;
+      width: 80px;
+      height:80px;
+      margin:0 20px 10px 0;
+      position: relative;
+      .upload-loading-img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        margin-left: -10px;
+        margin-top: -10px;
+      }
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+  }
+  .del-problem-pic{
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top:0;
+    right: 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+  }
+
+  .uploadify-progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    .uploadify-progress-bar{
+      height: 100%;
+      width: 0%;
+      background: #fe584d;
+    }
+  }
+  .add-problem-pic-box{
+    display: inline-block;
+    margin-bottom: 10px;
+    .uploadify-button-text{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .add-problem-pic{
+    width: 78px;
+    height: 78px;
+    background-color: #ffffff;
+    border: solid 1px #bfbfbf;
+    cursor: pointer;
+    .i-row{
+      width: 2px;
+      height: 24px;
+      background: #fc6b6b;
+      display: block;
+      position: relative;
+      margin: 28px auto;
+      .i-col{
+        display: block;
+        height: 2px;
+        width: 24px;
+        position: absolute;
+        top: 45%;
+        left: -11px;
+        background: #fc6b6b;
+      }
+    }
+  }
+  .problem-pic-tips{
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.form-sub{
+  text-align: center;
+  .sub-btn{
+    display: inline-block;
+    text-align: center;
+    width: 158px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #fe584d;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 23px;
+    cursor: pointer;
+  }
+}
+
+//我的反馈
+.my-problem{
+  min-height:725px;
+  padding: 10px 0px 30px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.user-problem{
+  border-bottom: 10px solid #e6e6e6;
+  padding:20px 0px 20px;
+  &.replay{
+    margin-top: 20px;
+    border-bottom: none;
+    border-top: 1px solid #e6e6e6;
+    padding: 20px 0 0;
+    .msg-title{
+      color: #fe584d;
+      &:after{
+        background-color: #fe584d;
+      }
+    }
+    .msg-detial{
+      color:#595959;
+    }
+  }
+  &:last-of-type{
+    border-bottom: none;
+  }
+}
+.msg-face{
+  width: 40px;
+  height: 40px;
+  float: left;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+}
+.msg-content{
+  margin-left: 20px;
+  padding: 0 20px;
+}
+.msg-infor{
+  line-height: 22px;
+}
+.msg-title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #4d4d4d;
+  position: relative;
+  &.system-title{
+    color: #fe584d;
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    top: 8px;
+    left:-18px;
+    border-radius: 100%;
+  }
+}
+.msg-date{
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.msg-detial{
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #b3b3b3;
+  position: relative;
+  &.show{
+    max-height: 999999px;
+    overflow: visible;
+  }
+}
+.msg-pic{
+  ul{
+    width: 560px;
+    li{
+      margin-top: 20px;
+      float: left;
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+      img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+//多行省略号
+.ellipsis-data{
+  max-height: 20px;
+  overflow: hidden;
+  &:after{
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 30px;
+    background-color: #f2f2f2;
+    z-index: 1;
+  }
+}
+.lookAll{
+  color: #246176;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 2;
+}

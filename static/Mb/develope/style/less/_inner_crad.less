@@ -1,0 +1,119 @@
+
+.price-green{
+  color: #3faf36;
+}
+.price-red{
+  color: #e74235;
+}
+.inner_card_wrap{
+  .inner_card_inner {
+    background: #fff;
+    padding: 10px;
+    border: 3px solid #efefef;
+    display: -webkit-box;
+    border-radius: 5px;
+    > a{
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+  }
+  .inner_card_miaosha{
+    background-color: #ED4F37;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  @h : 30%;
+  .inner_card_img{
+    width: @h;
+    height: @h;
+    min-width: 80px;
+    max-width: 100px;
+    float: left;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .inner_card_text{
+    margin-left: 33.233%;
+    position: relative;
+
+    .inner_card_title {
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-height: 16px;
+      font-size: 14px;
+    }
+
+    .inner_card_mall{
+      color: #b3b3b3;
+      font-size: 14px;
+    }
+    .inner_card_btn_wrap{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+    .inner_card_btn{
+      background-color: #ED4F37;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 13px;
+      display: block;
+      width: 60px;
+      text-align: center;
+      float: right;
+    }
+    .card-kill{
+      .inner_card_btn{
+        background-color: #afafaf;
+        &.on{
+          background-color: #ED4F37;
+        }
+      }
+    }
+  }
+  .kill-timer{
+    color: #B3B3B3;
+    position: absolute;
+    right: 65px;
+    bottom: 0;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 420px) {
+  .inner_card_price{
+    position: absolute;
+    bottom: 34px;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 350px){
+  .inner_card_text{
+    font-size: 12px!important;
+    .inner_card_price{
+      .ft16{
+        font-size: 14px!important;
+      }
+      .ft14{
+        font-size: 12px!important;
+      }
+      .inner_card_mall{
+        font-size: 12px!important;
+      }
+    }
+  }
+
+}

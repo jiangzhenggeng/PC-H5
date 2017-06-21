@@ -1,0 +1,138 @@
+
+
+.image-view-box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: 9;
+  img{
+    vertical-align: top;
+  }
+
+  .image-view-mask{
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+
+  }
+  .image-view-wrap{
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:0;
+    left: 0;
+
+  }
+  @bottomItem:100px;
+  .image-show-wrap{
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: @bottomItem;
+  }
+  .image-show-content{
+    height: 100%;
+  }
+
+  @queryW : 50px;
+  @queryH : 100px;
+  @queryLeft : 200px;
+
+  .image-view-prev,
+  .image-view-next,
+  .image-view-close{
+    background-color: transparent;
+    background-image: url(../images/prev_arow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: @queryW;
+    height: @queryH;
+    position: absolute;
+    left: @queryLeft;
+    top:50%;
+    margin-top: -@bottomItem;
+    cursor: pointer;
+    background-size: 36px;
+  }
+  .image-view-next{
+    background-image: url(../images/next_arow.png);
+    left: auto;
+    right: @queryLeft;
+  }
+  .image-view-close{
+    background-image: url(../images/next_close.svg);
+    left: auto;
+    right: @queryLeft;
+    top:80px;
+    margin-top: 0;
+    width: 30px;
+    height: 30px;
+    background-size: auto;
+  }
+
+
+  .image-show-content{
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    > * {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .image-show-item-real{
+    display: inline-block;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+  }
+
+  .bottom-item-wrap{
+    position: absolute;
+    bottom: 0;
+    background-color: #272727;
+
+    height: @bottomItem;
+    width: 100%;
+    text-align: center;
+
+    ul{
+      font-size: 0;
+      margin: auto;
+      margin-top: 15px;
+    }
+    li{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      font-size: 14px;
+
+      img{
+        width: 100%;
+      }
+      .item-wrap{
+        width: 60px;
+        height: 60px;
+        opacity: 0.4;
+        margin: 0 5px;
+        padding: 3px;
+        border: solid 1px transparent;
+        cursor: pointer;
+      }
+      &.on{
+        .item-wrap{
+          opacity: 1;
+          border-color:#ff5b5b;
+        }
+      }
+    }
+
+  }
+}

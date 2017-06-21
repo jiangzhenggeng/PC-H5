@@ -1,0 +1,55 @@
+
+@header-height : 52px;
+.header{
+  height: @header-height;
+  background: #ffffff !important;
+  border-bottom: 1px solid #ececec;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  .menu{
+    position: absolute;
+    padding: 13px 15px;
+    left: 0;
+    top:0;
+  }
+  .logo{
+    height: @header-height;
+    line-height: 50px;
+    text-align: center;
+    img{
+      height:35px;
+      margin:auto;
+    }
+  }
+  .header-search{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 13px 15px;
+    .fl{
+      margin-left: 10px;
+      position: relative;
+      &:first-child{
+        margin: 0;
+      }
+    }
+  }
+
+  .has-login{
+    a{
+      display: block;
+      width: 26px;
+      height: 26px;
+      overflow: hidden;
+      border-radius: 50%;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+define(["require","jquery"],function(a,b){function c(){var a=b(".app-download");a.hover(function(){b(this).find(".app-download-erweima").show()},function(){b(this).find(".app-download-erweima").hide()})}return{init:c}})

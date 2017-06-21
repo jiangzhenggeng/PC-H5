@@ -1,0 +1,136 @@
+@import "_variable";
+@import "_mixins";
+
+@import "_banner";
+
+.main-hot-event{
+  background-color: @bg-color;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 37px;
+  padding-top: 20px;
+}
+.hot-event-scorll{
+  margin-top: 20px;
+  height: 255px;
+  overflow: hidden;
+}
+
+
+//统一标题
+.common-cell-title();
+
+.hot-event-warp{
+
+  .next-prev{
+    @color : #dfdfdf;
+    border: 1px solid @color;
+    .border-radius(5px);
+    width: 76px;
+    height: 24px;
+    margin-top: 7px;
+    position: relative;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background-color: @color;
+    }
+    .query{
+      display: block;
+      float: left;
+      width: 50%;
+      height: 100%;
+      &.prev{
+        cursor: pointer;
+        .background-image(15px,-53px);
+      }
+      &.next{
+        cursor: pointer;
+        .background-image(-13px,-53px);
+      }
+      &.nextStop,&.prevStop{
+        opacity: 0.3;
+        cursor: default;
+      }
+    }
+  }
+}
+
+//精选流
+.main-choice-event {
+  .choice-event-box{
+    margin-top: 20px;
+  }
+}
+
+//清单卡片
+.choice-event-content {
+  li{
+    box-sizing: border-box;
+    height: 365px;
+    overflow: hidden;
+    a{
+      //一直显示标签
+      //span.tag{
+      //  display: none;
+      //}
+      //&:hover{
+      //  span.tag{
+      //    display: block;
+      //  }
+      //}
+    }
+    &.medium{
+      border: none !important;
+      .card-medium(@medium-wid);
+      .query-num {
+        margin-top: 6px;
+        color: #ccc;
+      }
+      .desc-box .d-title {
+        height: auto;
+      }
+    }
+    &.large{
+      border: none !important;
+      .card-large(@large-wid);
+      .choice-img-box{
+        height: 100% !important;
+        img{
+          height: auto;
+          width: 100%;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .center-box .query-num{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+
+//@media screen and (max-height: @fix-width) {
+  .choice-event-content {
+    li{
+      &.medium,
+      &.large{
+        width: 533px !important;
+      }
+
+      &.large{
+        .center-box .large-center{
+          margin: 80px auto auto auto;
+        }
+      }
+    }
+  }
+//}
+
+
+
+

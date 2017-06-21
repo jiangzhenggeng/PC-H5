@@ -1,0 +1,118 @@
+
+.banner-topic-swipe {
+  overflow: hidden;
+  li {
+    overflow: hidden;
+    position: relative;
+    a {
+      overflow: hidden
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .banner-img-box {
+    position: relative;
+  }
+
+  .banner-desc {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+
+    .banner-title, .banner-tips {
+      margin: 0 @bianju;
+    }
+    .banner-title {
+      line-height: 30px;
+      font-size: 16px;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .banner-tips {
+      margin-top: 3px;
+    }
+  }
+}
+
+.banner-inner {
+  position: relative;
+  .hd {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      border-radius: 50%;
+      height: 5px;
+      width: 5px;
+      background-color: #fff;
+      text-indent: -99999px;
+      overflow: hidden;
+      margin: 0 2px;
+      &.on {
+        background-color: #fe584d;
+      }
+    }
+  }
+}
+
+.banner-topic-swipe li a .mask-cover {
+  border-radius: 0;
+}
+
+//焦点图 2016-11-15
+.new_banner {
+  width: 100% !important;
+  height: 100% !important;
+  margin-bottom: -35px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  top:0 !important;
+
+  .new_title {
+    margin-bottom: 4px;
+    font-size: 22px;
+    text-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .news {
+    height: 22px;
+    padding: 0 15px;
+    border-radius: 25px;
+    line-height: 22px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+    display: inline-block;
+
+    span {
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    .line {
+      width: 1px;
+      height: 10px;
+      margin: 0;
+      background-color: rgba(255,255,255,.5);
+    }
+  }
+
+  .status{
+    margin-top: 8px;
+    font-wight:100;
+  }
+
+}
+

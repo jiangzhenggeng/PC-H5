@@ -1,0 +1,54 @@
+/**
+ +----------------------------------------------------------
+ // 全局变量
+ +----------------------------------------------------------
+ */
+@import "_variable";
+
+/**
+ +----------------------------------------------------------
+ // 全局混淆
+ +----------------------------------------------------------
+ */
+@import "_mixins";
+
+//公共文件
+@import "_common";
+
+@import "_loading";
+//头部
+@import "_header";
+//头部
+@import "_footer";
+//左侧菜单
+@import "_sidemenu";
+////字体
+//@import "_fonts";
+
+
+.history-coupon-list{
+  ul{
+    position: relative;
+    padding: 0 30px;
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      left:10px;
+      height: 100%;
+    }
+  }
+}
+
+//支付页面
+.btn.submitBtn.order-event-pay-btn{
+  margin: 13px;
+}
+//个人中心果币
+.usershop-top .top-content .avatar{
+  box-sizing: content-box;
+}
+//个人主页
+.usershop-top .top-content .avatar {
+  box-sizing: content-box !important;
+}

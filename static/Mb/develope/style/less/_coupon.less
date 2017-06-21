@@ -1,0 +1,410 @@
+
+.mark-logo(){
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  &.over{
+    background-image: url("../images/coupon/mark-over.png");
+  }
+  &.end{
+    background-image: url("../images/coupon/mark-end.png");
+  }
+  &.get{
+    background-image: url("../images/coupon/mark-get.png");
+  }
+  &.used{
+    background-image: url("../images/coupon/mark-used.png");
+  }
+}
+
+.coupon-wrap{
+  @l : 96px;
+  height: @l;
+  background-color: #fff;
+
+  .coupon-inner{
+    height: 100%;
+    box-shadow: 1px 0px 1px 0 #E6E6E6,1px 1px 1px 0 rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  .mark-logo{
+    .mark-logo();
+  }
+
+  .coupon-left{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: @l;
+    background-color: #FF5B5B;
+    color: #fff;
+    &.over{
+      background-color: #D5D5D5;
+      &:after,
+      &:before{
+        background-image: url("../images/coupon/coupon-over-bg.png");
+      }
+    }
+    &:after,
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top:0;
+      height: 100%;
+      width: 55%;
+      z-index: 1;
+      background-image: url("../images/coupon/coupon-bg.png");
+      background-position: left top;
+      background-repeat: repeat-y;
+      background-color: #fff;
+      background-size: 96px auto;
+    }
+    &:before{
+      left: auto;
+      right: 0;
+      background-position: right top;
+    }
+    .left-text{
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      display: inline-block;
+      max-width: 80px;
+    }
+  }
+  .coupon-right{
+    height: 100%;
+    position: relative;
+    margin-left: @l + 10px;
+    .title{
+      color: #595959;
+      font-size: 14px;
+      height: 25px;
+      overflow: hidden;
+      line-height: 25px;
+    }
+    .desc{
+      padding: 5px 5px 5px 0;
+    }
+    .pannle{
+      margin-top: 10px;
+    }
+    .pannle-bar{
+      width: 130px;
+      height: 4px;
+      border-radius: 5px;
+      background-color: #E7E7E7;
+      position: relative;
+      overflow: hidden;
+      margin-top: 5px;
+      .pannle-inner{
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        left: 0;
+        top:0;
+        background-color: #E43020;
+        transition: all 1s;
+      }
+    }
+    .pannle-desc{
+      color: #E43020;
+      font-size: 12px;
+      margin-top: -2px;
+    }
+    .btn-wrap{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 20px;
+      cursor: pointer;
+      .btn{
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #fff;
+        min-width: 0px;
+        width: 100%;
+        position: absolute;
+        &.white {
+          background: #fff;
+          color: #fe584d !important;
+        }
+      }
+    }
+    .mall-logo-wrap{
+      @w : 18px;
+      width: @w;
+      height: @w;
+      position: absolute;
+      left: 0px;
+      bottom: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      img{
+        width: 100%;
+        position: absolute;
+      }
+    }
+    .no-wrap{
+      color: #B3B3B3;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .table{
+    display: table;
+  }
+  .table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.layui-m-layer-immediately-to-receive-wrap{
+  overflow: visible;
+  background-color: transparent;
+}
+
+.table{
+  display: table;
+  width: 100%;
+  border: none;
+  .table-cell{
+    display: table-cell;
+  }
+}
+
+.immediately-wrap{
+  position: relative;
+  &.bg{
+    background-color: #fff;
+    width: 290px;
+  }
+  .immediately-tips{
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    .immediately-tips-text{
+      padding: 50px 30px;
+      color: #595959;
+      text-align: center;
+    }
+    .table{
+      text-align: center;
+      border-top: 1px solid #E6E6E6;
+      height: 50px;
+      .table-cell {
+        vertical-align: middle;
+        position: relative;
+        width: 50%;
+        &:nth-child(2){
+          color: #FF5B5B;
+          &:after{
+            content: '';
+            display: block;
+            left: 0;
+            top:0;
+            height: 100%;
+            width: 1px;
+            background-color: #E6E6E6;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  .immediately-close{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url("../images/coupon/close.svg");
+    background-position: center center;
+    background-repeat: repeat;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      height: 24px;
+      width: 1px;
+      background-color: #F2F2F2;
+    }
+  }
+  .immediately-header{
+    width: 290px;
+    height: 110px;
+    background-image: url("../images/coupon/coupon-header-bg.png");
+    background-size: 290px auto;
+    background-position: left top;
+    background-repeat: repeat;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #f66b61;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    .c1{
+      color: #822828;
+      font-size: 12px;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .k1{
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-top: 35px;
+    }
+    .t1{
+      font-size: 40px;
+      color: #FFFFFF;
+      font-weight: bold;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 15px;
+    }
+    .t2{
+      font-size: 12px;
+      color: #FFFFFF;
+      margin-top: 5px;
+     }
+  }
+  .immediately-line{
+    display: block;
+    width: 100%;
+    height: 0;
+    left: 0;
+    border-bottom: 1px dashed #E34F41;
+  }
+  .immediately-body{
+    position: relative;
+
+    &:after{
+      content: '';
+      display: block;
+      left: 0;
+      height: 10px;
+      bottom: -5px;
+      width: 100%;
+      position: absolute;
+      background-image: url("../images/coupon/coupon-shape.png");
+      background-size: 290px auto;
+      background-position: left bottom;
+      background-repeat: repeat-x;
+    }
+
+    .immediately-erweima{
+      border:1px solid #D7D7D7;
+      text-align: center;
+      position: relative;
+      width: 155px;
+      height: 155px;
+      margin: 20px auto;
+
+      img{
+        width: 100%;
+      }
+      .logo{
+        @w : 24px;
+        @w2 : 50px;
+        background-color: #fff;
+        position: absolute;
+        height: @w;
+        width: @w2;
+        margin-left: -@w2/2;
+        top: -@w/2;
+        left: 50%;
+        .logo-box{
+          overflow: hidden;
+          border-radius: 50%;
+          margin: auto;
+          height: @w;
+          width:@w;
+        }
+      }
+      .erweima{
+        width: 110px;
+        height: 110px;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .desc{
+        background-color: #fff;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+      }
+    }
+    .immediately-quanhao{
+      img{
+        width: 100%;
+      }
+      .cb3{
+        color: #b3b3b3;
+      }
+      .logo-box{
+        @w : 24px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+        height: @w;
+        width:@w;
+      }
+      .immediately-coupon-tiaoxin{
+        width: 80px;
+        margin: auto;
+      }
+      .query{
+        padding: 20px 0;
+        .btn{
+          line-height: 30px;
+          height: 30px;
+          width: 100%;
+          &.gray{
+            color: #595959 !important;
+            border-color: #B3B3B3 !important;
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
+    .immediately-desc{
+      font-size: 12px;
+      line-height: 20px;
+      color: #595959;
+      padding-bottom: 10px;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .mark-logo{
+    .mark-logo();
+  }
+}
+
+
+
+

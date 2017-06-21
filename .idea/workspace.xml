@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7db35583-15bc-42ae-be2d-88b4ca31a316" name="Default" comment="" />
+    <ignored path="cdn.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cdn">
+      <favorite_root url="file://$PROJECT_DIR$/static-v1/Pc/develope/script/app/chat.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="user_center.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/Mb/develope/style/less/user_center.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../60.205.106.62" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../jiguo-new/protected/modules/api/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/protected/extensions/UNews.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/ALirefund/notify_url.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/ALirefund/alipay.config.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/protected/extensions/alipay/alipay.config.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/ALirefund/index.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/protected/modules/mb/controllers/PayController.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/index.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/WxpayAPI_php_v3/lib/WxPay.Api.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/WxpayAPI_php_v3/example/refund.php" />
+        <option value="$PROJECT_DIR$/../jiguo-new/WxpayAPI_php_v3/lib/WxPay.Config.php" />
+        <option value="$PROJECT_DIR$/../zdm/protected/modules/admin/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/../zdm/protected/modules/admin/views/news/index.php" />
+        <option value="$PROJECT_DIR$/../zdm/assets/t.php" />
+        <option value="$PROJECT_DIR$/webpack/tsconfig.json" />
+        <option value="$PROJECT_DIR$/webpack/package.json" />
+        <option value="$PROJECT_DIR$/webpack/index.html" />
+        <option value="$PROJECT_DIR$/webpack/module.js" />
+        <option value="$PROJECT_DIR$/webpack/style.css" />
+        <option value="$PROJECT_DIR$/webpack/myModule.js" />
+        <option value="$PROJECT_DIR$/webpack/webpack.config.js" />
+        <option value="$PROJECT_DIR$/webpack/bundle.js" />
+        <option value="$PROJECT_DIR$/webpack/test/ex.1.1.js" />
+        <option value="$PROJECT_DIR$/webpack/test/webpack.config.js" />
+        <option value="$PROJECT_DIR$/webpack/entry.js" />
+        <option value="$PROJECT_DIR$/webpack/test/components/messageList.js" />
+        <option value="$PROJECT_DIR$/webpack/test/components/messageForm.js" />
+        <option value="$PROJECT_DIR$/webpack/test/components/messageBoard.js" />
+        <option value="$PROJECT_DIR$/webpack/test/index.html" />
+        <option value="$PROJECT_DIR$/webpack/webpack-website/webpack.config.js" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/webpack.config.js" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/style.less" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/mian.js" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/style.css" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/tpl.js" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/layer/layer.js" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/signin.php" />
+        <option value="$PROJECT_DIR$/webpack/gtic_apply/index.html" />
+        <option value="$PROJECT_DIR$/webpack/vue-test/node_modules/vue/src/shared/util.js" />
+        <option value="$PROJECT_DIR$/webpack/vue-test/package.json" />
+        <option value="$PROJECT_DIR$/webpack/vue-test/webpack.config.js" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/js/html2canvas.js" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/js/scsc.js" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/css/imgtool.css" />
+        <option value="$PROJECT_DIR$/static/Pc/develope/script/app/common.js" />
+        <option value="$PROJECT_DIR$/static/Pc/develope/script/app/register.js" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/css/zhibo.css" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/js/tag.js" />
+        <option value="$PROJECT_DIR$/static/Mb/develope/script/app/articleZan.js" />
+        <option value="&lt;d9980b32-b21d-4ff6-9ee8-52ebb9d811b0&gt;/protected/views/event/shows.php" />
+        <option value="$PROJECT_DIR$/zdm/v1.0.3/js/addProduct.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="develope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="develope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mb" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="develope" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jiguo-new" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/static/Pc/source/script/app/homeAjaxLoad.js" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/static/Mb/develope/style" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webpack/react" />
+      <recent name="$PROJECT_DIR$/zdm/v1.0.3/js" />
+      <recent name="$USER_HOME$/react-native/TestApp/android/app/src/main/assets/fonts" />
+      <recent name="$USER_HOME$/react-native/TestApp/android/app/src/main/assets" />
+      <recent name="$USER_HOME$/react-native/TestApp/android/app/src/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zdm/v1.0.3/css" />
+      <recent name="$PROJECT_DIR$/zdm/v1.0.3/js" />
+      <recent name="$PROJECT_DIR$/webpack/gtic_apply" />
+      <recent name="$PROJECT_DIR$/webpack/test" />
+      <recent name="$PROJECT_DIR$/webpack" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.banner_add.php">
+    <configuration default="false" name="banner_add.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/learn/protected/modules/admin/views/user/banner_add.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9a0d08b3-8c14-4de4-b343-32627f4018c3" server_name="jiguo-cnd-zdm(dev)">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.banner_add.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.banner_add.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7db35583-15bc-42ae-be2d-88b4ca31a316" name="Default" comment="" />
+      <created>1467357181478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467357181478</updated>
+      <workItem from="1467357182706" duration="848000" />
+      <workItem from="1467883964437" duration="226000" />
+      <workItem from="1471966929332" duration="9037000" />
+      <workItem from="1471980411617" duration="2214000" />
+      <workItem from="1472017281978" duration="2892000" />
+      <workItem from="1472023885704" duration="13936000" />
+      <workItem from="1472054511775" duration="652000" />
+      <workItem from="1472055489870" duration="458000" />
+      <workItem from="1472092013587" duration="9780000" />
+      <workItem from="1472129265027" duration="2012000" />
+      <workItem from="1472148081527" duration="237000" />
+      <workItem from="1472148432747" duration="4456000" />
+      <workItem from="1472199890437" duration="19131000" />
+      <workItem from="1472273637094" duration="9479000" />
+      <workItem from="1472301194393" duration="1000" />
+      <workItem from="1472437451123" duration="11931000" />
+      <workItem from="1472527601657" duration="21503000" />
+      <workItem from="1472560230408" duration="18000" />
+      <workItem from="1472560275415" duration="7803000" />
+      <workItem from="1472615348852" duration="17983000" />
+      <workItem from="1472706992616" duration="16070000" />
+      <workItem from="1472784525392" duration="5301000" />
+      <workItem from="1472803547574" duration="1164000" />
+      <workItem from="1472804778716" duration="31000" />
+      <workItem from="1472808076834" duration="1993000" />
+      <workItem from="1472882101593" duration="1720000" />
+      <workItem from="1473043585086" duration="5238000" />
+      <workItem from="1473061486484" duration="1569000" />
+      <workItem from="1473069291022" duration="3125000" />
+      <workItem from="1473134837786" duration="11381000" />
+      <workItem from="1473232993524" duration="14103000" />
+      <workItem from="1473306102356" duration="23382000" />
+      <workItem from="1473478897204" duration="141000" />
+      <workItem from="1473481183974" duration="6064000" />
+      <workItem from="1473514059108" duration="12000" />
+      <workItem from="1473517762844" duration="1948000" />
+      <workItem from="1473650695942" duration="2549000" />
+      <workItem from="1473845325377" duration="774000" />
+      <workItem from="1473962102587" duration="69000" />
+      <workItem from="1474168238250" duration="535000" />
+      <workItem from="1474171283954" duration="7680000" />
+      <workItem from="1474269676981" duration="9816000" />
+      <workItem from="1474286431648" duration="11726000" />
+      <workItem from="1474427285696" duration="14130000" />
+      <workItem from="1474516311238" duration="15095000" />
+      <workItem from="1474817823799" duration="412000" />
+      <workItem from="1474818252173" duration="1856000" />
+      <workItem from="1474938343575" duration="14155000" />
+      <workItem from="1475215123485" duration="7867000" />
+      <workItem from="1475406019255" duration="458000" />
+      <workItem from="1475894701241" duration="22918000" />
+      <workItem from="1475980042781" duration="22330000" />
+      <workItem from="1476067994330" duration="639000" />
+      <workItem from="1476075661332" duration="17000" />
+      <workItem from="1476088753504" duration="7049000" />
+      <workItem from="1476174352277" duration="7452000" />
+      <workItem from="1476415400224" duration="22820000" />
+      <workItem from="1476454705228" duration="816000" />
+      <workItem from="1476503275485" duration="1560000" />
+      <workItem from="1476639553119" duration="97000" />
+      <workItem from="1476677985666" duration="40309000" />
+      <workItem from="1476884278596" duration="1002000" />
+      <workItem from="1476933768560" duration="2107000" />
+      <workItem from="1476949389566" duration="2326000" />
+      <workItem from="1476954333509" duration="6948000" />
+      <workItem from="1477031814128" duration="11910000" />
+      <workItem from="1477119738742" duration="4582000" />
+      <workItem from="1477276699744" duration="6938000" />
+      <workItem from="1477365345429" duration="63000" />
+      <workItem from="1477365429067" duration="18000" />
+      <workItem from="1477388306553" duration="30000" />
+      <workItem from="1477453903521" duration="35308000" />
+      <workItem from="1477540773293" duration="27506000" />
+      <workItem from="1477628312805" duration="27357000" />
+      <workItem from="1477720177515" duration="9260000" />
+      <workItem from="1477882603445" duration="27555000" />
+      <workItem from="1478058384045" duration="19142000" />
+      <workItem from="1478245743524" duration="15695000" />
+      <workItem from="1478329059737" duration="10357000" />
+      <workItem from="1478418201469" duration="663000" />
+      <workItem from="1478494968273" duration="11012000" />
+      <workItem from="1478519673348" duration="11319000" />
+      <workItem from="1478584522062" duration="8363000" />
+      <workItem from="1478624766947" duration="27000" />
+      <workItem from="1478663583782" duration="499000" />
+      <workItem from="1478664523651" duration="13977000" />
+      <workItem from="1478750264423" duration="23716000" />
+      <workItem from="1479092722559" duration="12229000" />
+      <workItem from="1479186798192" duration="21261000" />
+      <workItem from="1479270860601" duration="4917000" />
+      <workItem from="1479280349412" duration="13452000" />
+      <workItem from="1479359060967" duration="17138000" />
+      <workItem from="1479439263734" duration="2846000" />
+      <workItem from="1479442942114" duration="26672000" />
+      <workItem from="1479528300078" duration="28021000" />
+      <workItem from="1479695630744" duration="26479000" />
+      <workItem from="1479730056731" duration="14087000" />
+      <workItem from="1479794610064" duration="9573000" />
+      <workItem from="1479806324654" duration="8101000" />
+      <workItem from="1479869277041" duration="25451000" />
+      <workItem from="1479947416934" duration="4979000" />
+      <workItem from="1480045664431" duration="15239000" />
+      <workItem from="1480086327380" duration="4797000" />
+      <workItem from="1480091629025" duration="10357000" />
+      <workItem from="1480306425447" duration="6377000" />
+      <workItem from="1480389217856" duration="20321000" />
+      <workItem from="1480488721471" duration="40499000" />
+      <workItem from="1480654835056" duration="20630000" />
+      <workItem from="1480749690110" duration="5332000" />
+      <workItem from="1480758290224" duration="1717000" />
+      <workItem from="1480906641306" duration="6952000" />
+      <workItem from="1480918300735" duration="41288000" />
+      <workItem from="1481193108892" duration="16088000" />
+      <workItem from="1481268327083" duration="9813000" />
+      <workItem from="1481340899657" duration="9603000" />
+      <workItem from="1481511752110" duration="62386000" />
+      <workItem from="1481806323825" duration="9702000" />
+      <workItem from="1481824606655" duration="27424000" />
+      <workItem from="1481903137750" duration="17730000" />
+      <workItem from="1481965711784" duration="4921000" />
+      <workItem from="1482048320355" duration="3349000" />
+      <workItem from="1482116381847" duration="22337000" />
+      <workItem from="1482206874737" duration="3378000" />
+      <workItem from="1482211992633" duration="898000" />
+      <workItem from="1482212905990" duration="1683000" />
+      <workItem from="1482218609997" duration="6751000" />
+      <workItem from="1482225783913" duration="39702000" />
+      <workItem from="1482398953108" duration="48141000" />
+      <workItem from="1482503277122" duration="1685000" />
+      <workItem from="1482553292606" duration="37663000" />
+      <workItem from="1482607959005" duration="234000" />
+      <workItem from="1482647695023" duration="499000" />
+      <workItem from="1482686494955" duration="3127000" />
+      <workItem from="1482732019561" duration="53027000" />
+      <workItem from="1482894929976" duration="20284000" />
+      <workItem from="1482917597202" duration="2955000" />
+      <workItem from="1482923929323" duration="6347000" />
+      <workItem from="1482931808622" duration="62555000" />
+      <workItem from="1483087378733" duration="51122000" />
+      <workItem from="1483346670737" duration="6139000" />
+      <workItem from="1483363303849" duration="1781000" />
+      <workItem from="1483411154955" duration="40658000" />
+      <workItem from="1483505491001" duration="35015000" />
+      <workItem from="1483576471521" duration="40877000" />
+      <workItem from="1483634611300" duration="977000" />
+      <workItem from="1483673086414" duration="31446000" />
+      <workItem from="1483764092699" duration="17681000" />
+      <workItem from="1483932659641" duration="18198000" />
+      <workItem from="1484040266977" duration="5470000" />
+      <workItem from="1484103311974" duration="7632000" />
+      <workItem from="1484143853716" duration="34347000" />
+      <workItem from="1484279708930" duration="37075000" />
+      <workItem from="1484367314502" duration="8006000" />
+      <workItem from="1484476972576" duration="1790000" />
+      <workItem from="1484796339277" duration="385000" />
+      <workItem from="1486953522361" duration="24002000" />
+      <workItem from="1487009123510" duration="15855000" />
+      <workItem from="1487057674355" duration="19024000" />
+      <workItem from="1487124987404" duration="33701000" />
+      <workItem from="1487257089803" duration="617000" />
+      <workItem from="1487296705469" duration="3395000" />
+      <workItem from="1487302177036" duration="29045000" />
+      <workItem from="1487346014235" duration="3000" />
+      <workItem from="1487383016398" duration="20265000" />
+      <workItem from="1487555411475" duration="29959000" />
+      <workItem from="1487644658278" duration="23652000" />
+      <workItem from="1487739366863" duration="9732000" />
+      <workItem from="1487817355349" duration="24433000" />
+      <workItem from="1487905708351" duration="25854000" />
+      <workItem from="1488160810020" duration="8829000" />
+      <workItem from="1488247682225" duration="28064000" />
+      <workItem from="1488336188378" duration="13569000" />
+      <workItem from="1488421029506" duration="16277000" />
+      <workItem from="1488507153651" duration="21779000" />
+      <workItem from="1488592534075" duration="1106000" />
+      <workItem from="1488595250990" duration="117000" />
+      <workItem from="1488595741987" duration="236000" />
+      <workItem from="1488596118559" duration="484000" />
+      <workItem from="1488596701410" duration="507000" />
+      <workItem from="1488597453475" duration="608000" />
+      <workItem from="1488609321226" duration="5912000" />
+      <workItem from="1488770076552" duration="15000" />
+      <workItem from="1488781065644" duration="3836000" />
+      <workItem from="1488852866157" duration="11605000" />
+      <workItem from="1488894380299" duration="931000" />
+      <workItem from="1489116206005" duration="2663000" />
+      <workItem from="1489392899551" duration="5321000" />
+      <workItem from="1489457725700" duration="2483000" />
+      <workItem from="1489465910227" duration="1282000" />
+      <workItem from="1489477247733" duration="11834000" />
+      <workItem from="1493778253612" duration="2115000" />
+      <workItem from="1493954913514" duration="513000" />
+      <workItem from="1494225756106" duration="1308000" />
+      <workItem from="1494570749540" duration="752000" />
+      <workItem from="1494834864184" duration="4138000" />
+      <workItem from="1495008493907" duration="626000" />
+      <workItem from="1495009591297" duration="760000" />
+      <workItem from="1495015747550" duration="5815000" />
+      <workItem from="1495162652253" duration="2326000" />
+      <workItem from="1495178879727" duration="585000" />
+      <workItem from="1495201968959" duration="624000" />
+      <workItem from="1495253368990" duration="410000" />
+      <workItem from="1495272548084" duration="2954000" />
+      <workItem from="1495425897458" duration="4195000" />
+      <workItem from="1495531400340" duration="2538000" />
+      <workItem from="1495620968921" duration="2837000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2347735000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="4" y="23" width="1276" height="777" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33873582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20988655" sideWeight="0.48439822" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211679" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.270073" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="11" y="38" width="1276" height="777" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23349057" sideWeight="0.51560175" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5690936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32485875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986626" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75555557" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="11" y="38" width="1276" height="777" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.338558" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21551724" sideWeight="0.48439822" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5690936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23349057" sideWeight="0.51560175" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.properties" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/temp/casperjs/test.js</url>
+          <line>68</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/lib/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="214" column="16" selection-start-line="214" selection-start-column="9" selection-end-line="214" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zdm/v1.0.3/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="195" column="13" selection-start-line="195" selection-start-column="11" selection-end-line="195" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zdm/v1.0.3/js/feedback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zdm/v1.0.3/js/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="419" column="30" selection-start-line="419" selection-start-column="30" selection-end-line="419" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="146" column="49" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/changePassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/homeAjaxLoad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/messageIO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/gifPlay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/hotEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/lazyload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/videoAdapt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/viewport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/iscroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/unitTool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/videoAdapt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/tplEngine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/theAnchor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/sideMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/region.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/scrollStatus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/provinceArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/praise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/localDataCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1337">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/goApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/getZan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/gifPlay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/getPraiseList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/countdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/chat2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/cardAuto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/app/articleZan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/build_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/global.fun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-653">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3065">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/script/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/tools/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/tools/build_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/banner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="11" selection-start-line="8" selection-start-column="8" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zdm/v1.0.3/js/addProduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
+          <folding>
+            <marker date="1495533756000" expanded="true" signature="3647:3661" ph="..." />
+            <marker date="1495533756000" expanded="true" signature="4138:4148" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Pc/develope/script/app/blogAjaxLoad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Mb/develope/style/less/user_center.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.24716267" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="webServersAuthStorage">
+    <data>AAAAsOn2/Ak4A/XgBNKesr2ytRYXNsUbnbN4Y7/8RpBrPj4h9soNyIQFmv98VHeaaH3KxnI17680KnD5MVNDKr8f7bMbDd9H0odow8jj7wEX/dA8InTRaCgnRz3QIqK8TjbrpYMb2Go0d8F6gypQi9YtuGsWVEsgy7XDvEgDQzPa4i4owbV+5eePS3Xt3ZJINAhUTgwyBUiGcBY9thS/noc2IIF7VqKuIfHnXeIBfP1FKrxHKrxHIH1fK1K2EdEtZIFLGw==</data>
+  </component>
+</project>

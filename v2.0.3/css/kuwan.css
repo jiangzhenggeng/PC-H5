@@ -1,0 +1,207 @@
+/* CSS Document */
+
+/* CSS index */
+#g-body .surplusArticle {
+	color: #3e3e3e;
+}
+#g-body .list .desc-first {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 100!important;
+	-webkit-box-orient: vertical;
+	padding-bottom: 5px;
+	display: none;
+}
+#g-body #list .desc .optBtn {
+	border-top: 1px solid #ededed;
+}
+#g-body #list .desc .title {
+	margin-top: 12px;
+	border-bottom: none;
+	padding-bottom: 3px;
+}
+#g-body #list .desc .optBtn .talkNum a::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 14px;
+	background: url('../images/060.png') no-repeat;
+	background-size: 16px 14px;
+	top: 10px;
+	left: -22px;
+}
+#g-body #list .desc .optBtn .loveNum a::before {
+	content: '';
+	position: absolute;
+	width: 17px;
+	height: 15px;
+	background: url('../images/061.png') no-repeat;
+	background-size: 17px 15px;
+	top: 10px;
+	left: -22px;
+}
+#g-body #list .desc .optBtn .zanNum a::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 14px;
+	background: url('../images/063.png') no-repeat;
+	background-size: 16px 14px;
+	top: 10px;
+	left: -22px;
+}
+#g-body #list {
+	border: none;
+	margin: 0px;
+	padding: 0px
+}
+#g-body .desc .botton a {
+	margin-top: 5px
+}
+#g-body #list .desc .title .txt {
+	padding-top: 10px;
+	padding-right: 10px
+}
+#g-body #list .desc .title .txt {
+	padding: 0px
+}
+#g-body .comment .tit {
+	margin-top: 14px
+}
+#g-body .content .list dd, .content .list dt {
+	box-shadow: none;
+	border: 1px solid #E4E4E4;
+}
+#g-body .content .pl {
+	border: 0px;
+}
+#g-body .content .list .pl {
+	border-bottom: none;
+}
+#g-body #list .desc .optBtn ul .loveNum {
+	border-left: 0px
+}
+#g-body #list .desc .optBtn ul li {
+	float: right
+}
+#g-body #list .desc .optBtn {
+	border: none;
+}
+#g-body .comment .tit a {
+	background: #f3f2f8;
+	border: 1px solid #fe5341;
+	color: #fe5341;
+	margin-right: 5px;
+	padding: 3px 15px 4px 35px;
+	margin-top: -5px
+}
+#g-body .comment .tit a::before {
+	left: 12px;
+	top: 9px
+}
+#g-body .finContent .perInfo {
+	margin: 0px
+}
+#g-body .finContent .intro h1 {
+	padding: 10px 0px 14px 0px
+}
+#g-body .comment {
+	padding: 15px 0px
+}
+#g-body #list .desc .bottons {
+	padding: 0 10px;
+	margin-bottom: 7px;
+	margin-top: 7px;
+}
+#g-body #list .desc .optBtn {
+	margin-bottom: 10px;
+	margin-top: 5px;
+	padding-right: 0px;
+	line-height: 32px;
+}
+#g-body #list .desc .optBtn span:nth-child(2), #g-body #list .desc .optBtn span:nth-child(3) {
+	position: relative;
+	padding: 0px 12px;
+	margin-top: 0px;
+}
+#g-body #list .desc .optBtn span a {
+	color: #a0a0a0;
+	font-size: 14px;
+}
+#g-body #list .desc .optBtn span:nth-child(2),#g-body  .optBtn span:nth-child(3) {
+	float: right;
+	margin-left: 5px
+}
+#g-body #list .desc .optBtn span:nth-child(3) a::before {
+	left: -8px
+}
+#g-body #list .desc .optBtn span:nth-child(2) a::before {
+	left: -6px
+}
+#g-body #list .txt a {
+	line-height: 1.6;
+	color: #3e3e3e;
+	font-size: 18px
+}
+#g-body #list dd {
+	margin-top: 20px
+}
+#g-body .content .list dd {
+margin-bottom:21px;
+}
+#g-body .content .desc .botton {
+	margin: 0px;
+}
+#g-body #list .desc .optBtn {
+	padding: 3px 2px 4px 10px
+}
+#g-body .title h2 {
+	line-height: 25px;
+	padding-top: 10px;
+	padding-left: 11px;
+	padding-bottom: 10px;
+	background: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+#g-body #focus {
+	background: #fff;
+}
+#g-body .botton .over {
+	margin-top: 0!important;
+}
+#g-body .content .desc .title a {
+font-weight: normal;
+font-size: 16px;
+}
+#g-body #list .desc .optBtn .name {
+	color: #a0a0a0;
+	font-size: 14px;
+}
+#g-body .focus .desc .title a {
+	font-size: 20px;
+}
+#g-body .tag {
+	line-height: 30px;
+}
+#g-body .content .list .surplusArticle {
+	color: #a0a0a0;
+	background: #fff;
+	overflow: hidden;
+}
+#g-body .content .focus .desc .txt {
+	color: #a0a0a0;
+}
+#g-body .wrapper .header .userCenter {
+	margin-right: 5px
+}
+#g-body .wrapper .header .userCenter a {
+	border: none;
+}
+#g-body #sidebar-wrapper {
+	width: 60%;
+}
+#g-body .content .list {
+	padding-top: 10px
+}

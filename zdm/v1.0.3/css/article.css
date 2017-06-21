@@ -1,0 +1,550 @@
+/* CSS Document */
+/********************
+主体部分样式::产品图片管理
+********************/
+.Z-product-image-box li {
+	height:auto;
+}
+.Z-list-subscribe {
+	margin-top: 15px;
+}
+.Z-list-subscribe .blue {
+	color: #369ad1 !important;
+}
+.Z-small-fenmian{
+	width: 46px;
+    height: 46px;
+	margin-top:10px;
+    overflow: hidden;
+}
+.Z-small-fenmian img{
+	width:100%;
+}
+.Z-btn.Z-setting{
+	background-image:url(../images/setting.png);
+	background-repeat:no-repeat;
+	background-position:35px center;
+}
+
+.Z-dialog .Z-product-image{
+	display:inline-block;
+	float: right;
+    width: 776px;
+}
+
+.Z-dialog .Z-product-image-box ul{
+	margin-left: -7.56%;
+}
+.Z-dialog .Z-product-image-box li{
+	width:150px;
+	height:150px;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+	float: left;
+	margin-left: 6.9999%;
+	margin-bottom: 20px;
+	cursor:move;
+}
+.Z-product-image-box li:last-child{
+	cursor:pointer;
+}    
+.Z-product-image-box li img{
+    max-height: 150px;
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
+.Z-product-image-move{
+	opacity:0.7;
+	background:#fff;
+	position:absolute;
+	border:3px solid #939496;
+	display:none;
+	z-index:1;
+}
+
+
+
+.Z-dialog-card-change {
+    height: 680px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.Z-dialog .Z-product-image-box li {
+    margin-left: 4.6%;
+}
+.Z-product-image-box.Z-edit .Z-delete{
+	height:24px;
+	width:24px;
+	position:absolute;
+	background:#fff url(../images/delete.png) no-repeat center center;
+	border-radius:3px;
+	top: 3px;
+    right: 3px;
+	cursor:pointer;
+	z-index: 1;
+}
+.Z-product-image-box.Z-edit .Z-delete:hover{
+	background: #fc6b6b url(../images/delete.png) no-repeat center center;
+}
+
+.Z-product-image-box li .Z-cover-setting{
+	height: 30px;
+    position: absolute;
+    background: #fc6b6b;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+    width: 96%;
+    margin: 2%;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+	display:none;
+}
+
+.Z-product-image-box.Z-edit li:hover .Z-cover-setting{
+	display:block;
+}
+
+.Z-product-image-box.Z-edit li.setting-product-image-cover .Z-cover-setting,
+.Z-product-image-box li.setting-product-image-cover .Z-cover-setting{
+	display:block;
+}
+
+/********************
+浮沉样式
+********************/
+.Z-dialog,
+.Z-dialog .Z-smark{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+.Z-dialog .Z-smark{
+	opacity:0.5;
+	background:#000;
+	z-index:0;
+}
+
+
+.Z-dialog .Z-content{
+	background:#fff;
+	width:910px;
+	height:98%;
+	position:absolute;
+	left:50%;
+	margin-left:-455px;
+	top:1%;
+	z-index:1;
+}
+.Z-dialog .Z-content .Z-content-inner{
+	padding:20px;
+	overflow:hidden;
+	height: 94%;
+}
+.Z-dialog-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #8A8A8A;
+	border:1px solid #fff;
+	cursor:pointer;
+}
+.Z-dialog-close:hover{
+	border:1px solid #f0f0f0;
+	color:#FD5154;
+}
+.Z-dialog-fixation{
+	margin-right:75px;
+	font-size:18px;
+}
+.Z-dialog-card li{
+	float:left;
+	font-size:16px;
+	padding:0 10px;
+	margin:0 10px;
+	position:relative;
+	height: 50px;
+	cursor:pointer;
+}
+.Z-dialog-title{
+	height:50px;
+	border-bottom:1px solid #f2f2f2;
+}
+.Z-dialog-title:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.Z-dialog-card li i{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:3px;
+	background:#ff5252;
+	display:block;
+	width:100%;
+	display:none;
+}
+.Z-dialog-card li.on i{
+	display:block;
+}
+.Z-page{
+	margin-top: 30px;
+}
+
+/********************
+产品列表
+********************/
+.Z-list-ul li{
+    border-bottom: 1px dotted #e7e7e7;
+    position: relative;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}
+.Z-list-ul li:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.Z-list-image{
+	width:128px;
+	height:128px;
+	border:1px solid #ededed;
+	overflow:hidden;
+	margin-right: 25px;
+}
+
+.Z-list-image img{
+	width:100%;
+	height:100%;
+}
+
+.Z-list-title{
+	font-size:16px;
+}
+.Z-time{
+	color:#a0a0a0;
+	font-size:14px;
+}
+.Z-list-brief{
+	color:#a0a0a0;
+	font-size:14px;
+	line-height: 24px;
+}
+.Z-list-brief .Z-list-brief-inner{
+	margin-top:15px;
+}
+.Z-left-query{
+	width:50px;
+	position:absolute;
+	top:0;
+	left:-50px;
+}
+.Z-left-query .Z-click-query{
+	margin-bottom:10px;
+}
+
+.Z-left-query .Z-add-product{
+	height:auto;
+}
+
+.Z-left-query .Z-add-product em{
+    font-style: normal;
+    display: block;
+    padding: 5px;
+    margin: auto;
+    line-height: 14px;
+    font-size: 12px;
+}
+
+/********************
+产品列表::标签
+********************/
+.Z-list-tags{
+	color:#a0a0a0;
+	margin-top:15px;
+}
+.Z-list-tags label{
+	margin-right:20px;
+}
+
+/********************
+文章插入产品图片列表
+********************/
+img[data-productid][src]{
+	max-width:100%;
+}
+
+/********************
+复选框样式
+********************/
+
+@font-face {
+	font-family: Muiicons;
+	font-style: normal;
+	font-weight: 400;
+	src: url(http://zdm.jiguo.com/zdm.ttf) format("truetype")
+}
+.icon {
+	display: inline-block;
+	font-family: Muiicons;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased
+}
+.input-group{
+	display: inline-block;
+}
+.input-row{
+	display: inline-block;
+	margin-right: 15px;
+}
+.checkbox input[type=checkbox],
+.radiobox input[type=radio] {
+    position: relative;
+    display: inline-block;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+    outline: 0!important;
+	margin-right: 5px;
+}
+.checkbox input[type=checkbox]:before{
+	content:'\e413';
+}
+.checkbox input[type=checkbox]:checked:before {
+	content:'\e443';
+	color:#ed4f37 !important;
+}
+.radiobox input[type=radio]:before{
+	content:'\e411';
+}
+.radiobox input[type=radio]:checked:before {
+	content:'\e442';
+	color:#ed4f37 !important;
+}
+/*********************
+插入卡片卡片
+**********************/
+
+.Z-dialog .Z-content-inner-warp{
+	height: 92%;
+	overflow: scroll;
+}
+@media screen and (min-height: 600px) {
+	.Z-dialog .Z-content-inner-warp{height: 92.5%;}
+}
+@media screen and (min-height: 800px) {
+	.Z-dialog .Z-content-inner-warp{height: 93.8%;}
+}
+@media screen and (min-height: 1000px) {
+	.Z-dialog .Z-content-inner-warp{height: 94.6%;}
+}
+@media screen and (min-height: 1300px) {
+	.Z-dialog .Z-content-inner-warp{height: 95%;}
+}
+@media screen and (min-height: 1600px) {
+	.Z-dialog .Z-content-inner-warp{height: 95.5%;}
+}
+
+.Z-dialog .link-btn{
+	text-align: right;
+}
+.Z-dialog .link-btn .Z-btn{
+	margin-right: 15px;
+}
+.Z-dialog .input-link{
+	display: block;
+	margin: auto;
+	width: 760px;
+}
+.Z-next-btn{
+	position: absolute !important;
+	bottom: -75px;
+	background: #fff;
+	width: 100%;
+	left: 0;
+	text-align: right;
+	padding: 10px 0;
+	border-top:1px solid #e6e6e6;
+}
+.Z-next-btn .Z-btn{
+	margin-right: 15px;
+}
+.search-card {
+	padding: 20px 60px;
+}
+.search-card span{
+	cursor: pointer;
+}
+.search-card span font{
+	color: #fe5341;
+}
+.search-card span.on {
+	box-shadow: 0 0 10px 0px #e6e6e6;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+.Z-dialog .Z-list-subscribe a{
+	margin-right: 10px;
+}
+.delect-card-btn span{
+	border-radius: 3px;
+	box-shadow: 0 0 0px 1px #ebebeb;
+	padding: 3px 5px;
+	margin-left: 20px;
+}
+
+/**********
+检查产品完善程度
+************/
+.tips-wanshan{
+	position: absolute;
+	right: 0;
+	top:0;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #fe5341;
+}
+.tips-wanshan a {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+}
+
+
+#search-model-list-ul{ width: 776px;}
+#search-model-list-ul .noData{
+	position: relative;
+	top: -20px;
+	border: none;
+	border-top: 1px solid #F3F3F3;
+	color: #fe6341;
+	padding-top: 16px;
+}
+.Z-buy-link-cell-warp{
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 20px;
+}
+
+
+.Z-dialog .Z-content {
+	overflow: hidden;
+}
+.Z-dialog .Z-content .Z-content-inner {
+	height: 100%;
+	box-sizing: border-box;
+}
+#first-search-model-list-ul-close{
+	display: none;
+}
+.first-search-model-list-ul{
+	position: fixed !important;
+	top: 1%;
+	display: block !important;
+	background: #fff;
+	width: 910px;
+	height: 98%;
+	overflow: scroll;
+	margin: 0;
+	left: 50%;
+	margin-left: -455px;
+	box-sizing: border-box;
+	padding-top: 61px;
+	border-bottom: 20px solid #fff;
+	z-index: 999999;
+}
+.first-search-model-list-ul:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #eaeaea;
+	z-index: 9999;
+	top: 0px;
+}
+.first-search-model-list-ul #search-model-list-ul .noData{
+	top: 0;
+	border-top: none;
+}
+
+.first-search-model-list-ul-warp{
+	background: #fff;
+	height: 60px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	line-height: 60px;
+	z-index: 1000000;
+	box-sizing: border-box;
+	padding: 0 20px;
+	font-size: 18px;
+	border-bottom: 1px solid #e8e8e8;
+}
+#first-search-model-list-ul-close{
+	display: none;
+	display: inline-block;
+	background: #fc6b6b;
+	color: #fff;
+	font-size: 14px;
+	height: 36px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #fc6b6b;
+	border-bottom: 2px solid #ee5a5a;
+	min-width: 150px;
+	cursor: pointer;
+	border-radius: 3px;
+	position: relative;
+	margin-left: 10px;
+	float: right;
+	top: 10px;
+}
+/**修改作者**/
+
+.Z-edit-author{
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.Z-edit-author .Z-edit-author-face{
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+	width: 80px;
+	height: 80px;
+}
+.Z-edit-author .Z-edit-author-face img{
+	width: 100%;
+}
+.Z-edit-author .Z-edit-author-query{
+	vertical-align: middle;
+	color: #3682ff;
+}
+.Z-edit-author .Z-edit-author-name{
+	margin-top: 5px;
+}
+
+
+
+

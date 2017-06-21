@@ -1,0 +1,505 @@
+.zhibo-comment-warp{
+
+}
+.Z-btn {
+    height: 43px;
+}
+.Z-body-main{
+    margin-bottom: 50px;
+}
+.none{
+    display: none;
+}
+.cp{
+    cursor: pointer;
+}
+.c59{
+    color: #595959;
+}
+.blue{
+    color: #4A90E2 !important;
+}
+.red,.Z-red{
+    color: #FF5B5B !important;
+}
+.zhibo-comment-warp .zhibo-comment-header{
+    position: relative;
+    padding-left:70px;
+    height: 30px;
+}
+.zhibo-comment-warp .zhibo-comment-header:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 58px;
+    width: 1px;
+    background: #d8d8d8;
+    height: 16px;
+    top: 8px;
+}
+.zhibo-comment-warp .title{
+    position: absolute;
+    left: 0;
+    top:0;
+    line-height: 30px;
+}
+.zhibo-comment-warp .title.on a{
+    color: #FC6B6B;
+}
+
+.zhibo-comment-warp .zhibo-comment-header ul{
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    font-size: 0;
+    white-space: nowrap;
+}
+.zhibo-comment-warp .zhibo-comment-header .scroll-warp{
+    background-color: #fff;
+    width: 100%;
+}
+.zhibo-comment-warp .zhibo-comment-header .scroll-warp.on{
+    height: auto;
+    box-shadow: 0 0 2px 1px #ccc;
+}
+.zhibo-comment-warp .zhibo-comment-header .scroll-warp.on ul{
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+}
+.zhibo-comment-warp .zhibo-comment-header ul li{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    min-width: 40px;
+    height: 30px;
+}
+.zhibo-comment-warp .zhibo-comment-header ul li a{
+    border-bottom: 1px solid transparent;
+    display: inline-block;
+    line-height: 29px;
+}
+.zhibo-comment-warp .zhibo-comment-header ul li.on a{
+    color: #FC6B6B;
+    border-bottom: 1px solid #FC6B6B;
+}
+.zhibo-comment-warp .zhibo-comment-header .scroll-warp{
+    position: relative;
+    padding: 0 15px;
+    height: 30px;
+}
+
+
+
+.zhibo-comment-body{
+    background: #FAFAFA;
+    padding: 20px 30px;
+}
+.zhibo-comment-body li{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.zhibo-comment-body .top-bang-time{
+    float: right;
+    font-size: 0px;
+}
+.zhibo-comment-body .top-bang-time > *{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.zhibo-comment-body .top-bang-time .top,
+.zhibo-comment-body .top-bang-time .bang{
+    color: #fff;
+    background-color: #fc6b6b;
+    border-radius: 3px;
+    line-height: normal;
+    padding: 0px 5px;
+}
+.zhibo-comment-body .top-bang-time .time{
+    color: #999999;
+}
+.zhibo-comment-body .name{
+    color: #4A90E2;
+    font-size: 12px;
+}
+.zhibo-comment-body .tag{
+    background: #E9E9E9;
+    color: #808080;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+.zhibo-comment-body .info .face{
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+}
+.zhibo-comment-body .info .face img{
+    width: 100%;
+}
+.zhibo-comment-body .info .desc{
+    margin-left: 48px;
+    line-height: 36px;
+}
+
+.zhibo-comment-body .comment-content{
+    padding: 10px 0;
+    margin-left: 50px;
+}
+.zhibo-comment-body .comment-content article{
+    font-size: 14px;
+    line-height: 22px;
+}
+.zhibo-comment-body .comment-content article + article{
+    margin-top: 10px;
+}
+.zhibo-comment-body .sub-comment{
+    background: #F5F5F5;
+    padding: 10px 15px;
+    margin-left: 50px;
+}
+
+.zhibo-comment-body .sub-name{
+    color: #B3B3B3;
+    font-size: 12px;
+}
+.zhibo-comment-body article{
+    color: #595959;
+    font-size: 14px;
+    line-height: 22px;
+}
+.zhibo-comment-body .query{
+    margin-top: 10px;
+}
+.zhibo-comment-body .query .blue{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.zhibo-comment-body article img{
+    display: inline-block;
+    width: 111px;
+}
+
+.card{
+    background: #E6E6E6;
+    padding: 10px;
+    overflow: hidden;
+    width: 440px;
+}
+
+.card .card-img{
+    width: 110px;
+    height: 110px;
+    float: left;
+}
+.card .card-img img{
+    width: 100%;
+}
+.card .card-desc{
+    height: 110px;
+    overflow: hidden;
+    margin-left: 120px;
+    position: relative;
+}
+
+.card .card-desc .card-title{
+    font-size: 14px;
+    color: #595959;
+    line-height: 20px;
+    height:40px;
+    overflow: hidden;
+}
+.card .card-desc .card-query{
+    font-size: 14px;
+    color: #595959;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.card .card-desc .card-query .card-price{
+    font-size: 16px;
+    color: #FF5B5B;
+}
+.card .card-desc .card-query .card-buy{
+    color: #fff;
+    background: #FF5B5B;
+    box-shadow: 0 0 0px 1px #DD2A2A inset,0 1px 0px 1px rgba(255,255,255,0.35) inset;
+    float: right;
+    padding: 0 10px;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #dedede;
+    background-color: #f1f1f1;
+    color: #333;
+}
+.layui-layer-btn .layui-layer-btn1 {
+    border-color: #f35353;
+    background-color: #fc6b6b;
+    color: #fff;
+}
+
+
+
+
+
+.replay-box input[type=text]{
+    border: 1px solid #f0f0f0;
+}
+.replay-box .replay-header{
+    font-size: 0px;
+    padding: 10px 20px;
+}
+.replay-box .replay-header [data-sub-replay-user]{
+    cursor: pointer;
+}
+.replay-box .replay-header > *{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.replay-box .replay-header .face{
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.replay-box .replay-header .t_class{
+    color:#929292;
+}
+.replay-box .replay-header .face img{
+    width: 100%;
+}
+
+.replay-box .replay-body .textarea-warp{
+    background: #F7F7F7;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    height: 120px;
+}
+.replay-box .replay-body .textarea-warp textarea{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #595959;
+}
+
+.ft0{
+    font-size: 0px !important;
+}
+.replay-box{
+    margin-bottom: 20px;
+}
+.replay-bottom{
+    /*padding:20px;*/
+    /*background: #F7F7F7;*/
+}
+.replay-bottom .replay-img-item{
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    padding: 1px;
+}
+.replay-bottom .replay-img-item .close,
+.card .close{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+    background: #fafafa;
+    right: 1px;
+    top: 1px;
+    color: #969696;
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    display: none;
+    cursor: pointer;
+}
+.replay-bottom .replay-img-item:hover .close,
+.card:hover .close{
+    display: block;
+}
+.replay-bottom .replay-img-item .close:hover{
+    color: red;
+}
+.replay-bottom .replay-img-item img{
+    width:100%;
+}
+.replay-bottom .card {
+    width: 280px;
+}
+.replay-bottom .card .card-img{
+    width: 80px;
+    height: 80px;
+}
+.replay-bottom .card .card-desc {
+    height: 80px;
+    margin-left: 90px;
+}
+.replay-bottom .card .card-desc .card-query .card-price {
+    font-size: 14px;
+}
+.replay-bottom .card .card-desc .card-title {
+    font-size: 14px;
+    line-height: 16px;
+    height:32px;
+}
+
+
+.replay-img-item-btn{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: #EFEFEF;
+    position: relative;
+    cursor: pointer;
+}
+.replay-img-item-btn:after,
+.replay-img-item-btn:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #BFBFBF;
+    width: 2px;
+    height: 20px;
+    margin-top: -10px;
+    top:50%;
+    left: 50%;
+    margin-left: -1px;
+}
+.replay-img-item-btn:before{
+    height: 2px;
+    width: 20px;
+    margin-top: -1px;
+    margin-left: -10px;
+}
+
+.replay-bottom .replay-link{
+    float: left;
+    margin-left: 10px;
+}
+
+.replay-bottom .uploadify {
+    margin-bottom: 0;
+    vertical-align: top;
+}
+.Z-edit-author .Z-edit-author-name {
+    display: inline-block;
+    max-width: 100px;
+    overflow-x: hidden;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.live-add-send-message a{
+    background: #fc6b6b;
+    margin-bottom: 20px;
+    line-height: 60px;
+    display: block;
+    box-shadow: 0 1px 1px 0px #a0a0a0;
+    color: #fff;
+}
+
+
+.card-kill{
+    width: 460px;
+}
+.card-kill .card-kill-inner {
+    position: relative;
+    border: 1px solid #EDEDED;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.card-kill .card-kill-inner .card-kill-tag {
+    color: #FDF9C4;
+    background-color: #E43020;
+    border-radius: 3px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    z-index: 1;
+    font-size: 12px;
+    transform: scaleX(0.8) scaleY(0.8);
+    float: left;
+}
+.card-kill .card-kill-inner .card-img {
+    position: relative;
+    overflow: hidden;
+    max-height: 230px;
+}
+.card-kill .card-kill-inner .card-img img {
+    width: 100%;
+}
+.card-kill .card-kill-inner .card-img .card-kill-img-desc {
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #CCCCCC;
+    padding: 5px 12px;
+    box-sizing: border-box;
+}
+.card-kill .card-kill-inner .card-img .card-kill-img-desc .kill-timer-number {
+    font-size: 14px;
+    color: #fff;
+    background-color: #424242;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 3px;
+}
+.card-kill .card-kill-inner .card-img .card-kill-img-desc .kill-timer-number:first-child {
+    margin-left: 0;
+}
+.card-kill .card-kill-inner .card-img .card-kill-img-desc .kill-timer-number.millisecond {
+    background-color: #E43020;
+}
+.card-kill .card-kill-inner .card-desc {
+    border-top: none;
+    padding: 12px;
+}
+.card-kill .card-kill-inner .card-desc .card-title {
+    font-size: 14px;
+    color: #808080;
+}
+.card-kill .card-kill-inner .card-desc .card-query .card-price {
+    margin: 10px 0 5px 0;
+}
+.card-kill .card-kill-inner .card-desc .card-query .card-btn {
+    font-size: 12px;
+}
+.card-kill .card-kill-inner .card-desc .card-query .card-laiyuan {
+    color: #B3B3B3;
+}
+.card-kill .card-kill-inner .card-desc .card-query .card-buy {
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 5px;
+    float: right;
+}
+.card-kill .card-kill-inner .card-desc .card-query .card-buy.on {
+    background-color: #E43020;
+}

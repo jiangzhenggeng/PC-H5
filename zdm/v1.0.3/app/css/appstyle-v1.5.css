@@ -1,0 +1,51 @@
+body,
+body p,
+body div,
+body span,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5{
+	color:rgb(78,78,78);
+}
+/*百度编辑器默认样式*/
+p{margin:5px 0;}
+p img[src]{
+	max-width:100%!important;
+	height:auto!important;
+}
+
+body{
+	font-family:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+	color:#595959;
+	font-size:18px;
+	line-height: 150%;
+}
+iframe[data-productid]{
+	max-width:394px;
+}
+titlesmall{
+	color:#000 !important;
+	position:relative;
+	display:block;
+	font-size:18px;
+	padding-left:16px;
+}
+titlesmall >* {
+	color:#000 !important;
+	font-size:18px !important;
+}
+titlesmall:before{
+	display:block;
+	content:'';
+	position:absolute;
+	border-radius:50%;
+	height:6px;
+	width:6px;
+	left:0px;
+	top:50%;
+	margin-top:-3px;
+	background: #ed4f37;
+}
+}

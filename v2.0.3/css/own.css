@@ -1,0 +1,61 @@
+.own-add .input_file {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.own-add .user-info-edit {
+	position: absolute;
+}
+body.own-add {
+	margin: 0;
+}
+.own-add .sm {
+	color: #a3a3a3;
+	font-size: 12px;
+	margin-left: 6px;
+}
+.own-add .photo-list .item {
+	padding-left: 0px
+}
+.own-add .hidden_checkbox {
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.own-index .li-edit:after {
+	content: " ";
+}
+.own-index .table-view-cell .editObtain {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 39px;
+}
+.own-update .input_file {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.own-update .user-info-edit {
+	position: absolute;
+}
+body.own-update {
+	margin: 0;
+}
+.own-update .sm {
+	color: #a3a3a3;
+	font-size: 12px;
+	margin-left: 6px;
+}
+.own-update .photo-list .item {
+	padding-left: 0px
+}

@@ -1,0 +1,226 @@
+.todo-list-tab {
+  padding-top: 10px;
+}
+
+.list-status {
+  float: left;
+  width: 33.33%;
+  height: 50px;
+  line-height: 30px;
+  border-bottom: 1px solid #ededed;
+  &:first-child {
+    text-align: left;
+  }
+  &:nth-child(2) {
+    text-align: center;
+  }
+  &:last-child {
+    text-align: right;
+  }
+  span {
+    position: relative;
+    .on {
+      position: absolute;
+      bottom: -28px;
+      left: 25px;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0;
+        height: 0;
+        border: 16px solid #ededed;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 16px solid transparent;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        width: 0;
+        height: 0;
+        border: 14px solid #fff;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-top: 14px solid transparent;
+      }
+    }
+  }
+}
+
+.meta-item {
+  margin-top: 20px;
+}
+
+.meta-list-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.spec-list-name {
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.todo-item {
+  border-bottom: 1px dotted #ededed;
+  padding: 10px 0;
+}
+
+.todo-item-avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.todo-item-right {
+  margin-left: 70px;
+  overflow: hidden;
+}
+
+.todo-item-tag {
+  padding: 0 10px;
+  &.player {
+    background-color: #92e2ff;
+    color: #1672AD;
+  }
+  &.tys {
+    background-color: #FFEF83;
+    color: #AF701B;
+  }
+  &.sxtys {
+    background-color: #ff9991;
+    color: #d42f3f;
+  }
+  &.sptys {
+    background-color: #D1B3FF;
+    color: #784F9C;
+  }
+  &.jxtys {
+    background-color: #50E3C2;
+    color: #015643;
+  }
+}
+
+.publish-title {
+  padding-top: 20px;
+  font-size: 0;
+  span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.publish-name {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+  }
+}
+
+.publish-money {
+  display: inline-block;
+  width: 270px;
+  text-align: left;
+}
+
+.publish-status {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+}
+
+.publish-opera {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+.event-add-user {
+  background-image: url(../images/icon-user-event-add.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+//活动列表
+.Z-event-inner {
+  border-bottom: 1px dashed #ededed;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  .Z-inner-left {
+    float: left;
+  }
+  .Z-inner-item {
+    margin-left: 160px;
+    text-align: right;
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+//报告评级弹窗
+.report-level-wrapper {
+  margin: 20px;
+
+}
+
+.report-level-type {
+  margin: 10px 0;
+  .Z-name {
+    display: inline-block;
+    width: 70px;
+  }
+  label {
+    display: inline-block;
+    width: 110px;
+  }
+}
+
+.report-level-line {
+  border-top: 1px solid #ececec;
+}
+
+.report-level-box {
+  height: 150px;
+  margin: 20px 0;
+  border: 1px solid #ececec;
+  background-color: #fafafa;
+  textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: transparent;
+    box-sizing: border-box;
+  }
+}
+
+.meta-type {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ededed;
+  color: #333;
+  background-color: #fff;
+  &.on{
+    background-color: #fc6b6b;
+    color: #fff;
+  }
+}

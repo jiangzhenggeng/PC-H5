@@ -1,0 +1,1 @@
+define(["require","global.fun","app/banner","app/common","app/homeAjaxLoad","app/hotEvent","app/lazyload","app/messageIO","app/search","app/tplEngine","app/unitTool","jquery","app/scrollStatus","app/hDownload"],function(a,b,c,d,e,f,g,h,i,j,k,l,m,n){e.init(),d.collect(),f.init()})

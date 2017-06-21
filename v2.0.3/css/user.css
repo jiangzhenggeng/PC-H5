@@ -1,0 +1,132 @@
+/* CSS Document */
+/*************user************/
+.individualCenter {
+    background: #f3f2f8;
+}
+.individualCenter .avt a, .wrapper .header .userCenter a {
+	border: none
+}
+.individualCenter .setting .modify a::after, .individualCenter .zhuye a::after, .individualCenter .individualList ul li .chakan a::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	width: 8px;
+	height: 13px;
+	background: url('../images/010.png') no-repeat;
+	background-size: 8px 13px;
+	right: 0;
+	top: 15px;
+	margin-right: 18px;
+}
+.individualCenter .zhuye a::after {
+	top: 45px;
+}
+.individualCenter .setting .modify a::after {
+	top: 15px;
+	margin-right: 18px;
+}
+.individualCenter .individualList ul {
+	padding-right: 0px;
+	padding-left: 15px
+}
+.individualCenter .setting .modify a, .individualCenter .zhuye a, .individualCenter .individualList ul li .chakan a {
+	margin-right: 20px;
+}
+.individualCenter .setting .modify a {
+	margin-right: 10px;
+}
+.menu-side {
+	width: 60%
+}
+.individualCenter .individualList {
+	margin: 20px 0;
+}
+.foot {
+	padding-bottom: 0px
+}
+.individualCenter .setting {
+	margin-bottom: 50px
+}
+.operation ul li {
+	border-bottom: 1px solid #dedede
+}
+em, i, b {
+	color: #343434
+}
+ul li .name {
+	color: #343434
+}
+.individualCenter .individualList ul li {
+	border-bottom: 1px solid #dbdbdb
+}
+.wrapper .header .userCenter a {
+	left: 8px;
+}
+.individualCenter .individualList ul .mycoins::before {
+	width: 30px;
+	height: 30px;
+	background: url('http://m.jiguo.com/assets/data/20150416/186530/1429182102345943.png') no-repeat;
+	background-size: 30px 30px;
+	left: -35px;
+	top: 5px;
+}
+/****************users******************/
+    .personInfo{border-bottom:none}
+    .operation ul li{border-bottom: 1px solid #dbdbdb}
+    .operation{margin-top: 73px;margin-right: 2px}
+   /* html{overflow: hidden;height:400px}*/
+    .individualCenter .individualList ul li{position: relative;}
+    .operation ul li a::after{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 8px;
+        height: 13px;
+        background: url('../images/010.png') no-repeat;
+        background-size: 8px 13px;
+        right: 0;
+        top: 15px;
+        left:-7px;
+        margin-right: 13px;
+    }
+    .operation ul .sss a{
+        position: relative
+    }
+    .wrapper{background: #f3f2f8;}
+    .operation{margin-left: 0;padding-left: 12px;}
+    .wrapper .header .userCenter a{left:8px;border:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

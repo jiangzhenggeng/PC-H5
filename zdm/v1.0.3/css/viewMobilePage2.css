@@ -1,0 +1,74 @@
+.Z-dialog, .Z-dialog .Z-smark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.Z-dialog .Z-smark {
+    opacity: 0.5;
+    background: #000;
+    z-index: 0;
+}
+
+.Z-vitrual-mobile-warp{
+	overflow:hidden;
+	background:#fff;
+	position: absolute;
+}
+.Z-vitrual-mobile{
+	background-image:url(http://cdn.jiguo.com/zdm/v1.0.3/images/iphone5.png);
+	background-size:cover;
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+	margin-top:0px;
+    z-index: 1;
+}
+.view-yuelan ::-webkit-scrollbar{width:0px;height:0px;margin-right:0px;}
+.view-yuelan ::-webkit-scrollbar-button:vertical{display:none;}
+.view-yuelan ::-webkit-scrollbar-track:vertical{background-color:black;}
+.view-yuelan ::-webkit-scrollbar-track-piece{background-color:#FFFFFF;}
+.view-yuelan ::-webkit-scrollbar-thumb:vertical{margin-right:0px; background-color:#A6A6A6;border-radius:0px;}
+.view-yuelan ::-webkit-scrollbar-thumb:vertical:hover{background-color:#aaa;}
+.view-yuelan ::-webkit-scrollbar-corner:vertical{background-color:#535353;}
+.view-yuelan ::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00;}
+
+.Z-vitrual-mobile .phone-type{
+	position:absolute;
+    right: -115px;
+    top: 50px;
+	display:block;
+	width:70px;
+	line-height:30px;
+	text-align:center;
+	font-size:16px;
+}
+.Z-vitrual-mobile .phone-type li{
+	display:block;
+	cursor:pointer;
+	margin-bottom: 10px;
+	background:#fff;
+	border-radius: 50%;
+	width: 40px;
+    height: 40px;
+}
+.Z-vitrual-mobile .phone-type li span{
+	line-height: 40px;
+    font-size: 30px;
+}
+.Z-vitrual-mobile .phone-type li:not(.on) span:hover{
+    color: #fc6b6b;
+}
+.Z-vitrual-mobile .phone-type li.on{
+    background: #fc6b6b;
+    color: #fff;
+}
+.Z-vitrual-mobile.iphone5{width:380px;height:800px;}
+.Z-vitrual-mobile.iphone6{width:445px;height:930px;}
+.Z-vitrual-mobile.iphone6plus{width:487px;height:930px;}
+
+.iphone5 .Z-vitrual-mobile-warp{width:320px;height:568px;left: 32px;top: 118px;}
+.iphone6 .Z-vitrual-mobile-warp{width:375px;height:667px;left: 37px;top: 138px;}
+.iphone6plus .Z-vitrual-mobile-warp{width:414px;height:736px;left: 37px;top: 148px;}

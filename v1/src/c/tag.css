@@ -1,0 +1,54 @@
+.tags {
+    min-height: 35px;
+    display: flex;
+}
+.finInfo .tags ul {
+    width: 100%;
+    text-align: center;
+}
+.finInfo .tags ul li {
+    height: 27px;
+    line-height: 25px;
+    display: block;
+    float: left;
+    color:#fe5341;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:2px 0px 2px 0px;
+
+}
+.finInfo .tags ul li a{
+    /*background: #fabf00;*/
+    color:#fe5341;
+    border:1px solid #fe5341;
+    border-right:0px solid #fe5341 ;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 2px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    float: left;
+    padding:0 5px;
+    min-width: 2em;
+    max-width: 12em;
+    height: 25px;
+}
+.finInfo .tags ul li span {
+    /*background: #f9d602;*/
+    font-size: 16px;
+    border:1px solid #fe5341;
+    border-radius: 0 5px 5px 0;
+    padding: 0 5px 0 5px;
+    float: right;
+    min-width: 16px;
+    max-width: 36px;
+    word-break: break-all;
+    text-align: center;
+    margin-right: 2px;
+}
+.finInfo .tags ul .selected a {
+	background:#898989;
+}
+.finInfo .tags ul .selected a span{ 
+	background:#a1a1a1;
+}

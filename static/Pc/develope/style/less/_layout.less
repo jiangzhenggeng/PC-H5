@@ -1,0 +1,28 @@
+
+html,body{
+  min-height: 100.99999999%;
+}
+//主题布局文件
+.main{
+  display: block;
+  clear: both;
+  width: @main-width !important;
+  margin:auto;
+  background: transparent;
+  position: relative;
+}
+
+.footer{
+  background: @footer-bg-color;
+  border-top: 2px solid @border-top-color;
+  color: @color-gray;
+  @h : 36px;
+  overflow: hidden;
+  width: 100%;
+  line-height: @h;
+  .footer-bottom{
+    background: @footer-bottom-bg-color;
+    height: @h;
+    text-align: center;
+  }
+}

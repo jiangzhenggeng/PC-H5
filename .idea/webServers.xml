@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ff31cd0d-725a-43d7-8e41-c6fe0316f26b" name="cdn(ali-back)" url="http://qxu1142380220.my3w.com">
+        <fileTransfer host="qxu1142380220.my3w.com" port="21" rootFolder="/myfolder/jiguo1.x">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

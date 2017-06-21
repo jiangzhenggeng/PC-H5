@@ -1,0 +1,52 @@
+
+@import "_variable";
+@import "_mixins";
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.vip_icon{
+  @img_1x : '../images/vip_icon.png';
+  @img_2x : '../images/vip_icon@2x.png';
+
+  background-image: url(@img_1x);
+  background-image: -webkit-image-set(url(@img_1x) 1x,url(@img_2x) 2x);
+  background-image: -moz-image-set(url(@img_1x) 1x,url(@img_2x) 2x);
+  background-image: -ms-image-set(url(@img_1x) 1x,url(@img_2x) 2x);
+  background-image: -o-image-set(url(@img_1x) 1x,url(@img_2x) 2x);
+  background-size: 250px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+//申请信息阅览
+@import "_preview";
+
+//表单申请
+@import "_vip_form";
+
+//体验师中心
+@import "_vip_index";
+
+//体验师个人页
+@import "_vip_profile";
+
+
+
+
+
+
+
+
+
+
+
+
+

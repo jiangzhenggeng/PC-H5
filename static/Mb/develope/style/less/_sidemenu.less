@@ -1,0 +1,117 @@
+.side-menu{
+  .fixed();
+  font-size: 16px;
+  z-index: -1;
+
+  .menu-inner{
+    width: 50%;
+    left: -50%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate3d(0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+
+  .mask{
+    transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    opacity: 0;
+  }
+
+  &.show{
+    z-index: 99;
+    .menu-inner{
+      transform: translate3d(100%, 0, 0);
+    }
+    .mask{
+      opacity: 1;
+    }
+  }
+
+  li{
+    line-height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left: 42%;
+    position: relative;
+
+    .icon{
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      margin-top: -13px;
+    }
+    &.on a{
+      color: #fb3f3d;
+    }
+    &.on .icon{
+      &.icon-home:before{
+        background-position: 7px -55px;
+      }
+      &.icon-menu-event:before{
+        background-position: -23px -55px;
+      }
+      &.icon-xinping:before{
+        background-position: -55px -55px;
+      }
+      &.icon-discount:before{
+        background-position: -85px -55px;
+      }
+      &.icon-list:before{
+        background-position: -114px -55px;
+      }
+      &.icon-experience:before{
+        background-position: -143px -55px;
+      }
+      &.icon-uee:before{
+        background-position: -54px -272px;
+      }
+      &.icon-mall:before{
+        background-position: -174px -55px;
+      }
+      &.icon-contact:before{
+        background-position: -205px -55px;
+      }
+      &.icon-app-download:before{
+        background-position: -202px -205px;
+      }
+    }
+  }
+  a{
+    color: #cfcfcf;
+    display: block;
+    position: relative;
+  }
+}
+
+
+.icon-app-down-arrow{
+  position: absolute;
+  right:10px;
+  top:50%;
+  margin-top: -13px;
+}
+.menu-app-download{
+  padding: 20px;
+  position: relative;
+
+  .app-download-logo{
+    width: 40px;
+  }
+  .app-download-desc{
+    margin-top: 3px;
+    margin-left: 45px;
+  }
+  .app-download-logo img{
+    width: 100%;
+  }
+  & + ul{
+    border-top: 1px solid #f0f0f0;
+  }
+}
+

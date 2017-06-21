@@ -1,0 +1,219 @@
+/**
+ +----------------------------------------------------------
+ // 全局变量
+ +----------------------------------------------------------
+ */
+/**
+ +----------------------------------------------------------
+ // 全局混淆
+ +----------------------------------------------------------
+ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.zan-on {
+  color: #e65041!important;
+}
+.comment-view .icon {
+  padding-right: 26px;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+  position: absolute;
+  font-size: 14px;
+}
+.comment-view .icon.icon-comment-zan-sub {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.comment-view .icon:before {
+  position: absolute;
+  left: auto;
+  top: 50%;
+  margin-top: -13px;
+  right: 0;
+}
+.comment-view .icon.icon-comment-zan:before {
+  background-position: -85px -119px;
+}
+.comment-view .icon.icon-comment-zan.on {
+  color: #e93838;
+}
+.comment-view .icon.icon-comment-zan.on:before {
+  background-position: -115px -119px;
+}
+.comment-view .icon.icon-comment-replay:before {
+  background-position: -144px -115px;
+}
+.comment-view .comment-replay {
+  color: #78949b;
+  font-size: 14px;
+}
+.comments-t {
+  background-color: #ededed;
+}
+.comments-input {
+  border-bottom: 1px solid #e0e0e0;
+}
+.textarea-warp {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+}
+.textarea-warp textarea {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  background-color: transparent;
+}
+#ajax-loading-home-box textarea {
+  height: 20px !important;
+}
+.comment-list-face {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #f0f0f0;
+}
+.comment-list-face img {
+  width: 100%;
+}
+.comment-view-cell {
+  margin: 0 0 5px 0;
+  background: #fff;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.comment-view-cell .comment-content {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.comment-view-cell .comment-content li {
+  width: 25%;
+  margin-top: 5px;
+}
+.comment-view-cell .comment-content li img {
+  width: 90%;
+}
+.comment-view-cell:last-child {
+  margin-bottom: 0;
+}
+.comment-view-cell.bianju-p {
+  background-color: transparent;
+}
+.comment-sub-view {
+  border-radius: 2px;
+  margin-top: 10px;
+  position: relative;
+  display: none;
+  background-color: #FAFAFA;
+  border: 1px solid #ebebeb;
+}
+.comment-sub-view ul {
+  padding: 10px;
+}
+.comment-sub-view .comment-arrow-up {
+  position: absolute;
+  width: 100%;
+}
+.comment-sub-view .comment-arrow-up.icon:before {
+  background-position: -173px -112px;
+  right: 10px;
+  left: auto;
+  top: -5px;
+  background-size: 251px auto;
+}
+.comment-sub-view .comment-view-cell-2 {
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.comment-sub-view .comment-view-cell-2 .comments-input {
+  border: none !important;
+  margin-top: 10px;
+}
+.comment-sub-view .comment-view-cell-2:last-child {
+  border: none;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.comment-sub-view .fire-loading {
+  background-color: #f7f7f7;
+  border-top: 1px solid #ebebeb;
+  color: #808080;
+}
+.comments-input-sub {
+  background-color: #f2f2f2;
+  border-bottom: none !important;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0 0 4px 4px;
+}
+.no-sub-comment {
+  border: none !important;
+}
+.no-sub-comment > ul {
+  display: none;
+}
+.no-sub-comment > .comment-arrow-up {
+  display: none;
+}
+.no-sub-comment > .comments-input-sub {
+  background-color: transparent;
+  padding: 0 !important;
+  border: none;
+}
+.send-top-comment-warp {
+  background-color: #fff;
+  padding: 20px 12px 15px 12px;
+}
+.send-top-comment-warp .send-first-top-comment {
+  background-color: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  line-height: 40px;
+}
+.comment-hr {
+  height: 1px;
+  background-color: #f0f0f0;
+  margin: 0 12px;
+}
+.layui-m-layercont-my {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.layui-m-layercont-my .input-replay-comment-warp .input-replay-comment-header {
+  padding: 0 12px;
+  border-bottom: 1px solid #ececec;
+  line-height: 46px;
+  background-color: #fff;
+}
+.layui-m-layercont-my .input-replay-comment-warp .input-replay-comment-body {
+  height: 90%;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+.layui-m-layercont-my .input-replay-comment-warp .input-replay-comment-body textarea {
+  font-size: 14px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

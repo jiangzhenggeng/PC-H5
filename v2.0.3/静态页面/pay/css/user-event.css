@@ -1,0 +1,361 @@
+
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.over-hidden{
+    overflow: hidden;
+}
+.red{
+    color: #fe5341;
+}
+.time{
+    color: #b3b3b3;
+}
+.gray{
+    color: #b3b3b3;
+}
+.bg-fff{
+    background: #fff;
+}
+.text-center{
+    text-align: center;
+}
+.col-999{
+    color: #999999;
+}
+.green{
+    color: #5ea829;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px !important;
+}
+.m-bottom-10{
+    margin-bottom: 10px;
+}
+.line-height-24{
+    line-height: 24px;
+}
+.line-bottom{
+    border-bottom: 1px solid #ededed;
+}
+.line-bottom-2{
+    border-bottom: 1px solid #e6e6e6;
+}
+.btn{
+    background: #fe5341 !important;
+    border-radius: 20px !important;
+    padding: 0 15px !important;
+    color: #FFFFFF !important;
+    border-color: #fe5341 !important;
+}
+.white.btn{
+    border-color: #ccc !important;
+    background: transparent!important;
+    color: inherit !important;
+}
+.white.btn a{
+    background: #fff !important;
+}
+.white.btn a.red{
+    color: #fe5341 !important;
+}
+.content{
+    margin-bottom: 50px;
+}
+.content,a[href]{
+    color: #595959;
+}
+.user-event-list-card ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.user-event-list-card ul{
+    border-bottom: 1px solid #ededed;
+    background: #ffffff;
+}
+.user-event-list-card li{
+    display: block;
+    float: left;
+    width: 33.3333%;
+    height: 52px;
+    line-height: 50px;
+    text-align: center;
+}
+.user-event-list-card li a{
+    display: block;
+}
+.user-event-list-card li.on a{
+    color: #fe5341;
+    border-bottom: 2px solid #fe5341;
+}
+
+
+.user-event-list-warp li {
+    background: #fff;
+    margin: 10px 0;
+}
+.user-event-list-warp li .detail,
+.user-event-list-warp li .buy-btn{
+    padding: 12px;
+}
+.user-event-list-warp li a {
+     position: relative;
+     display: block;
+     overflow: hidden;
+     color: inherit;
+    font-size: 14px;
+ }
+.user-event-list-warp li img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.user-event-list-warp li .text-nav{
+    height: 100px;
+    margin-left: 110px;
+    position: relative;
+}
+@media (max-width:360px) {
+    .user-event-list-warp li img {
+        height: 90px;
+        width: 90px;
+    }
+    .user-event-list-warp li .text-nav{
+        height: 90px;
+        margin-left: 100px;
+    }
+}
+.user-event-list-warp li .text-nav .title{
+    font-size: 16px;
+}
+.user-event-list-warp li .event-name{
+    top: 50%;
+    position: absolute;
+    margin-top: -12px;
+    width: 100%;
+}
+.user-event-list-warp li a .arrow{
+    background-image: url(http://cdn.jiguo.com/v2.0.3/images/jiantou.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 8px auto;
+}
+.user-event-list-warp li a .status{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.user-event-list-warp li .buy-btn{
+    border-top:1px solid #f3f2f8;
+    line-height: 25px;
+}
+/**
+简洁头
+***/
+.header-brief{
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+    padding: 0;
+    background: #f0f0f0;
+    border-bottom: 1px solid #d3d3d6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    left: 0;
+}
+.header-brief .header-brief-title{
+    padding: 0 52px;
+}
+.header-brief .header-brief-back{
+    float: left;
+}
+.header-brief .header-brief-back a{
+    position: relative;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    display: block;
+    background-image: url(../images/user-event/icon-left-back.png);
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+}
+
+/**
+填写订单
+****/
+.user-event-order-warp {
+    padding:0 12px;
+}
+.user-event-order-warp .header-title{
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 40px;
+}
+.item-row{
+    overflow: hidden;
+    margin: 15px 0;
+}
+.item-row .item-title{
+    display: block;
+    width: 70px;
+    float: left;
+    line-height: 40px;
+    color: #999999;
+}
+.item-row .item-input-warp input{
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.item-row .item-input-warp input.error{
+    color: #fe5341;
+}
+.item-row .item-input-warp{
+    margin-left: 70px;
+}
+
+.order-event-form-tips{
+    margin: 15px 0;
+}
+.btn.submitBtn.order-event-pay-btn{
+    border-radius: 5px !important;
+}
+
+/****************
+订单状态条
+****************/
+.user-event-status-bar ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.user-event-list-warp.detail li{
+    margin-top: 0;
+}
+.user-event-status-bar{
+    padding: 12px;
+    background: #fff;
+}
+.user-event-status-bar ul{
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+}
+.user-event-status-bar li{
+    float: left;
+    line-height: 22px;
+    font-size: 12px;
+    background: #eeeeee;
+    color: #b3b3b3;
+    width: 33.3333%;
+}
+.user-event-status-bar li.on{
+    color: #fff;
+    background: #18d513;
+}
+.order-detail .line-height-24{
+    padding: 10px 0;
+}
+.order-detail{
+    margin-bottom: 10px;
+}
+/****************
+支付剩余时间
+****************/
+.surplus-header{
+    line-height: 14px;
+    margin-top: 20px;
+}
+.surplus-time{
+    color: #595959;
+    font-size: 16px !important;
+}
+.surplus-time .number{
+    background: #b3b3b3;
+    border-radius: 3px;
+    padding: 10px 8px;
+    font-size: 16px;
+    color: #fff;
+}
+.surplus-time{
+    height: 55px;
+    line-height: 50px;
+}
+.surplus-time-buy-bottom{
+    padding:8px 12px;
+}
+/****************
+支付方式
+****************/
+.order-pay-type-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.order-pay-type-select li{
+    position: relative;
+}
+.order-pay-type-select li:not(:last-child):after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+
+.order-pay-type-select{
+    padding-right: 0;
+}
+.order-pay-type-select li label {
+    display: block;
+    padding: 15px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    padding-left: 24px;
+}
+.order-pay-type-select li.zhifubao label{
+    background-image: url(../images/user-event/icon-zhifubao-pay.png);
+}
+.order-pay-type-select li.weixin label{
+    background-image: url(../images/user-event/icon-weixin-pay.png);
+}
+
+.order-pay-type-select li label input{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    background-image: url(../images/user-event/icon-radio-default.png);
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 0;
+    outline: 0!important;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+.order-pay-type-select li label input:checked{
+    background-image: url(../images/user-event/icon-radio-select.png);
+}

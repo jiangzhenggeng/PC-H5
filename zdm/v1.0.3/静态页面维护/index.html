@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <title>添加产品</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/select.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- 百度编辑器代码 -->
+	<script type="text/javascript" src="js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="js/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="js/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="Z-body">
+	<!-- 头部 -->
+	<div class="Z-header">
+		<div class="Z-main">
+			<div class="Z-logo-box Z-left">
+				<img src="images/logo.png" width="218" height="36" alt=""/>
+			</div>
+			<div class="Z-drop-down-menu Z-right">
+				<ul>
+					<li class="on"><a href="#">极果管理员</a></li>
+					<li><a href="#">极果管理员</a></li>
+					<li><a href="#">极果管理员</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="Z-clear Z-h-20"></div>
+	<!-- 主题部分 -->
+	<div class="Z-body-main">
+		<div class="Z-main">
+			
+			<!-- 左侧菜单 -->
+			<div class="Z-menu Z-left">
+				<ul>
+					<li class="product">
+						<a href="#">产品</a>
+						<dl>
+							<dd class="on"><a href="#">产品列表</a></dd>
+							<dd><a href="#">待审核</a></dd>
+							<dd><a href="#">待编辑</a></dd>
+						</dl>
+					</li>
+					<li class="artical"><a href="#">文章管理</a>
+						<dl>
+							<dd><a href="#">文章管理</a></dd>
+						</dl></li>
+					<li class="special">
+						<a href="#">专题</a>
+						<dl>
+							<dd><a href="#">专题列表</a></dd>
+							<dd><a href="#">待审核</a></dd>
+							<dd><a href="#">待编辑</a></dd>
+						</dl>
+					</li>
+					<li class="qita"><a href="#">其它</a>
+						<dl>
+							<dd><a href="#">客服审核设置</a></dd>
+							<dd><a href="#">用户设置</a></dd>
+							<dd><a href="#">标签管理</a></dd>
+						</dl></li>
+				</ul>
+			</div>
+			
+			<!-- 有侧内容 -->
+			<div class="Z-content Z-right">
+				<form>
+				
+					<!-- 产品信息 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">产品信息</div>
+							<div class="Z-list-info">
+								<div class="Z-row">
+									<span class="Z-name">产品链接：</span>
+									<input class="Z-input Z-w-600" value="http://www.jiguo.com/article/index/6361.html" />
+									<button type="button" class="Z-btn Z-red Z-right">抓取信息</button>
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">产品名称：</span>
+									<input class="Z-input" value="Handpresso Auto车载电动手咖" />
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">产品图片：</span>
+									<div class="Z-product-image">
+										<div class="Z-product-image-box" id="Z-product-image-box">
+											<ul>
+												<li class="setting-product-image-cover">
+													<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188" />
+													<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+													<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+												</li>
+												<li>
+													<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188" />
+													<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+													<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+												</li>
+												<li>
+													<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188" />
+													<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+													<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+												</li>
+												<li data-no-setting >
+													<img onclick="createEditorUploadFile.__HIDE_UE__.getDialog('insertimage').open()" src="images/input-img-tpl.png" />
+												</li>
+											</ul>
+											<input id="setting-product-image-cover" type="hidden" />
+											<div class="Z-clear"></div>
+										</div>
+										<div class="Z-complete">
+											<button type="button" class="Z-btn Z-red Z-setting" onclick="editProductImageComplete('#Z-product-image-box',this)" style="display:none;">完成</button>
+											<button type="button" class="Z-btn Z-gray Z-setting" onclick="editProductImageNow('#Z-product-image-box',this)">编辑</button>
+										</div>
+									</div>
+									<div class="Z-clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 产品属性 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">产品属性</div>
+							<div class="Z-list-info">
+								<div class="Z-row">
+									<span class="Z-name">产品分类：</span>
+									<input class="Z-input" value="笔记本电脑" />
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">品牌：</span>
+									<input class="Z-input" value="华硕" />
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">型号：</span>
+									<div data-Z-select class="Z-select-box">
+										<input data-Z-select-value type="hidden"/>
+										<div class="Z-select-selected"><span>IS15082</span></div>
+										<div class="Z-select-arrow"></div>
+										<div class="Z-select-list">
+											<ul>
+												<li data-value="IS15081"><span>IS15081</span></li>
+												<li data-value="IS15082"><span>IS15082</span></li>
+												<li data-value="IS15083"><span>IS15083</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">上市状态：</span>
+									<div data-Z-select class="Z-select-box">
+										<input data-Z-select-value type="hidden"/>
+										<div class="Z-select-selected"><span>已上市</span></div>
+										<div class="Z-select-arrow"></div>
+										<div class="Z-select-list">
+											<ul>
+												<li data-value="1"><span>已上市</span></li>
+												<li data-value="2"><span>未上市</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">使用场景：</span>
+									<input class="Z-input" value="旅行" />
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">目标人群：</span>
+									<input class="Z-input" value="青年" />
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">其他：</span>
+									<input class="Z-input" value="手机；电池；移动；" />
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 描述信息 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">描述信息</div>
+							<div class="Z-list-info">
+								<div class="Z-desciption">
+									<!-- 描述信息富文本编辑器 -->
+									<textarea name="content" id="Z-desciption" style="height:300px;"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 参数设置 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">参数设置</div>
+							<div class="Z-list-info" id="add-parme-setting"></div>
+							<div class="Z-add-parme">
+								<div class="Z-click-query-box" style="visibility:hidden"><span class="Z-click-query"><i></i></span></div>
+								<button type="button" class="Z-btn Z-gray Z-w-250" onclick="addParmeSetting('#add-parme-setting')">添加</button>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 购买链接 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">购买链接</div>
+							<div class="Z-list-info" id="add-buy-setting"></div>
+							
+							<div class="Z-add-parme">
+								<div class="Z-click-query-box" style="visibility:hidden"><span class="Z-click-query"><i></i></span></div>
+								<button type="button" class="Z-btn Z-gray Z-w-250" onclick="addBuySetting('#add-buy-setting')">添加</button>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- 关联推荐 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-title">关联推荐</div>
+							<div class="Z-list-info">
+								<table class="Z-list-table" width="100%" cellpadding="0" cellspacing="0">
+									<tr>
+										<th width="120">/ 推荐者</th>
+										<th width="100">/ 时间</th>
+										<th width="100">/ 价格</th>
+										<th width="auto">/ 引文</th>
+										<th width="100">/ 渠道</th>
+									</tr>
+									<tr>
+										<td>TONY</td>
+										<td>2016-9-10</td>
+										<td>￥222</td>
+										<td><a href="#" class="Z-link">看历年都送了啥？小米5发布会大礼包猜想</a></td>
+										<td>京东</td>
+									</tr>
+									<tr>
+										<td>九五先生</td>
+										<td>2016-9-10</td>
+										<td>￥222</td>
+										<td><a href="#" class="Z-link">看历年都送了啥？小米5发布会大礼包猜想</a></td>
+										<td>京东</td>
+									</tr>
+									<tr>
+										<td>哈姆太郎YSL  </td>
+										<td>2016-9-10</td>
+										<td>￥222</td>
+										<td><a href="#" class="Z-link">看历年都送了啥？小米5发布会大礼包猜想</a></td>
+										<td>京东</td>
+									</tr>
+									<tr>
+										<td>TONY</td>
+										<td>2016-9-10</td>
+										<td>￥222</td>
+										<td><a href="#" class="Z-link">看历年都送了啥？小米5发布会大礼包猜想</a></td>
+										<td>京东</td>
+									</tr>
+								</table>
+								<div class="Z-show-more">
+									<a class="Z-more-pic" href="javascript:void(0);"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 信息提交按钮 -->
+					<div class="Z-sub-main Z-center">
+						<div class="Z-tips Z-m-15">请检查并提交产品录入信息</div>
+						<button type="button" class="Z-btn Z-w-270">提交信息</button>
+					</div>
+				</form>
+			</div>
+			<div class="Z-clear"></div>
+			
+		</div>
+	</div>
+</div>
+
+<script>
+/*********************
+模拟select
+*********************/
+dataZselectBind($('[data-Z-select]'));
+
+/*********************
+//初始化参数设置
+*********************/
+addParmeSetting('#add-parme-setting');
+addBuySetting('#add-buy-setting');
+
+/*********************
+//初始化编辑器
+*********************/
+var _editor = UE.getEditor('Z-desciption',{
+	onready:function(){
+		var style = document.createElement('style');
+		style.innerHTML = '.edui-default .edui-editor{border: 1px solid #ededed;border-radius: 0px;}';
+		document.getElementsByTagName('body')[0].appendChild(style);
+	}
+});
+
+/*********************
+//添加产品图片
+*********************/
+createEditorUploadFile(function(t, arg){
+	var imgs = '';
+	for(var a in arg){
+		imgs += '<li>\
+				<img src="'+arg[a].src+'" />\
+				<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>\
+				<div class="Z-cover-setting" onclick="settingProductImageCover(\'#setting-product-image-cover\',this)">封面</div>\
+			</li>';
+	}
+	var selecterP = $('#Z-product-image-box ul');
+	selecterP.find('li').last().before(imgs);
+	if(selecterP.find('li.setting-product-image-cover').length<=0){
+		var src = selecterP.find('li:not([data-no-setting])').eq(0)
+			.addClass('setting-product-image-cover').find('img').attr('src');
+		$('#setting-product-image-cover').val(src);
+	}
+	if(selecterP.find('li').length<=1){
+		$('#setting-product-image-cover').val('');
+	}
+});
+
+/*********************
+顶部多管理员下拉菜单
+*********************/
+showDownTopAdminMenu();
+</script>
+
+</body>
+</html>
+

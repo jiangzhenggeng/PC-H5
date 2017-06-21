@@ -1,0 +1,112 @@
+/******************************
+文章标题标尺
+******************************/
+
+.Z-row{
+	position:relative;
+}
+.scaleplate{
+	position: absolute;
+	width: 775px;
+	font-size: 12px;
+	color: #ccc;
+	margin-left: 74px;
+	line-height: 20px;
+}
+.scaleplate.up{
+	top:-20px;
+}
+.scaleplate.down{
+	bottom:-20px;
+}
+.scaleplate-all{
+	position:absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align:right;
+}
+.scaleplate-arrow .arrow-title{
+	margin-right: 5px;
+}
+.scaleplate-arrow .scaleplate-haf{
+	position: absolute;
+	height: 100%;
+	width: 8px;
+}
+.scaleplate-arrow .arrow-1{
+	background: #ccc;
+	position: absolute;
+	height: 5px;
+	width: 1px;
+	left:43.75%;
+}
+.scaleplate-arrow .arrow-2{
+	position: absolute;
+	height:0;
+	width:0;
+	border:4px solid #ccc;
+	border-left-color:transparent !important;
+	border-right-color:transparent !important;
+	left: 0px;
+}
+.scaleplate.up .scaleplate-arrow .arrow-1{
+	bottom:0px;
+}
+.scaleplate.up .scaleplate-arrow .arrow-2{
+	border-bottom-color:transparent !important;
+	bottom: 5px;
+}
+.scaleplate.down .scaleplate-arrow .arrow-1{
+	top:0px;
+}
+.scaleplate.down .scaleplate-arrow .arrow-2{
+	top: 5px;
+	border-top-color:transparent !important;
+}
+.scaleplate-all.over-box .scaleplate-arrow,
+.scaleplate-title.over-box{
+	color:#ed4f37;
+}
+.scaleplate-all.over-box .scaleplate-arrow .arrow-1{
+	background: #ed4f37;
+}
+.scaleplate-all.over-box .scaleplate-arrow .arrow-2{
+	border-color:#ed4f37;
+}
+
+.scaleplate.up .scaleplate-all.scaleplate-iP5{
+	width:315px;
+}
+.scaleplate.up .scaleplate-all.scaleplate-iP6{
+	width:425px;
+}
+.scaleplate.up .scaleplate-all.scaleplate-Plus{
+	width:480px;
+}
+
+.scaleplate.down .scaleplate-all.scaleplate-iP5{
+	width:230px;
+}
+.scaleplate.down .scaleplate-all.scaleplate-iP6{
+	width:285px;
+}
+.scaleplate.down .scaleplate-all.scaleplate-Plus{
+	width:315px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

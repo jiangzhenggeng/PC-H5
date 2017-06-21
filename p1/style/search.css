@@ -1,0 +1,193 @@
+/* CSS Document 2016-01-04*/
+
+.cards .userLikes {
+	margin-left: 60px;
+	font-size: 16px
+}
+.cards .userLikes a {
+	display: inline-block;
+	background: none;
+	color: #fe5341
+}
+.homeLeft {
+    width: 224px;
+    min-height: 500px;
+}
+.homeRigth {
+	min-height: 500px
+}
+.homeLeft ul.fixed{
+	position: fixed;
+    top: 23px;
+}
+.land .listCon .tab .tabCon .homeLeft ul .userOns1 {
+	display: block
+}
+
+
+.search .con{
+	width: auto;
+	overflow: hidden;
+	    border-bottom: 1px dashed #bfbfbf;
+}
+.listCon .tab .tabCon ul {
+	margin-left:-35px;
+}
+.listCon .tab .tabCon .homeRigth ul li {
+    border-radius: 6px;
+    margin-bottom: 35px;
+	margin-left: 35px;
+}
+.homeRigth .guideInfo ul li {
+    width: 220px;
+}
+
+.search .homeRigth .con ul li.card{
+    height: 286px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 5px #fff;
+    position: relative;
+}
+.search .homeRigth .con ul li.card .name{
+    font-size: 16px;
+}
+.search .homeRigth .con ul li.card .desc .labes{
+	line-height:23px;
+}
+.search .homeRigth .con ul li.card .desc .labes,
+.search .homeRigth .con ul li.card .desc .sq{
+	height:auto;
+	line-height: 26px;
+}
+.land .listCon{
+	margin:auto;
+}
+.land .listCon .tab .tabCon .homeLeft ul .on {
+    background-color: #ffffff;
+}
+.land .listCon .tab .tabCon .homeLeft ul .on a{
+	color:#fe5341;
+}
+/****************/
+.p-t-0{
+	padding-top:0px;
+}
+.b-b-0{
+	border-bottom:none !important;
+}
+ul li .jiguo-color-red{
+	color:inherit !important;
+}
+.head{
+	clear:both;
+	top: 0px;
+    margin:0;
+}
+.wrapper{
+	height:81px;
+}
+.search-into-nav-btn{
+    float: right;
+    top: 18px;
+    position: relative;
+}
+.search-into-nav-btn a{
+	background:url(../i/search/search.png) no-repeat center center;
+}
+.search-into-nav-btn,
+.search-into-nav-btn a{
+	display:block;
+	height:42px;
+	width:40px;
+	line-height:42px;
+	cursor:pointer;
+	position:relative;
+	z-index:1;
+}
+input[type="text"].search-into-text{
+	background: #f7f7f7;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    height: 40px;
+    padding: 0 10px;
+    width: 0px;
+	display:none;
+	opacity:0;
+	padding-right:40px;
+	font-size:16px;
+}
+
+
+.search-main{
+	border-bottom: 1px solid #e6e6e6;
+}
+.search-result.no-key-word{
+    visibility: hidden;
+    margin: auto;
+    height: 20px;
+}
+
+.search-input{
+	clear:both;
+	width:1000px;
+	margin:auto;
+	font-size:16px;
+	color:#474747;
+	margin: 25px auto 10px auto;
+}
+.search-parent{
+	background:#f7f7f7;
+	border:1px solid #d9d9d9;
+	border-radius:5px;
+	position:relative;
+	overflow:hidden;
+}
+
+.search-parent *{
+	background-color:transparent;
+}
+
+.search-text,
+.search-btn,
+.search-parent,
+.search-btn-bg{
+	height:40px;
+	font-size:16px;
+}
+
+.search-btn,
+.search-btn-bg{
+	cursor: pointer;
+	font-size:14px;
+	border:none;
+	position:absolute;
+	right:0;
+	top:0;
+	width:80px;
+	border-left:1px solid #d9d9d9;
+	filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=#f0f0f0); /*IE 6 7 8*/ 
+	background: -ms-linear-gradient(top, #ffffff,  #f0f0f0);        /* IE 10 */
+	background:-moz-linear-gradient(top,#ffffff,#f0f0f0);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#ffffff), to(#f0f0f0));/*谷歌*/ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#f0f0f0));      /* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #ffffff, #f0f0f0);   /*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #ffffff, #f0f0f0);  /*Opera 11.10+*/
+}
+.search-btn-icon{
+	background:url(../i/search/icon-search.png) no-repeat center center;
+}
+.search-text{
+	width: 900px;
+    padding: 0 10px;
+}
+
+.search-result{
+	margin:10px 0;
+}
+.search-result p{
+	text-indent:10px;
+}

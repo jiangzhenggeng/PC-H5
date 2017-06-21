@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+var pix = 375/750;
+document.write('<meta name="viewport" content="width=device-width, initial-scale='+pix+', minimum-scale=1, maximum-scale=1">');
+</script>
+
+<style>
+html{
+	font-size: 62.5%;
+}
+html,body{
+	width:375px;
+	display:block;
+	margin:auto;
+}
+*{
+	margin:0;
+	padding:0;
+	font-style:normal;
+	font-style:normal;
+}
+img{
+	border:none;
+}
+@font-face { 
+	font-family: '方正兰亭纤黑'; 
+	src: url('images/card/方正兰亭纤黑_GBK.TTF') format('truetype'); 
+} 
+body{
+	font-family:'方正兰亭纤黑';
+	font-size: 1.4rem;
+	color:#333;
+}
+.card-warp{
+	padding:4.666%;
+}
+.clear:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.card{
+	background:#f7f7f7;
+	padding:2.4%;
+	border:1px solid #e6e6e6;
+}
+.card{
+	display:block;
+	clear:both;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.red{
+	color:#f15f52;
+}
+.gray{
+	color:#b3b3b3;
+}
+.bold{
+	font-weight:bold;
+}
+.delete{
+	text-decoration:line-through;
+}
+.img{
+	margin-right:4%;
+	float:left;
+	width:29.3333%;
+	height:29.3333%;
+}
+.card-warp img{
+	width:100%;
+	height:100%;
+}
+.title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 18px;
+    height: 36px;
+	overflow: hidden;/*
+	white-space: nowrap;
+	text-overflow: ellipsis;*/
+}
+.price-box{
+	height:30px;
+	line-height:30px;
+	margin: 3px 0;
+}
+.laiyuan{
+	height:26px;
+	line-height:26px;
+}
+.buy .goumai{
+    background-image: url(images/card/gouwuche.png);
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-color: #f15f52;
+    background-size: 22px auto;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+    display: block;
+    padding: 0 14px 0 19px;
+    width: 50px;
+    height: 26px;
+    line-height: 27px;
+    text-align: right;
+}
+.buy.xiangqing .goumai {
+	text-align:center;
+}
+.buy.xiangqing .goumai {
+	background-image:none;
+	padding: 0 16px;
+}
+.xing{
+	display:inline-block;
+	position:relative;
+	height:30px;
+	width:100px;
+	margin-right: 10px;
+}
+.xing span{
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:100%;
+	background-position:left 40%;
+    background-repeat:repeat-x;
+    background-size:20px auto;
+}
+.xing .xing-1{
+	background-image: url(images/card/xing-1.png);
+    
+}
+.xing .xing-2{
+	background-image: url(images/card/xing-2.png);
+}
+.icon-zan{
+	background-image: url(images/card/zan.png);
+}
+.icon-pinglun{
+	background-image: url(images/card/pinglun.png);
+    
+}
+.icon-zan,.icon-pinglun{
+    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: left 30%;
+    background-size: 14px auto;
+    margin-right: 10px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="card-warp">
+	<div class="card clear">
+		<div class="img"><img src="temp/图层-38.png"/></div>
+		<div class="text">
+			<div class="title"><span>BOSE / QuiteComfo25 / 耳罩式耳机耳罩式耳机耳罩式耳机耳罩式耳机耳罩式耳机</span></div>
+			<div class="price-box">
+				<div class="price-zhe fl"><span class="red bold">9.2折</span></div>
+				<div class="price-inner fr">
+					<span class="delete gray">￥2880</span>
+					<span class="red bold">￥2680</span>
+				</div>
+			</div>
+			<div class="laiyuan">
+				<div class="laiyuan-name fl">
+					<span class="gray">京东</span>
+				</div>
+				<div class="buy fr">
+					<span class="goumai">购买</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="height:10px;"></div>
+	
+	
+	<div class="card clear">
+		<div class="img"><img src="temp/图层-38.png"/></div>
+		<div class="text">
+			<div class="title"><span>BOSE / QuiteComfo25 / 耳罩式耳机</span></div>
+			<div class="price-box">
+				<div class="price-zhe fl">
+					<div class="xing fl">
+						<span class="xing-1"></span>
+						<span class="xing-2" style="width:80%"></span>
+					</div>
+					<span class="red bold">4.3</span>
+				</div>
+				<div class="price-inner fr">
+					<span class="red bold">￥2680起</span>
+				</div>
+			</div>
+			<div class="laiyuan">
+				<div class="laiyuan-name fl">
+					<span class="icon-zan gray">1200</span>
+					<span class="icon-pinglun gray">182</span>
+				</div>
+				<div class="buy fr xiangqing">
+					<span class="goumai">详情</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

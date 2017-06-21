@@ -1,0 +1,1 @@
+define(["jquery","app/tplEngine"],function(a,b){return{init:function(c){a.get("/api/praise/GetPraiseList",{id:c.id,type:c.type},function(d){var e=c.tpl||a("#praise-list-tpl"),f=b.init(e.html()),g=d.result.length;if(g){a("[data-praise-num]").html(g),a("#praise-list-box").removeClass("none");var h=f({data:d.result}),i=c.box||a("#praise-list");i.html(h)}},"json")}}})

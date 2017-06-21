@@ -1,0 +1,65 @@
+.content {
+	background: #f3f2f8;
+}
+.content .topic-item .desc .txt {
+	font-size: 14px;
+	color: #a0a0a0;
+	font-weight: normal;
+}
+.focus .hd {
+	margin-bottom: 10px;
+	position: relative;
+}
+.wrapper .button .btn {
+	padding: 4px 7px;
+}
+#list .desc .optBtn .Num .zanNum {
+	margin-right: 4px;
+}
+#list {
+	padding-top: 0px;
+}
+#list dd {
+	margin-top: 21px;
+}
+.content .list dd, .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+.wrapper .submitBtn {
+	margin: 15px 0px 0px;
+}
+.content #focus .desc {
+	padding: 5px 10px 0px;
+}
+.focus .hd ul li {
+	height: 8px;
+	width: 8px;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.content .desc .tag span {
+	margin-top: 5px;
+}
+.avt .name {
+	padding-left: 4px;
+}
+/*******about******/
+.about p{
+	padding-bottom: 13px;
+	color:#666;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

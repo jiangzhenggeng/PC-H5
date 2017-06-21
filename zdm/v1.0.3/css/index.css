@@ -1,0 +1,152 @@
+
+/********************
+主体部分样式::产品图片管理
+********************/
+.Z-btn.Z-setting{
+	background-image:url(../images/setting.png);
+	background-repeat:no-repeat;
+	background-position:35px center;
+}
+
+.Z-product-image{
+	display:inline-block;
+	float: right;
+    width: 776px;
+}
+
+.Z-product-image-box ul{
+	margin-left: -7.56%;
+}
+.Z-product-image-box li{
+	width:150px;
+	height: 94px;
+	text-align:center;
+	overflow:hidden;
+	position:relative;
+	float: left;
+	margin-left: 6.9999%;
+	margin-bottom: 20px;
+}
+
+.Z-product-image-box li:last-child{
+	cursor:pointer;
+	margin-right: 6.9999%;
+}    
+.Z-product-image-box li img{
+    display: block;
+    margin: auto;
+    max-width: 150px;
+}
+
+.Z-product-image-box.Z-edit .Z-delete{
+	height:24px;
+	width:24px;
+	position:absolute;
+	background:#fff url(../images/delete.png) no-repeat center center;
+	border-radius:3px;
+	top: 3px;
+    right: 3px;
+	cursor:pointer;
+}
+.Z-product-image-box.Z-edit .Z-delete:hover{
+	background: #fc6b6b url(../images/delete.png) no-repeat center center;
+}
+
+.Z-product-image-box li .Z-cover-setting{
+	height: 30px;
+    position: absolute;
+    background: #fc6b6b;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+    width: 96%;
+    margin: 2%;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+	display:none;
+}
+
+.Z-product-image-box.Z-edit li:hover .Z-cover-setting{
+	display:block;
+}
+
+.Z-product-image-box.Z-edit li.setting-product-image-cover .Z-cover-setting,
+.Z-product-image-box li.setting-product-image-cover .Z-cover-setting{
+	display:block;
+}
+
+/********************
+主体部分样式::关联推荐
+********************/
+
+.Z-link{
+	color:#039be5;
+}
+.Z-list-table th,
+.Z-list-table td{
+	height:50px;
+	padding: 0 5px;
+}
+.Z-list-table th{
+	color:#808080;
+	text-align:left;
+	font-size:14px;
+	font-weight:100;
+}
+.Z-list-table tr:nth-child(even) td{
+	background:#f5f5f5;
+}
+.Z-show-more{
+	text-align:center;
+}
+.Z-show-more .Z-more-pic{
+	display:block;
+	margin:auto;
+	height:25px;
+	width:80px;
+	background:#fff url(../images/arrow-down-2.png) no-repeat center center;
+}
+
+/********************
+主体部分样式::参数设置
+********************/
+
+.Z-click-query{
+	top:10px;
+}
+.Z-add-parme .Z-btn.Z-gray{
+	border-bottom:1px solid #ededed;
+	background:#f7f7f7 url(../images/add-parme.png) no-repeat 90px center;
+}
+
+/********************
+主体部分样式::购买链接
+********************/
+.Z-click-query-box{
+    display: inline-block;
+    width: 50px;
+}
+.Z-buy-link-cell{
+	display:inline-block;
+}
+.Z-sub-row{
+	margin:20px 0;
+}
+.Z-sub-row .Z-input{
+	margin-right:10px;
+}
+
+.Z-click-query-box.top-17{
+	position: relative;
+	top: 17px;
+}
+
+
+
+
+
+
+
+
+

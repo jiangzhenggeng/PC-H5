@@ -1,0 +1,916 @@
+@charset "utf-8";
+html {
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	height: 100%;
+    overflow-x: hidden;
+}
+body {
+	margin: 0;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	color: #333333;
+	background-color: #f1f1f1;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block
+}
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden], template {
+	display: none
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+blockquote {
+	margin: 1em 40px;
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+
+li {
+	list-style-type: none;
+}
+strong {
+	font-weight: 700
+}
+dfn {
+	font-style: italic
+}
+h1 {
+	margin: .67em 0
+}
+mark {
+	color: #000;
+	background: #ff0;
+	font-style: italic;
+	font-weight: bold;
+}
+small {
+	 font-size: 80%; 
+}
+ins {
+	background: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+sub, sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+	vertical-align: baseline
+}
+sup {
+	top: -.5em
+}
+sub {
+	bottom: -.25em
+}
+/* =============================================================================
+   列表
+   ========================================================================== */
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+/*
+ * 纠正 IE9 中未隐藏的溢出 
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 0;
+}
+
+hr {
+	height: 0;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/* 改善所有浏览器中预先格式化的文本的可读性 */
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: auto
+}
+/* 重新声明固定宽度字体系列: h5bp.com/j */
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+}
+q {
+	quotes: none;
+}
+q:before, q:after {
+	content: "";
+	content: none;
+}
+/* =============================================================================
+   表单
+   ========================================================================== */
+
+form {
+	margin: 0;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/* 指示“label”会将焦点移至相关联的表单元素 */
+label {
+	cursor: pointer;
+}
+/* 
+ * 1. 纠正 IE6/7/8/9 中非继承的颜色 
+ * 2. 纠正 IE6/7 中显示异常的对齐 
+ */
+legend {
+	border: 0;
+	*margin-left: -7px;
+	padding: 0;
+}
+/*
+ * 1. 纠正所有浏览器中非继承的字体大小
+ * 2. 删除 FF3/4 S5 Chrome 中的边距
+ * 3. 定义在所有浏览器中一致地垂直对齐显示
+ */
+button, input, select, textarea {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+}
+button, input, optgroup, select, textarea {
+	font: inherit;
+	color: inherit;
+	margin: 0;
+}
+button {
+	overflow: visible
+}
+button, select {
+	text-transform: none
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+button[disabled], html input[disabled] {
+	cursor: default
+}
+input {
+	line-height: normal
+}
+input[type=checkbox], input[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+	height: auto
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+/*
+ * 1. 将行高定义为正常，以匹配 FF3/4（使用 UA 样式表中的 !important 设置）
+ * 2. 纠正 IE6/7 中显示异常的内边距
+ */
+
+button, input {
+	line-height: normal;
+	*overflow: visible;
+}
+/*
+ * 在“table”中重新加入内边距，以避免 IE6/7 中的交迭和空白问题
+ */
+table button, table input {
+	*overflow: auto;
+}
+/* 
+ * 删除 FF3/4 中的内边距和边框: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+ border: 0;
+ padding: 0;
+}
+/* 用于表单验证的颜色 */
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+ background-color: #f0dddd;
+}
+/* 
+ * 1. 删除 IE6/7/8/9 中的默认垂直滚动条 
+ * 2. 仅允许垂直调整大小
+ */
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+fieldset {
+	padding: .35em .625em .75em;
+	margin: 0 2px;
+	border: 1px solid silver
+}
+textarea {
+	overflow: auto
+}
+optgroup {
+	font-weight: 700
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse
+}
+input::-moz-placeholder, textarea::-moz-placeholder { color: #cccccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #cccccc; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #cccccc; }
+
+a,li,ul,div,dl,dt,dd,p,span,i,em,h1,h2,h3,h4,h5,h6{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);/**解决手机网站点击出现蓝色框的问题**/
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+i,em,cite{
+	font-style:normal;
+}
+/***************************************************
+	==*************************************************
+	以上全部为css初始化部分
+	==*************************************************
+***************************************************/
+
+a {
+	background: 0 0;
+	background: transparent;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+}
+a:active {
+	outline: 0;
+}
+a:visited {
+}
+a:hover {
+	outline: 0;
+}
+a:focus {
+	outline: thin dotted;
+}
+
+/***************************************************
+	==*************************************************
+	极果布局样式
+	==*************************************************
+***************************************************/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++
+	顶级容器
+	极果所有页面的内容都写在这里面，否则不能正常显示
++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.jiguo-container{
+	overflow-x: hidden;
+}
+
+.jiguo-table-view{
+	position: relative;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.jiguo-table-view-cell {
+    position: relative;
+    padding: 10px 15px;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    background-color: #fff;
+}
+/*<!-- 设置为弹性盒 -->*/
+.jiguo-box{
+	display: -moz-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex
+}
+.jiguo-box > .jiguo-flex{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	-moz-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	display: block;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++
+	固定高度的横条
+	里面包含导航菜单等
++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.jiguo-bar{
+	height:50px;
+	background:#FFFFFF;
+	border-bottom: 1px solid #d3d3d6;
+	position:relative;
+}
+
+.jiguo-title{
+	position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 -10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+}
+/*<!-- 页面里用户头像 -->*/
+.jiguo-header-face .jiguo-body-icon{
+	width:44px;
+	height:44px;
+	border-radius:50%;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++
+	位置浮动
++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.jiguo-left{
+	float:left;
+}
+.jiguo-right{
+	float:right;
+}
+.jiguo-clear{
+	clear:both;
+	content:'';
+	height:0;
+	display:block;
+}
+.jiguo-hidden{
+	overflow:hidden;
+}
+/***************************************************
+	==*************************************************
+	极果组件样式
+	==*************************************************
+***************************************************/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++
+	菱角组件
++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.jiguo-badge{
+	color:#ffffff;
+	display: inline-block;
+    padding: 3px 6px;
+    font-size: 14px;
+    line-height: 1;
+    background-color:#fe5341;
+    border-radius: 100px;
+	font-style:normal;
+}
+.jiguo-radius{
+	border-radius:5px;
+}
+.jiguo-full-radius{
+	border-radius:50%;
+}
+/***************************************************
+	==*************************************************
+	图标类组件
+	==*************************************************
+***************************************************/
+
+.jiguo-icon {
+    display: inline-block;
+	width:24px;
+	height:24px;
+	padding:13px;
+    position: relative;
+	box-sizing: content-box;
+}
+.jiguo-icon:before {
+	content:'';
+	display:block;
+	position:absolute;
+	top:50%;
+	margin-top:-12px;
+	width:24px;
+	height:24px;
+	background-size:12px auto;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.jiguo-success:after{
+	background-image: url('../images/user-center-icon/icon-face-smaill.png');
+}
+.jiguo-error:after{
+	background-image: url('../images/user-center-icon/icon-face-error.png');
+}
+.jiguo-guobi.jiguo-success:after{
+	background-image: url('../images/user-center-icon/icon-guobi-add.png');
+}
+.jiguo-guobi.jiguo-error:after{
+	background-image: url('../images/user-center-icon/icon-guobi-sub.png');
+}
+.jiguo-icon-back:before {
+    background-image: url('../images/user-center-icon/icon-back.png');
+}
+/***************************************************
+	==*************************************************
+	按钮类组件
+	==*************************************************
+***************************************************/
+.jiguo-button-row{
+	display:block;
+	position: relative;
+    padding-top: 5px;
+    text-align: center;
+}
+.mui-input-group .mui-button-row {
+    height: 50px;
+}
+.jiguo-button,.jiguo-btn,input[type=button],button{
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #fe5341;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+/***************************************************
+	==*************************************************
+	颜色类组件
+	==*************************************************
+***************************************************/
+.jiguo-green{
+	color:#1fcd6c;
+}
+.jiguo-green-bg{
+	background-color:#1fcd6c;
+}
+.jiguo-blue-bg{
+	background-color:#2e96dd;
+}
+.jiguo-yellow-bg{
+	background-color:#f59d00;
+}
+.jiguo-red-bg{
+	background-color:#0acccc;
+}
+.jiguo-success{
+	background:#46b692;
+}
+.jiguo-error{
+	background:#e24555;
+}
+/***************************************************
+	==*************************************************
+	文字类组件
+	==*************************************************
+***************************************************/
+
+.jiguo-ellipsis{
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.jiguo-ellipsis-2{
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.jiguo-ellipsis-3{
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.jiguo-list-title{
+	font-size:12px;
+	color:#a3a3a3;
+}
+.jiguo-list-desc{
+	color:#474747;
+	font-size:16px;
+	margin:5px auto;
+	line-height:22px;
+}
+/*<!-- 用于只显示固定行数的标识 -->*/
+.jiguo-show-open-flage{
+	position:absolute;
+}
+/*<!-- 展开按钮 -->*/
+.jiguo-open-btn {
+    color: rgb(79, 129, 189);
+    font-size: 13px;
+	margin: 5px 0;
+    padding: 0 5px;
+}
+
+
+.preserve-3d {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.bubleQueen {
+	-webkit-transform: translate3D(0, 0, 0);
+	-ms-transform: translate3D(0, 0, 0);
+	-o-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	-webkit-animation: bubleQueenParent 4s cubic-bezier(.42, 0, .58, 1) 0 infinite normal
+}
+.bubleQueen .bubles {
+	position: relative;
+	height: 45px;
+	width: 320px;
+	margin: 0 auto;
+	overflow: hidden
+}
+.bubleQueen .buble {
+	position: absolute;
+	background: #bcbbbb;
+	-webkit-background-size: 100% 100%;
+	-ms-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 100%;
+	width: 4px;
+	height: 4px;
+	-webkit-box-shadow: 0 0 0 0 #bcbbbb;
+	-moz-box-shadow: 0 0 0 0 #bcbbbb;
+	-ms-box-shadow: 0 0 0 0 #bcbbbb;
+	-o-box-shadow: 0 0 0 0 #bcbbbb;
+	box-shadow: 0 0 0 0 #bcbbbb;
+	left: 0;
+	top: 50%;
+	margin: -2px 0 0 -6px;
+	-webkit-transform: translate3D(0, 0, 0);
+	-ms-transform: translate3D(0, 0, 0);
+	-o-transform: translate3D(0, 0, 0);
+	transform: translate3D(0, 0, 0);
+	-webkit-animation-name: bubleQueen;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+	-webkit-animation-delay: 0;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-ms-animation-name: bubleQueen;
+	-ms-animation-duration: 4s;
+	-ms-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+	-ms-animation-delay: 0;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-direction: normal;
+	-o-animation-name: bubleQueen;
+	-o-animation-duration: 4s;
+	-o-animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+	-o-animation-delay: 0;
+	-o-animation-iteration-count: infinite;
+	-o-animation-direction: normal;
+	animation-name: bubleQueen;
+	animation-duration: 4s;
+	animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	text-indent: -99em
+}
+.bubleQueen .buble:nth-child(1) {
+	-webkit-animation-name: bubleQueen1;
+	-ms-animation-name: bubleQueen1;
+	-o-animation-name: bubleQueen1;
+	animation-name: bubleQueen1
+}
+.bubleQueen .buble:nth-child(2) {
+	-webkit-animation-name: bubleQueen2;
+	-ms-animation-name: bubleQueen2;
+	-o-animation-name: bubleQueen2;
+	animation-name: bubleQueen2
+}
+.bubleQueen .buble:nth-child(3) {
+	-webkit-animation-name: bubleQueen3;
+	-ms-animation-name: bubleQueen3;
+	-o-animation-name: bubleQueen3;
+	animation-name: bubleQueen3
+}
+.bubleQueen .buble:nth-child(4) {
+	-webkit-animation-name: bubleQueen4;
+	-ms-animation-name: bubleQueen4;
+	-o-animation-name: bubleQueen4;
+	animation-name: bubleQueen4
+}
+.bubleQueen .buble:nth-child(5) {
+	-webkit-animation-name: bubleQueen5;
+	-ms-animation-name: bubleQueen5;
+	-o-animation-name: bubleQueen5;
+	animation-name: bubleQueen5
+}
+.bubleQueen .buble:nth-child(6) {
+	-webkit-animation-name: bubleQueen6;
+	-ms-animation-name: bubleQueen6;
+	-o-animation-name: bubleQueen6;
+	animation-name: bubleQueen6
+}
+.bubleQueen .buble:nth-child(7) {
+	-webkit-animation-name: bubleQueen7;
+	-ms-animation-name: bubleQueen7;
+	-o-animation-name: bubleQueen7;
+	animation-name: bubleQueen7
+}
+@-webkit-keyframes bubleQueen1 {
+0%, 100% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+20%, 80% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+99.99% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+22%, 79% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.12);
+-ms-transform:translate3D(170px, 0, 0) scale(1.12);
+-o-transform:translate3D(170px, 0, 0) scale(1.12);
+transform:translate3D(170px, 0, 0) scale(1.12)
+}
+27%, 74% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.24);
+-ms-transform:translate3D(170px, 0, 0) scale(1.24);
+-o-transform:translate3D(170px, 0, 0) scale(1.24);
+transform:translate3D(170px, 0, 0) scale(1.24)
+}
+32%, 69% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.36);
+-ms-transform:translate3D(170px, 0, 0) scale(1.36);
+-o-transform:translate3D(170px, 0, 0) scale(1.36);
+transform:translate3D(170px, 0, 0) scale(1.36)
+}
+37%, 64% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.48);
+-ms-transform:translate3D(170px, 0, 0) scale(1.48);
+-o-transform:translate3D(170px, 0, 0) scale(1.48);
+transform:translate3D(170px, 0, 0) scale(1.48)
+}
+42%, 59% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.6);
+-ms-transform:translate3D(170px, 0, 0) scale(1.6);
+-o-transform:translate3D(170px, 0, 0) scale(1.6);
+transform:translate3D(170px, 0, 0) scale(1.6)
+}
+47%, 54% {
+-webkit-transform:translate3D(170px, 0, 0) scale(1.72);
+-ms-transform:translate3D(170px, 0, 0) scale(1.72);
+-o-transform:translate3D(170px, 0, 0) scale(1.72);
+transform:translate3D(170px, 0, 0) scale(1.72)
+}
+}
+@-webkit-keyframes bubleQueen2 {
+4.5%, 95.5% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+24.5%, 75.5% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+95.49% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueen3 {
+9%, 91% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+29%, 71% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+90.99% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueen4 {
+13.5%, 86.5% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+33.5%, 66.5% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+86.49% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueen5 {
+18%, 82% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+38%, 62% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+81.99% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueen6 {
+22.5%, 77.5% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+42.5%, 57.5% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+77.49% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueen7 {
+27%, 73% {
+-webkit-transform:translate3D(0, 0, 0) scale(1);
+-ms-transform:translate3D(0, 0, 0) scale(1);
+-o-transform:translate3D(0, 0, 0) scale(1);
+transform:translate3D(0, 0, 0) scale(1)
+}
+47%, 53% {
+-webkit-transform:translate3D(170px, 0, 0);
+-ms-transform:translate3D(170px, 0, 0);
+-o-transform:translate3D(170px, 0, 0);
+transform:translate3D(170px, 0, 0)
+}
+72.99% {
+-webkit-transform:translate3D(350px, 0, 0) scale(1);
+-ms-transform:translate3D(350px, 0, 0) scale(1);
+-o-transform:translate3D(350px, 0, 0) scale(1);
+transform:translate3D(350px, 0, 0) scale(1)
+}
+}
+@-webkit-keyframes bubleQueenParent {
+50% {
+-webkit-transform:translate3D(-5px, 0, 0);
+-ms-transform:translate3D(-5px, 0, 0);
+-o-transform:translate3D(-5px, 0, 0);
+transform:translate3D(-5px, 0, 0)
+}
+100% {
+-webkit-transform:translate3D(5px, 0, 0);
+-ms-transform:translate3D(5px, 0, 0);
+-o-transform:translate3D(5px, 0, 0);
+transform:translate3D(5px, 0, 0)
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

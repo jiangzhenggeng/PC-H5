@@ -1,0 +1,138 @@
+/********index*********/
+.tabSwitch .tabLabel .on a {
+	color: #474747;
+}
+.tabSwitch .tabLabel .on::after {
+	border-bottom: 2px solid #fe5341;
+}
+/********product*********/
+.productProduct .tabCont3 #list.list dl{
+    background: #f2f3f8;
+}
+.productProduct #list .desc .optBtn {
+	padding: 0px;
+}
+.productProduct #list .desc .optBtn span:nth-child(2) {
+	padding-right: 0px;
+	padding-left: 20px;
+}
+.productProduct .labels .details img {
+	margin: 0px;
+}
+.productProduct #list .desc .optBtn {
+	margin-bottom: 10px;
+}
+#list .desc {
+	padding: 0px 10px 0px;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.buyRes .resList li span:first-child {
+	font-weight: normal;
+	padding-top: 14px;
+}
+.buyRes .resList li {
+	padding: 0px 12px 0px 10px;
+}
+.buyRes .resList li a {
+	float: none;
+	display: block
+}
+.details p {
+	background: #f2f3f8!important;
+}
+/*.details span{background: #f2f3f8!important;}*/
+.commentList .desc {
+	background: none;
+}
+#masks .close {
+	position: relative;
+	padding: 5px 10px 5px 20px;
+}
+#masks .close::before {
+	content: 'X';
+	position: absolute;
+	color: #FFF;
+	padding-left: 10px;
+	left: 0px;
+}
+/********catelist*********/
+.catelist .allList {
+	padding-top: 9px;
+}
+.catelist .list .img img {
+	webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.catelist .tabSwitch .tabLabel .on a {
+	color: #474747;
+}
+.catelist .tabSwitch .tabLabel .on::after {
+	border-bottom: 2px solid #fe5341;
+}
+.catelist .allList ul li dl dt {
+	padding: 2px 0px;
+}
+.catelist .allList ul li dl dd .list .img img {
+	width: 64px;
+	height: 64px;
+}
+.catelist .allList ul li dl dd .list .nam {
+	font-size: 12px;
+}
+/********catelists*********/
+.catelists .allList {
+	padding-top: 9px;
+}
+.catelists .list .img img {
+	webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.catelists .tabSwitch .tabLabel .on a {
+	color: #474747;
+}
+.catelists .tabSwitch .tabLabel .on::after {
+	border-bottom: 2px solid #fe5341;
+}
+.catelists .allList ul li dl dt {
+	padding: 2px 0px;
+}
+.catelists .allList ul li dl dd .list .img img {
+	width: 64px;
+	height: 64px;
+}
+.catelists .allList ul li dl dd .list .nam {
+	font-size: 12px;
+}
+.catelists .allList .proLoadMores {
+	border-top: 1px dashed #ccc;
+	width: 100%;
+}
+.catelists .allList .proLoadNext {
+	padding-top: 0px;
+}
+.catelists .allList .proLoadMore {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+.catelists .allList .proLoadMore a {
+	color: #a3a3a3;
+}
+.catelists .allList .proLoadMore a img {
+	margin-left: 11px;
+	margin-top: -1px;
+}
+.catelists .allList .listNone {
+	display: none
+}

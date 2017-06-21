@@ -1,0 +1,67 @@
+/********index*********/
+#list {
+	padding-top: 1px;
+	margin-top: -10px
+}
+#list dd {
+	margin-top: 21px;
+}
+.content .list dd, .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.avt .name {
+	padding-left: 4px;
+}
+/********list*********/
+.listList #list .desc .bottons {
+	padding: 0px;
+}
+.listList #list .desc .optBtn {
+	padding: 0px;
+}
+.listList #list .desc .optBtn span:nth-child(2) {
+	float: none;
+	padding-right: 0px;
+	padding-left: 20px;
+}
+#list dd {
+	margin-top: 21px;
+}
+#list .desc {
+	padding: 0px 10px 0px;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.content .desc .botton span {
+	margin-top: 5px;
+}
+#list .desc .optBtn .Num .talkNum::before {
+	top: 9px
+}
+.listList #list .desc .title {
+	margin-top: 10px;
+	margin-bottom: 0px
+}
+.listList #list .desc .bottons {
+	margin-top: 0px
+}
+#list .desc .optBtn .Num .priceNum img {
+	width: 15px;
+	height: 20px;
+	display: inline-block;
+	margin-top: -5px;
+}
+.listList .content .desc .botton {
+	margin-bottom: 14px
+}
+.listList #list .desc .optBtn {
+	margin-bottom: 3px
+}
+.listList #list .desc .optBtn {
+	padding-bottom: 10px;
+	padding-top: 6px
+}

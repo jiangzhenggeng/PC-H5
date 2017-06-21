@@ -1,0 +1,69 @@
+html, body, h1,
+h2, h3, h4, h5, h6, p,
+ul, ol, li, dl, dt, dd, th, td, form,
+fieldset, legend, input, textarea, blockquote, address, pre {
+  margin: 0;
+  padding: 0
+}
+em,i,address,cite{
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+img, fieldset, hr, iframe {
+  border: 0
+}
+img {
+  display: inline-block;
+  border: none;
+  vertical-align: middle;
+}
+a, del, ins {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+li {
+  list-style: none
+}
+body, input, textarea, select {
+  font: normal 12px/1.667 "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+  color: #4c4c4c;
+}
+body{
+  background-color: @body-bg-color;
+}
+input[type=text],
+input[type=password],
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=search]{
+  .input-text();
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #b7b7b7;
+}

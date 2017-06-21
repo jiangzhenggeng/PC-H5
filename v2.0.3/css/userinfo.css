@@ -1,0 +1,26 @@
+/* CSS Document */
+
+/* CSS editcity */
+#city select {
+	font-size: 16px;
+	background: #fff;
+	padding: 0 3px;
+	height: 28px;
+	margin-bottom: 0px;
+	border:none;
+	color:#a3a3a3;
+	text-align: center;
+}
+.edit-content .quyu .sex-label span {
+	width: 98px;
+}
+.edit-content .quyu .sex-label i {
+	content: "";
+	background: url('../images/jiantou.png');
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 70% auto;
+}

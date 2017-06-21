@@ -1,0 +1,1 @@
+define(["require","jquery","superSlide"],function(a,b){b(function(){b(".banner").slide({titCell:".hd ul",mainCell:".bd ul",effect:"fold",autoPlay:!0,autoPage:!0,trigger:"click",interTime:5e3,prevCell:".prev",nextCell:".next"})})})

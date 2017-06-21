@@ -1,0 +1,503 @@
+.border{
+	border:1px solid #e0e0e0;
+}
+.border-top{
+	border-top:1px solid #e0e0e0;
+}
+.border-left{
+	border-left:1px solid #e0e0e0;
+}
+.border-right{
+	border-left:1px solid #e0e0e0;
+}
+.border-bottom{
+	border-bottom:1px solid #e0e0e0;
+}
+.clear{
+	clear:both;
+}
+.fl{
+	float:left;
+}
+.view-img{
+	margin-right:10px;
+}
+.finInfo .tags ul li a{
+	max-width:11em;
+}
+
+/***********/
+.content .conInfo .pl{
+	overflow: hidden;
+	position:relative;
+}
+.content .conInfo .pl .filter-bg{
+	-webkit-filter:blur(8px);
+	-moz-filter:blur(8px);
+	-ms-filter:blur(8px);
+	filter:blur(8px);
+}
+.content .conInfo .pl .filter-bg img{
+	width:110%;
+	margin-left:-5%;
+	margin-top:-5%;
+}
+.content .conInfo .pl .bottom-bg{
+	background-image:url(../myimg/touxiang-bg.png);
+	background-position:center bottom;
+	background-size:100% 150px;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+.content .conInfo .pl .bottom-bg div{
+	position:absolute;
+	bottom:0;
+	  width: 100%;
+}
+.content .conInfo .pl .bottom-bg img{
+	width:100px;
+	height:100px;
+	border-radius:5000px;
+	display:block;
+	margin:auto;
+	bottom:0;
+	border:3px solid #fff;
+}
+.content .conInfo .text-content{
+	text-align:center;
+	margin:10px 0;
+	color:#474747;
+}
+
+.content .conInfo .text-content .user-name,
+.content .conInfo .text-content .user-tag,
+.content .conInfo .text-content .user-quyu
+{
+	height:30px;
+	line-height:30px;
+}
+.content .conInfo .text-content .user-name{
+	font-size:24px;
+	position:relative;
+}
+.content .conInfo .text-content .user-name a{
+	margin-right:5px;
+	font-weight:600;
+}
+.content .conInfo .text-content .user-name i.i1{
+	background-image:url(../myimg/n1.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	padding:8px;
+	display: inline-block;
+}
+.content .conInfo .text-content .user-name i.i1.n1{
+	background-image:url(../myimg/n1.png);
+}
+.content .conInfo .text-content .user-name i.i1.n2{
+	background-image:url(../myimg/n2.png);
+}
+
+.content .conInfo .text-content .user-quyu{
+	font-size:14px;
+	color:#666;
+}
+.content .conInfo .text-content .user-quyu .ad,
+.content .conInfo .text-content .user-quyu .qy{
+	padding:11px;
+}
+.content .conInfo .text-content .user-quyu .qy{
+	background:url(../myimg/qy.png) no-repeat center center;
+}
+.content .conInfo .text-content .user-quyu .ad{
+	background:url(../myimg/ad.png) no-repeat center center;
+}
+
+.content .conInfo .text-content .user-tag a{
+	border-radius:3px;
+	background:#F2F2F2;
+	color:#BEBEBE;
+	font-size:14px;
+	padding:4px 8px;
+}
+.content .conInfo .text-content .user-desc{
+	margin-top:0px;
+	padding:0 15px 0 15px;
+	text-align:left;
+}
+.content .conInfo .text-content .user-desc .user-desc-row{
+	background-image:url(../myimg/user-desc-row.png);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	height:16px;
+	background-size:auto 16px;
+}
+.content .conInfo .text-content .user-desc .user-desc-bg{
+	background:#f2f2f2;
+	border-radius:5px;
+	padding:10px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.content .conInfo .pl{
+	height: 260px;
+}
+}
+@media only screen and (max-width: 680px) and (min-width: 481px) {
+.content .conInfo .pl{
+	height: 300px;
+}
+}
+@media only screen and (max-width: 960px) and (min-width: 681px) {
+.content .conInfo .pl{
+	height: 340px;
+}
+}
+@media only screen and (max-width: 1400px) and (min-width: 961px) {
+.content .conInfo .pl{
+	height: 380px;
+}
+}
+@media only screen and (min-width: 1401px) {
+.content .conInfo .pl{
+	height: 400px;
+}
+}
+
+.photo-album{
+	background: #fff;
+	margin-top:10px;
+	position:relative;
+}
+.photo-album .photo-album-header{
+	height:50px;
+	line-height:50px;
+	padding:0 14px
+}
+.photo-album .photo-album-header span{
+	/*text-shadow: #C7C7C7 0 1px 0;*/
+	font-weight: 300;
+	color: #474747;
+	font-size:18px;
+}
+.photo-album .photo-album-content{
+	padding:14px;
+	overflow:hidden;
+	position:relative;
+}
+.photo-album .photo-album-content ul.photo li{
+	width: 19%;
+	height:auto;
+	display:inline-block;
+	float:left;
+	margin:0 7px;
+	border-radius:15px;
+}
+.photo-album .photo-album-content ul.photo li:last-child{
+	margin-right:0;
+}
+.photo-album .photo-album-content ul.photo li:first-child{
+	margin-left:0;
+}
+
+.photo-album .photo-album-content ul.photo li img{
+	max-width:100%;
+	border-radius: 8px;
+}
+.photo-album .photo-album-content .photo-album-next-icon{
+	position:absolute;
+	right:4%;
+	top:0px;
+	height:100%;
+}
+.photo-album .photo-album-content .photo-album-next-icon .t-table{
+	display:table;
+	height:100%;
+}
+.photo-album .photo-album-content .photo-album-next-icon .t{
+	display:table-row;
+}
+.photo-album .photo-album-content .photo-album-next-icon .t .td{
+	display:table-cell;
+	vertical-align: middle;
+}
+.photo-album .photo-album-content .photo-album-next-icon i{
+	display:block;
+	width:12px;
+	height:24px;
+	background-image:url(../myimg/jiantou.png);
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size:93% auto;
+}
+.photo-album .photo-album-content.no-padding{
+	padding:0;
+}
+.photo-album .photo-album-content .view-img-ul li {
+  overflow: hidden;
+  position: relative;
+  padding: 11px 0px 11px 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.photo-album .photo-album-content .view-img-ul li:last-child{
+	border-bottom:none;
+}
+.photo-album .photo-album-content .view-img-ul li>a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: inherit;
+}
+.photo-album .photo-album-content .view-img-ul li img{
+	max-width:80px;
+}
+.photo-album .photo-album-content .view-img-ul .text-nav .title{
+	color:#474747;
+	font-size: 16px;
+}
+.photo-album .photo-album-content .view-img-ul .text-nav .in-time,
+.photo-album .photo-album-content .view-img-ul .text-nav .in-price{
+	color:#bebebe;
+	font-size: 14px;
+	height:25px;
+	line-height:25px;
+}
+.photo-album .photo-album-content .view-img-ul .text-nav .in-price .sp-2{
+	color: #fe5341;
+}
+.photo-album .photo-album-content .geren-jineng .finInfo {
+  padding: 0;
+}
+
+.photo-album .photo-album-content .geren-jineng .finInfo .tags ul li {
+  height: 27px;
+  line-height: 25px;
+  margin: 0px 10px 10px 0px;
+}
+
+.photo-album .photo-album-content .view-zuoping-ul .text-nav .title{
+	color: #474747;
+	font-size: 16px;
+	padding-right: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	line-height: 26px;
+	margin-bottom: 10px;
+	min-height:50px;
+}
+.photo-album .photo-album-content .view-zuoping-ul .text-nav .title strong{
+	font-weight:100;
+}
+.shenhezhong{
+	font-size:14px;
+	color: #bebebe;
+}
+
+
+/****************/
+.footer-zan{
+	margin:30px auto;
+	text-align:center;
+}
+.footer-zan .dianzan{
+	display:block;
+	margin:auto;
+	height:65px;
+	width:65px;
+	text-indent:-9999999px;
+	background-position:center center;
+	background-image:url(../myimg/zan-no.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.footer-zan .dianzan.yes{
+	background-image:url(../myimg/zan-yes.png);
+}
+.footer-zan .dianzan.no{
+	background-image:url(../myimg/zan-no.png);
+}
+.footer-zan p{
+	color:#b0b0b0;
+	font-size:16px;
+	text-align:center;
+	height:25px;
+	line-height:35px;
+}
+
+.footer-zan p .zan-number{}
+/****************/
+.footer-icon{
+	  margin: 30px auto;
+	  text-align:center;
+}
+.footer-icon .xtb-icon{
+	display:inline-block;
+	margin-bottom:5px;
+	width:40px;
+	height:40px;
+}
+
+.footer-icon .xtb-icon img{
+	max-width:100%;
+	max-height:100%;
+}
+
+.loading-more{
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	border-top: 1px solid #e0e0e0;
+	font-size:16px;
+}
+.loading-more p{
+	color:#9d9d9d;
+}
+.loading-all{
+	/*position:absolute;
+	bottom:0px;*/
+}
+.preserve-3d{
+	display:none;
+}
+.preserve-3d.loading-animation{
+	display:block;
+}
+
+/*******************/
+.admin-edit{
+	position:absolute;
+	right:10px;
+	top:0;
+}
+.admin-edit .admin-icon{
+	background-image:url(../myimg/admin-edit-icon.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:16px auto;
+	padding:8px;
+	margin-right:5px;
+}
+.admin-edit .admin-text{
+	color:#fe7266 !important;
+	font-size:16px;
+}
+
+
+.usershop-top .blur-image-block .blur-image{
+	-webkit-filter:blur(8px);
+	-moz-filter:blur(8px);
+	-ms-filter:blur(8px);
+	filter:blur(8px);
+	height: 104%;
+	width: 104%;
+	margin-left: -2%;
+	margin-top: -0.5%;
+}
+ /*******************/ 
+.usershop-top .top-content .round-bg {
+	background-image: url("../myimg/round_bg@002.png");
+	background-size: 100% auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min--moz-device-pixel-ratio:1.5), only screen and (-o-min-device-pixel-ratio:3/2), only screen and (min-device-pixel-ratio:1.5) {
+.usershop-top .top-content .round-bg {
+	background-image: url("../myimg/round_bg@002.png")
+}
+}
+.usershop-top .top-content .avatar {
+  position: relative;
+  z-index: 1;
+}
+/******************/
+.content .conInfo .text-content .user-desc .user-desc-row {
+  height: 13px;
+  background-size: auto 13px;
+}
+.photo-album .photo-album-content .view-img-ul .text-nav .in-time,
+.photo-album .photo-album-content .view-img-ul .text-nav .in-price {
+  height: 22px;
+  line-height: 22px;
+}
+.text-nav .title{
+	margin-bottom:10px;
+}
+.content .conInfo .text-content .user-desc {
+  padding: 0 12px 0 12px;
+}
+#list {
+	padding-left:12px;
+	padding-right:12px;
+}
+.content .conInfo .text-content{
+	margin:12px 0;
+}
+.photo-album .photo-album-header {
+  height: 42px;
+  line-height: 42px;
+}
+.photo-album .photo-album-header {
+  padding: 0 12px;
+}
+.photo-album .photo-album-content{
+	padding:12px;
+}
+.photo-album .photo-album-content .view-img-ul li {
+  padding: 12px 0px 12px 12px;
+}
+
+.recommend-product .operate .love .ico,
+.recommend-product .operate .love.loveed .ico
+{
+	width: auto;
+	height: auto;
+	padding:10px;
+	margin-right: 10px;
+	background-size: 17px auto;
+}
+.recommend-product .operate .love.loveed .ico{
+	background-size: 16px auto;
+}
+.usershop-top .top-content .avatar{
+	top:10px;
+}
+
+.usershop-top .top-content .round-bg{
+  border-bottom: 1px solid #F5F5F5;
+}
+.photo-album .photo-album-content .photo-album-next-icon i{
+	background-size: 70% auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+.Z-select-box{
+    display:inline-block;
+    height: 38px;
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+    outline: none;
+    vertical-align: middle;
+    line-height: 38px;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 753px;
+    position:relative;
+    cursor:default;
+}
+.Z-select-box .Z-select-arrow{
+    height: 38px;
+    width:38px;
+    position:absolute;
+    right:0;
+    top:0;
+    left:auto;
+    background-color:#fff;
+    border-left: 1px solid #ededed;
+    background-image:url(selectUI/arrow-down-2.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+.Z-select-box .Z-select-list{
+    display:none;
+    border: 1px solid #ededed;
+    border-top:none;
+    background-color:#fff;
+    position: absolute;
+    top:39px;
+    left:-1px;
+    width: 100%;
+    z-index:20160224;
+    max-height:315px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.Z-select-box .Z-select-list li{
+    padding-left:20px;
+    cursor:default;
+}
+.uploadify{
+    display: inline-block;
+}
+.Z-select-box .Z-select-list li:hover,
+.Z-select-box .Z-select-list li[data-selected]{
+    background-color:#f5f5f5;
+}
+.Z-select-box .Z-select-list li span{
+    display:block;
+    border-bottom: 1px solid #ededed;
+}
+.Z-select-box .Z-select-list li:last-child span{
+    border-bottom:none;
+}

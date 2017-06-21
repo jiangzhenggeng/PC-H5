@@ -1,0 +1,154 @@
+
+.none{
+    display: none;
+}
+.ac-table-basic{
+    width: 100%;
+    border: none;
+    color: #666666;
+    margin: 10px auto;
+}
+#replay-article-tbody-box .ac-table-basic{
+    border: 1px dotted #AFAFAF;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #F3F3F3;
+    position: relative;
+}
+#replay-article-tbody-box .delete{
+    border-radius: 5px;
+    border: 1px dotted #AFAFAF;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #CECECE;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+.wx-type-3-add{
+    border-radius: 5px;
+    border: 1px dotted #AFAFAF;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #CECECE;
+}
+
+
+.ac-table-basic input.text {
+    background: #fff;
+    color: #333;
+    border: 1px solid #eee;
+    border-top-color: #999;
+    border-left-color: #999;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    width: 320px;
+    outline: none;
+    padding: 0 5px;
+}
+.ac-table-basic textarea{
+    background: #fff;
+    color: #333;
+    border: 1px solid #eee;
+    border-top-color: #999;
+    border-left-color: #999;
+    line-height: 20px;
+    width: 100%;
+    outline: none;
+    padding: 0 5px;
+    height: 180px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.ac-table-basic input.text.listorder{
+    width: 30px;
+}
+.ac-table-basic td,
+.ac-table-basic th {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 8px 5px;
+    word-break: break-all;
+}
+.ac-table-basic td.break-all,
+.ac-table-basic th.break-all {
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ac-table-basic th {
+    background-color: #F9F9F9;
+}
+.ac-table-basic tr:hover td {
+    background-color: #f1f1f1 !important;
+}
+.ac-table-basic tr:nth-child(odd) td {
+    background-color: #F9F9F9;
+}
+
+.ac-table-basic-add{
+    width: 100%;
+    border: none;
+    color: #666666;
+    margin: 10px auto;
+}
+.ac-table-basic-add th{
+    color: #555555;
+    width: 80px;
+    text-align: right;
+}
+.ac-table-basic-add th div{
+    width: 100px;
+}
+.ac-table-basic-add td{
+    color: #666666;
+}
+.ac-table-basic-add.ac-table-basic-add td,
+.ac-table-basic-add.ac-table-basic-add th,
+.ac-table-basic-add.ac-table-basic-add tr:hover td{
+    background: transparent !important;
+}
+
+.upload-box{
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+}
+.upload-box input[type=file],
+.upload-box .button{
+    text-align: center;
+    opacity: 0.01;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    line-height: 26px;
+}
+.upload-box input[type=file]{
+    z-index: 1;
+}
+.upload-box .button{
+    opacity: 1;
+    background-color: #fc6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}

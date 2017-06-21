@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <title>添加产品</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/article.css"/>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/select.js"></script>
+	<!-- 百度编辑器代码 -->
+	<script type="text/javascript" src="js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="js/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="js/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="Z-body">
+	<!-- 头部 -->
+	<div class="Z-header">
+		<div class="Z-main">
+			<div class="Z-logo-box Z-left">
+				<img src="images/logo.png" width="218" height="36" alt=""/>
+			</div>
+			<div class="Z-drop-down-menu Z-right">
+				<ul>
+					<li class="on"><a href="#">极果管理员</a></li>
+					<li><a href="#">极果管理员</a></li>
+					<li><a href="#">极果管理员</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="Z-clear Z-h-20"></div>
+	<!-- 主题部分 -->
+	<div class="Z-body-main">
+		<div class="Z-main">
+			<div class="Z-article-header Z-bottom-line">
+				
+			</div>
+			<!-- 左侧菜单 -->
+			<div class="Z-menu Z-left">
+				<ul>
+					<li class="on">
+						<div class="Z-left-article-list">
+							<div class="Z-left-article-inner Z-right"></div>
+							<div class="Z-left-article-text">请在这里输入标题</div>
+						</div>
+					</li>
+					<li>
+						<div class="Z-left-article-list">
+							<div class="Z-left-article-inner Z-right">
+								<img src="temp/图层-17.png"/>
+							</div>
+							<div class="Z-left-article-text">
+								元宵佳节放花灯 国外 各国孔明灯密布星空
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="Z-left-article-list">
+							<div class="Z-left-article-inner Z-right">
+								<img src="temp/图层-17.png"/>
+							</div>
+							<div class="Z-left-article-text">
+								元宵佳节放花灯 国外 各国孔明灯密布星空
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 有侧内容 -->
+			<div class="Z-content Z-right">
+				<form>
+				
+					<!-- 产品信息 -->
+					<div class="Z-sub-main">
+						<div class="Z-info">
+							<div class="Z-list-info">
+								<div class="Z-row article-title">
+									<input class="Z-input" placeholder="请在这里输入标题" />
+								</div>
+								<div class="Z-row">
+									<input class="Z-input" placeholder="标签" />
+								</div>
+								<div class="Z-row">
+									<textarea name="content" id="Z-desciption" style="height:300px;"></textarea>
+								</div>
+							</div>
+							<div class="Z-list-info">
+								<div class="Z-list-info-style">
+									<div class="Z-row article-f-title"><i></i>发布样式编辑</div>
+									<div class="Z-row">
+										<span>首图</span>
+										<div class="Z-article-upload">
+											<button type="button" class="Z-btn Z-w-150" onclick="createEditorUploadFile.__HIDE_UE__.getDialog('insertimage').open()">本地上传</button><label>图片尺寸建议：XX像素* XX像素</label>
+											<div class="show-upload-img Z-right">
+												<img src="temp/图层-17.png"  width="70" height="70" />
+											</div>
+										</div>
+									</div>
+									<div class="Z-row">
+										<span>摘要</span><label style="margin-left:20px;">选填，如果不填写会默认抓取正文前54个字</label>
+										<div class="Z-article-content">
+											<div class="Z-content-box"><textarea name="content"></textarea></div>
+											<div class="Z-a-right"><label style="margin-left:20px;">0/120</label></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="Z-clear"></div>
+			
+		</div>
+	</div>
+</div>
+<script>
+/*********************
+//初始化编辑器
+*********************/
+var _editor = UE.getEditor('Z-desciption',{
+	onready:function(){
+		var style = document.createElement('style');
+		style.innerHTML = '.edui-default .edui-editor{border: 1px solid #ededed;border-radius: 0px;}';
+		document.getElementsByTagName('body')[0].appendChild(style);
+	}
+});
+</script>
+<div class="Z-submit-article">
+	<div class="Z-main">
+		<div class="Z-submit-article-query  Z-left">
+			<a href="#">收起正文</a>
+		</div>
+		<div class="Z-submit-article-btn Z-right">
+			<button type="button" class="Z-btn Z-w-150">保存</button>
+			<button type="button" class="Z-btn Z-w-150">预览</button>
+		</div>
+	</div>
+</div>
+
+<div class="Z-dialog">
+	<div class="Z-smark"></div>
+	<div class="Z-content">
+		<div class="Z-dialog-close" onclick="$('.Z-dialog').hide()">&times;</div>
+		<div class="Z-content-inner">
+			<div class="Z-dialog-title">
+				<div class="Z-dialog-fixation Z-left">插入产品卡片</div>
+				<div class="Z-dialog-card">
+					<ul>
+						<li class="on" onclick="javascript:$('.Z-dialog-card-change').hide().eq(0).show();$('.Z-dialog-card li').removeClass('on').eq(0).addClass('on')"><a href="javascript:void(0);">链接</a><i></i></li>
+						<li onclick="javascript:$('.Z-dialog-card-change').hide().eq(1).show();$('.Z-dialog-card li').removeClass('on').eq(1).addClass('on')"><a href="javascript:void(0);">产品库</a><i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="Z-info">
+				<div class="Z-dialog-card-change">
+					<div class="Z-list-info" id="add-buy-setting">
+						<div class="Z-row">
+							<div class="Z-buy-link-cell">
+								<div class="Z-sub-row"> <span class="Z-name">购买链接：</span>
+									<input class="Z-input Z-w-580 buyLinkInfo-url" id="random_id_09572471261490136" name="product[buylink][random_id_05359377718996257][url]" value="">
+									<button type="button" class="Z-btn Z-w-110 Z-right" onclick="getIsLinkProductInfo('#random_id_05899842563085258','#random_id_09572471261490136')">抓取</button>
+								</div>
+								<div class="Z-row">
+									<span class="Z-name">产品名称：</span>
+									<input class="Z-input">
+								</div>
+								<div class="Z-sub-row"> <span class="Z-name">来源：</span>
+									<input class="Z-input Z-w-130 buyLinkInfo-mall" name="product[buylink][random_id_05359377718996257][mall]" value="">
+								</div>
+								<div class="Z-sub-row"> <span class="Z-name">价格：</span>
+									<input class="Z-input Z-w-130 buyLinkInfo-price" onblur="changePrice('#random_id_004433756601065397',this)" name="product[buylink][random_id_05359377718996257][price]" value="">
+									<span class="Z-name">货币类型：</span>
+									<div data-Z-select class="Z-select-box Z-w-150" tabindex="9999">
+										<input data-z-select-value="" value="RMB" class="buyLinkInfo-currency" name="product[buylink][random_id_05359377718996257][currencyname]" type="hidden">
+										<div class="Z-select-selected"><span class="buyLinkInfo-currencyname">￥人民币</span></div>
+										<div class="Z-select-arrow"></div>
+										<div class="Z-select-list">
+											<ul>
+												<li data-value="RMB"><span>￥人民币</span></li>
+												<li data-value="MY"><span>$美元</span></li>
+											</ul>
+										</div>
+									</div>
+									<span class="Z-name Z-w-100 Z-a-right">价格：</span> <font class="Z-red" id="random_id_004433756601065397">￥<span class="buyLinkInfo-price2"></span></font>
+								</div>
+							</div>
+							<div class="Z-clear"></div>
+						</div>
+						
+						<div class="Z-row Z-bottom-line">
+							<span class="Z-name">产品图片：</span>
+							<div class="Z-product-image">
+								<div class="Z-product-image-box" id="Z-product-image-box">
+									<ul>
+										<li class="setting-product-image-cover">
+											<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188">
+											<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+											<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+										</li>
+										<li>
+											<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188">
+											<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+											<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+										</li>
+										<li>
+											<img src="http://pic.jiguo.com/200717/0/5abf581f-544e-49c9-a8c5-8722300e6eba/320X188">
+											<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>
+											<div class="Z-cover-setting" onclick="settingProductImageCover('#setting-product-image-cover',this)">封面</div>
+										</li>
+										<li data-no-setting="">
+											<img onclick="createEditorUploadFile.__HIDE_UE__.getDialog('insertimage').open()" src="images/input-img-tpl.png">
+										</li>
+									</ul>
+									<input id="setting-product-image-cover" type="hidden">
+									<div class="Z-clear"></div>
+								</div>
+							</div>
+							<div class="Z-clear"></div>
+						</div>
+						
+						<div class="Z-row">
+							<div class="Z-sub-row">
+								<span class="Z-name"></span>
+								<button type="button" class="Z-btn">确定</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Z-dialog-card-change" style="display:none;">
+					<div class="Z-list-info">
+						<div class="Z-row">
+							<span class="Z-name">检索：</span>
+							<input class="Z-input Z-w-650" placeholder="名称、品牌、类别" />
+							<button type="button" class="Z-btn Z-red Z-right Z-w-110">搜索</button>
+						</div>
+						<div class="Z-list-info-box">
+							<ul class="Z-list-ul Z-m-l-50">
+								<li>
+									<div class="Z-list-image Z-left">
+										<img src="temp/1.jpg" />
+									</div>
+									<div class="Z-list-desc">
+										<div class="Z-list-title">
+											<strong>Microsoft微软<em class="Z-slash">/</em>Surface Pro 3 128G 12英寸<em class="Z-slash">/</em>平板电脑</strong>
+											<span class="Z-time Z-right">2016-02-20</span>
+										</div>
+										<div class="Z-list-tags">
+											<label>类别标签</label>
+											<label>人群标签</label>
+											<label>场景标签</label>
+											<label>其他标签</label>
+										</div>
+										<div class="Z-list-brief">
+											<div class="Z-list-brief-inner">
+												微软对 Surface Pro 3 12英寸 平板电脑的定位是取代笔记本电脑，叫板MacBook Air。这样口气狂妄，其实Surface Pro 3从造型到内在都有大幅提升。比如保留镁铝合金质感前提下，厚度缩减到了9毫米，重量只有800克。新的Type Cover加入磁性吸条稳定机身，kickstand支架则提供的多段式最大达到...
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="Z-list-image Z-left">
+										<img src="temp/1.jpg" />
+									</div>
+									<div class="Z-list-desc">
+										<div class="Z-list-title">
+											<strong>Microsoft微软<em class="Z-slash">/</em>Surface Pro 3 128G 12英寸<em class="Z-slash">/</em>平板电脑</strong>
+											<span class="Z-time Z-right">2016-02-20</span>
+										</div>
+										<div class="Z-list-tags">
+											<label>类别标签</label>
+											<label>人群标签</label>
+											<label>场景标签</label>
+											<label>其他标签</label>
+										</div>
+										<div class="Z-list-brief">
+											<div class="Z-list-brief-inner">
+												微软对 Surface Pro 3 12英寸 平板电脑的定位是取代笔记本电脑，叫板MacBook Air。这样口气狂妄，其实Surface Pro 3从造型到内在都有大幅提升。比如保留镁铝合金质感前提下，厚度缩减到了9毫米，重量只有800克。新的Type Cover加入磁性吸条稳定机身，kickstand支架则提供的多段式最大达到...
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="Z-list-image Z-left">
+										<img src="temp/1.jpg" />
+									</div>
+									<div class="Z-list-desc">
+										<div class="Z-list-title">
+											<strong>Microsoft微软<em class="Z-slash">/</em>Surface Pro 3 128G 12英寸<em class="Z-slash">/</em>平板电脑</strong>
+											<span class="Z-time Z-right">2016-02-20</span>
+										</div>
+										<div class="Z-list-tags">
+											<label>类别标签</label>
+											<label>人群标签</label>
+											<label>场景标签</label>
+											<label>其他标签</label>
+										</div>
+										<div class="Z-list-brief">
+											<div class="Z-list-brief-inner">
+												微软对 Surface Pro 3 12英寸 平板电脑的定位是取代笔记本电脑，叫板MacBook Air。这样口气狂妄，其实Surface Pro 3从造型到内在都有大幅提升。比如保留镁铝合金质感前提下，厚度缩减到了9毫米，重量只有800克。新的Type Cover加入磁性吸条稳定机身，kickstand支架则提供的多段式最大达到...
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="Z-page">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li class="on"><a href="javascript:void(0);">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">8</a></li>
+								<li><a href="#">9</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">&raquo;</a></li>
+								<li><a href="#">尾页</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+/*********************
+模拟select
+*********************/
+dataZselectBind($('[data-Z-select]'));
+
+
+/*********************
+//初始化编辑器
+*********************/
+var _editor = UE.getEditor('Z-desciption',{
+	onready:function(){
+		var style = document.createElement('style');
+		style.innerHTML = '.edui-default .edui-editor{border: 1px solid #ededed;border-radius: 0px;}';
+		document.getElementsByTagName('body')[0].appendChild(style);
+	}
+});
+
+/*********************
+//添加产品图片
+*********************/
+createEditorUploadFile(function(t, arg){
+	var imgs = '';
+	for(var a in arg){
+		imgs += '<li>\
+				<img src="'+arg[a].src+'" />\
+				<div class="Z-delete" onclick="deleteProductImageNow(this)"></div>\
+				<div class="Z-cover-setting" onclick="settingProductImageCover(\'#setting-product-image-cover\',this)">封面</div>\
+			</li>';
+	}
+	var selecterP = $('#Z-product-image-box ul');
+	selecterP.find('li').last().before(imgs);
+	if(selecterP.find('li.setting-product-image-cover').length<=0){
+		var src = selecterP.find('li:not([data-no-setting])').eq(0)
+			.addClass('setting-product-image-cover').find('img').attr('src');
+		$('#setting-product-image-cover').val(src);
+	}
+	if(selecterP.find('li').length<=1){
+		$('#setting-product-image-cover').val('');
+	}
+});
+
+/*********************
+顶部多管理员下拉菜单
+*********************/
+showDownTopAdminMenu();
+</script>
+
+</body>
+</html>
+

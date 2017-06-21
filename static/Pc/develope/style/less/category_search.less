@@ -1,0 +1,148 @@
+
+@import "_variable";
+@import "_mixins";
+
+.inner-nav{
+  height:40px;
+  line-height: 40px;
+  span{
+    margin: 0 5px;
+  }
+}
+.inner-category .category-all-inner {
+  width: 850px;
+}
+
+.category-nav-warp{
+  background-color: #fff;
+  box-shadow:0 1px 1px 0px rgba(34, 23, 20, 0.1);
+  padding: 0 25px;
+  *border-bottom: 1px solid #e6e6e6;
+
+  .common-cell-title {
+    padding: 10px 0 8px 0;
+    h3{
+      border-bottom: none;
+    }
+  }
+
+  .category-class-top{
+    li{
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      position: relative;
+      font-size: 14px;
+      width: 95px;
+      text-align: center;
+      &.first{
+        width: 60px;
+        text-align: left;
+      }
+      a{
+        display: block;
+        color: #808080;
+        &:hover{
+          color: #fe584d;
+        }
+      }
+      i{
+        position: absolute;
+        right:0;
+        top:50%;
+        margin-top: -7px;
+        display: block;
+        width: 0px;
+        height: 15px;
+        border-left: 1px solid #efefef;
+        border-right: 1px solid #e1e1e1;
+      }
+      span{
+        display: inline-block;
+        position: relative;
+        *display: block;
+        *zoom: 1;
+      }
+      em{
+        border-bottom: 2px solid transparent;
+        position: absolute;
+      }
+      &.on{
+        a{
+          color: #000000;
+        }
+        em{
+          border-bottom: 2px solid #fe584d;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .category-nav-sub-warp{
+    position: relative;
+    .category-nav-sub-type{
+      margin-left: 36px;
+      margin-top: 2px;
+    }
+    .category-nav-sub-item{
+      margin-left: 12px;
+      display: inline-block;
+      //width: 88px;
+    }
+    @hj : 800px;
+    @hjW : 50px;
+    @hjWE : @hj - @hjW;
+    &.packup{
+      height: 40px;
+      overflow: hidden;
+      padding-right: @hjW;
+      line-height: 40px;
+
+      .category-nav-sub-item{
+        //margin-left: 15px;
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    .category-nav-sub-show-all{
+      color: #B2B2B2;
+      border: 1px solid #f0f0f0;
+      font-size: 12px;
+      position: absolute;
+      top: 8px;
+      right: 0;
+      line-height: 20px;
+      text-align: center;
+      padding: 0 16px 0 5px;
+      cursor: pointer;
+      .icon-category-sub-more{
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        right: 2px;
+        background-position: -57px -820px;
+      }
+    }
+  }
+}
+.content-warp{
+  .common-cell-title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  //活动卡片显示
+  .event-class-list{
+    li{
+      margin-bottom: 20px;
+    }
+  }
+}

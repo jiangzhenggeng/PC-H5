@@ -1,0 +1,106 @@
+
+
+@import "_variable";
+@import "_mixins";
+
+.dialog{
+  @w : 715px;
+  @h : 325px;
+  .dialog-warp{
+    background: #fff;
+    .border-radius();
+    overflow: hidden;
+    width: @w;
+    height: @h - 4px;
+    border-bottom: 4px solid @border-top-color;
+  }
+
+  .dialog-inner{
+    margin: 25px 50px;
+    color: #595959;
+  }
+
+  .dialog-input{
+    width: 395px;
+    border-right: 1px solid #ededed;
+  }
+
+  .dialog-title{
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .dialog-input-body{
+    width: 340px;
+  }
+  .dialog-input-arrow{
+    margin: 10px 0;
+  }
+
+  .dialog-login-query{
+    font-size: 14px;
+    line-height: 40px;
+
+    .btn{
+      .border-radius(20px);
+      line-height: 40px;
+      width: 165px;
+      font-size: 14px;
+    }
+    input[type="checkbox"][data-login-auto]{
+      position: relative;
+      top: -1px;
+      margin-right: 5px;
+    }
+  }
+
+  .dialog-register-query{
+    font-size: 14px;
+    margin-top: 20px;
+    a{
+      color: #595959;
+    }
+  }
+  //其他登录方式
+  .dialog-other{
+    width: 180px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .dialog-erweima{
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    img{
+      display: block;
+      width: 100%;
+    }
+    .code-bg{
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+  }
+  .dialog-other-type{
+    margin-top: 5px;
+    position: relative;
+    .icon{
+      margin: 0 10px;
+    }
+    .small-icon-group:after{
+      background: #e0e0e0;
+      content: '';
+      position: absolute;
+      width: 1px;
+      display: block;
+      height: 17px;
+      left: 54%;
+      top: 5px;
+    }
+
+    a{
+      color: #808080;
+    }
+  }
+}

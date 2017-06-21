@@ -1,0 +1,138 @@
+/**
+ +----------------------------------------------------------
+ // 全局变量
+ +----------------------------------------------------------
+ */
+/**
+ +----------------------------------------------------------
+ // 全局混淆
+ +----------------------------------------------------------
+ */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.zan-on {
+  color: #e65041!important;
+}
+html,
+body {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 26px;
+  background-image: url(../images/global-icon.png);
+  background-size: 250px auto;
+  background-clip: content-box;
+}
+.icon.icon-back:before {
+  background-position: -30px -89px;
+}
+.icon.icon-right-arrow:before {
+  background-position: -19px -149px;
+}
+.user-header-poxs {
+  height: 52px;
+}
+.user-header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  font-size: 16px;
+  border-bottom: 1px solid #ececec;
+  z-index: 1;
+}
+.user-header .back {
+  display: block;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 13px;
+  line-height: normal;
+  z-index: 3;
+}
+.user-header .search-warp {
+  padding: 0 60px 0 50px;
+  overflow: hidden;
+  position: relative;
+  color: #595858;
+}
+.user-header .search-warp .search-input {
+  border-radius: 50px;
+  padding: 6px 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #f7f7f7;
+  margin: 8px 0;
+}
+.user-header .search-warp [type=search] {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  color: #595858;
+  background-color: transparent;
+  border: none;
+}
+.user-header .search-warp #search-submit {
+  color: #595858;
+  position: absolute;
+  right: 12px;
+  font-size: 16px;
+  top: 50%;
+  margin-top: -11px;
+  background-color: transparent;
+  border: none;
+}
+.mian-stream li {
+  background-color: transparent;
+}
+.s-event .s-body {
+  background-color: #fafafa;
+}
+.search-type-title,
+.search-type-more {
+  line-height: 44px;
+  padding: 0 12px;
+}
+.search-type-more {
+  position: relative;
+}
+.search-type-more:before {
+  content: '';
+  display: block;
+  clear: both;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  background-color: #e6e6e6;
+  bottom: 0px;
+}
+.search-type-more i {
+  float: right;
+  margin-top: 10px;
+}
+#show-search-type-pos {
+  top: 50%;
+  margin-top: -9px;
+}

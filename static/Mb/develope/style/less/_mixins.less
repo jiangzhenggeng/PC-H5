@@ -1,0 +1,385 @@
+
+//圆角处理
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+//间距
+.mg(@num) when ( @num <= 50 ) {
+  .mt@{num}{margin-top: unit(@num,px);}
+  .ml@{num}{margin-left: unit(@num,px);}
+  .mr@{num}{margin-right: unit(@num,px);}
+  .mb@{num}{margin-bottom: unit(@num,px);}
+  .mg@{num}{margin: unit(@num,px);}
+  .mg( @num+5 );
+}
+
+//补白
+.pd(@num) when ( @num <= 50 ) {
+  .pdt@{num}{padding-top: unit(@num,px);}
+  .pdl@{num}{padding-left: unit(@num,px);}
+  .pdr@{num}{padding-right: unit(@num,px);}
+  .pdb@{num}{padding-bottom: unit(@num,px);}
+  .pd@{num}{padding: unit(@num,px);}
+  .pd( @num+5 );
+}
+
+
+.mg2(@num) when ( @num <= 20 ) {
+  .mt@{num}{margin-top: unit(@num,px) !important;}
+  .ml@{num}{margin-left: unit(@num,px) !important;}
+  .mr@{num}{margin-right: unit(@num,px) !important;}
+  .mb@{num}{margin-bottom: unit(@num,px) !important;}
+  .mg@{num}{margin: unit(@num,px) !important;}
+  .mg2( @num+1 );
+}
+.pd2(@num) when ( @num <= 20 ) {
+  .pdt@{num}{padding-top: unit(@num,px) !important;}
+  .pdl@{num}{padding-left: unit(@num,px) !important;}
+  .pdr@{num}{padding-right: unit(@num,px) !important;}
+  .pdb@{num}{padding-bottom: unit(@num,px) !important;}
+  .pd@{num}{padding: unit(@num,px) !important;}
+  .pd2( @num+1 );
+}
+
+//字体
+.ft(@num) when ( @num <= 30 ) {
+  .ft@{num}{font-size: unit(@num,px);}
+  .ft( @num+1 );
+}
+
+.position(){
+  .pos-abs,.abs{
+    position: absolute !important;
+  }
+  .pos-rel,.rel{
+    position: relative !important;
+  }
+  .r0{
+    right:0;
+  }
+  .b0{
+    bottom:0;
+  }
+  .l0{
+    left:0;
+  }
+  .t0{
+    top:0;
+  }
+  .ta{
+    top: auto;
+  }
+  .la{
+    left:auto;
+  }
+}
+
+.fixed(@pos:fixed){
+  &{
+    position: @pos;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .mask{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: ~'rgba(0,0,0,0.7)';
+      z-index: 99;
+    }
+  }
+}
+
+//图标
+.icon () {
+
+
+  @-webkit-keyframes heart_like {
+    0% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1)
+    }
+    25% {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4)
+    }
+    50% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1)
+    }
+    75% {
+      -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      transform: scale(0.6)
+    }
+    100% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1)
+    }
+  }
+
+  .icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    &:before{
+      content: '';
+      display: block;
+      width: 26px;
+      height: 26px;
+
+      background-image: url(../images/global-icon.png);
+      background-size: 250px auto;
+      background-clip: content-box;
+    }
+    &.icon-menu:before{
+      background-position: 0px 5px;
+    }
+    &.icon-search:before{
+      background-position: -26px 5px;
+    }
+    &.icon-user:before{
+      background-position: -55px 4px;
+    }
+
+    &.icon-home:before{
+      background-position: 7px -26px;
+    }
+    &.icon-menu-event:before{
+      background-position: -23px -26px;
+    }
+    &.icon-xinping:before{
+      background-position: -55px -25px;
+    }
+    &.icon-discount:before{
+      background-position: -85px -26px;
+    }
+    &.icon-list:before{
+      background-position: -114px -26px;
+    }
+    &.icon-experience:before{
+      background-position: -143px -25px;
+    }
+    &.icon-uee:before{
+      background-position: -24px -272px;
+    }
+    &.icon-mall:before{
+      background-position: -174px -26px;
+    }
+    &.icon-contact:before{
+      background-position: -205px -25px;
+    }
+    &.icon-app-down-arrow:before{
+      background-position: -201px -233px;
+    }
+
+    &.icon-praise:before{
+      background-position: -145px 8px;
+    }
+    &.icon-replay:before{
+      background-position: -113px 9px;
+    }
+    &.icon-price-up:before{
+      width: 14px;
+      height: 12px;
+      background-position: 1px -474px;
+    }
+    &.icon-price-down:before{
+      width: 14px;
+      height: 12px;
+      background-position: 1px -485px;
+    }
+    &.icon-video:before{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      background-position: -30px -238px;
+    }
+    //话题
+    &.icon-nav-share:before{
+      background-position: -117px -270px;
+    }
+    &.icon-topic-join:before{
+      width: 16px;
+      height: 16px;
+      background-position: -119px -310px;
+    }
+    &.icon-topic-star:before{
+      width: 16px;
+      height: 16px;
+      background-position: -151px -310px;
+    }
+    &.icon-topic-moreText:before{
+      background-position: -83px -271px;
+    }
+    &.icon-topic-share:before{
+      background-position: -84px -304px;
+    }
+    &.icon-topic-reply:before{
+      background-position: -52px -339px;
+    }
+    &.icon-topic-zan:before{
+      background-position: -28px -304px;
+    }
+    &.icon-topic-zan.on:before{
+      background-position: -117px -120px;
+    }
+    &.icon-message-close:before{
+      background-position: -146px -275px;
+    }
+
+    //文章底部按钮
+    &.icon-article-comment-top:before{
+      background-position: -25px -207px;
+    }
+    &.icon-article-comment:before{
+      background-position: -86px -207px;
+    }
+    &.icon-article-zan:before{
+      background-position: -56px -208px;
+    }
+    &.icon-article-like:before{
+      background-position: -116px -208px;
+    }
+    &.icon-article-share:before{
+      background-position: -148px -208px;
+    }
+
+    //文章底部按钮
+    &.icon-article-zan.on:before{
+      background-position: -56px -237px;
+    }
+    &.icon-article-like.on:before{
+      background-position: -116px -237px;
+    }
+    //更多点赞头像展示
+    &.icon-pariset-more.icon:before {
+      background-position: -170px 6px;
+    }
+    @add : -92px;
+    &.icon-back:before{
+      background-position: -30px 3px+@add;
+    }
+    &.icon-tys:before{
+      background-position: 0px -207px+@add;
+    }
+    &.icon-right-arrow:before{
+      background-position: -20px -26px+@add;
+    }
+
+    &.icon-message:before{
+      background-position: 0px 2px+@add;
+    }
+    &.icon-collect:before{
+      background-position: 0px -28px+@add;
+    }
+    &.icon-ceping:before{
+      background-position: 0px -57px+@add;
+    }
+    &.icon-event:before{
+      background-position: 1px -87px+@add;
+    }
+    &.icon-order:before{
+      background-position: -180px -303px;
+    }
+    &.icon-guobi:before{
+      background-position: 0px -117px+@add;
+    }
+
+    &.icon-address:before{
+      background-position: 0px -147px+@add;
+    }
+    &.icon-bind:before{
+      background-position: 0px -177px+@add;
+    }
+    &.icon-more:before{
+      background-position: -85px -271px;
+    }
+    &.icon-tel:before{
+      background-size: 200px auto;
+      background-position: -167px -243px;
+    }
+//意见反馈
+    &.icon-more-feedbackType:before{
+      background-position: -85px -271px;
+    }
+    &.icon-delete-uploadImage:before{
+      background-position: -178px -273px;
+      width: 14px;
+      height: 14px;
+    }
+    //消息
+    &.icon-news-zan:before{
+      background-position: -90px -119px;
+      width: 20px;
+    }
+    &.icon-product-star:before{
+      background-position: -479px -121px;
+      width: 12px;
+      height: 12px;
+    }
+    &.icon-product-star-on:before{
+      background-position: -479px -89px;
+      width: 12px;
+      height: 12px;
+    }
+    &.icon-arrow-right:before{
+      background-position: -20px -149px;
+      width: 12px;
+      height:12px;
+    }
+    &.animate:before{
+      -webkit-animation: heart_like .5s linear;
+      -moz-animation: heart_like .5s linear;
+      -o-animation: heart_like .5s linear;
+      animation: heart_like .5s linear;
+    }
+
+  }
+}
+
+.libor(@posx : 0px,@posy : 0px,@color : #e6e6e6){
+  &{
+    content: '';
+    display: block;
+    clear: both;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: @posy;
+    width: 100%;
+    position: absolute;
+    background-color: @color;
+    bottom: @posx;
+  }
+}
+
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+//赞
+.zan-on{
+  color: #e65041!important;
+}

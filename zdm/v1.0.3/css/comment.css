@@ -1,0 +1,172 @@
+
+.Z-comment-table-view .Z-comment-table-row{
+	border-bottom:1px solid #f0f0f0;
+	margin: 15px 0;
+	position:relative;
+}
+.Z-comment-view-cell{
+	position:relative;
+	margin: 0 0 15px 0;
+	font-size:14px;
+}
+.is-forbidden:before{
+    content: '已封禁';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    font-size: 28px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    color: #ccc;
+}
+/**********头像顶栏*********/
+
+.Z-comment-view-cell.medium{
+	padding-left:40px;
+}
+
+.face{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.face img{
+	border-radius:50%;
+	width:26px;
+	height:26px;
+}
+.Z-comment-view-cell.medium > div {
+	display:inline-block;
+	line-height:26px;
+}
+.username,.target{
+	color:#b5b5b5;
+}
+.time,.query-target{
+	color:#b5b5b5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Z-comment-view-cell .comment-content{
+	line-height:20px;
+}
+/**********赞与评论*********/
+.query-target span{
+	margin-left:20px;
+	cursor:pointer;
+}
+.icon-zan, .icon-comment {
+	cursor:pointer;
+	color:#b5b5b5;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px auto;
+    margin-right: 10px;
+}
+.icon-zan {
+    background-image: url(http://cdn.jiguo.com/zdm/v1.0.1/images/card/home_praise@2x.png);
+}
+.icon-comment {
+    background-image: url(http://cdn.jiguo.com/zdm/v1.0.1/images/card/home_comments@2x.png);
+}
+
+.query-target span:hover,.icon-zan:hover, .icon-comment:hover,.red,.icon-comment.red{
+	color: #fc6b6b;
+}
+/**********星星*********/
+.xing {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 80px;
+}
+.xing span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: left 50%;
+    background-repeat: repeat-x;
+    background-size: 16px auto;
+}
+.xing .xing-1 {
+    background-image: url(http://cdn.jiguo.com/zdm/v1.0.1/images/card/xing-1.png);
+}
+.xing .xing-2 {
+    background-image: url(http://cdn.jiguo.com/zdm/v1.0.1/images/card/xing-2.png);
+}
+/**********图片附件*********/
+.attachment{
+	background-color:#f7f7f7;
+	padding:5px;
+	border:1px solid #f0f0f0;
+	line-height:56px;
+	color:#b5b5b5;
+}
+.atta-img{
+    width: 56px;
+    height: 56px;
+	display:inline-block;
+    margin-right: 10px;
+}
+.atta-img img{
+	width:100%;
+	height:100%;
+	vertical-align: middle;
+}
+/**********显示回复*********/
+.show-comment-box{
+	display:none;
+}
+/**********回复评论*********/
+
+.replay-box{
+	background-color:#f7f7f7;
+	padding:10px;
+	border:1px solid #f0f0f0;
+	line-height:56px;
+	color:#b5b5b5;
+}
+.comment-area{
+	width:100%;
+	height:50px;
+	background-color:transparent;
+}
+.replay-box + .Z-button-group{
+	margin-top:10px;
+}
+.replay-box + .Z-button-group .Z-btn {
+    height: 26px;
+    line-height: 26px;
+    min-width: 80px;
+}
+.show-comment-row-warp{
+    border: 1px solid #E5E4E4;
+    border-radius: 3px;
+	margin:0 0 10px 0;
+	display:none;
+}
+.Z-comment-view-cell.show-comment {
+    border-bottom: 1px dashed #E5E4E4;
+    padding: 10px;
+	margin: 0;
+}
+.Z-comment-view-cell.show-comment:last-child {
+    border-bottom:none;
+}
+
+
+
+
+
+
+

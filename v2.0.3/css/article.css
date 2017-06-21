@@ -1,0 +1,87 @@
+/* CSS Document */
+
+/*************article************/
+.articleArticle #list .desc .bottons {
+	padding: 0px;
+}
+.articleArticle #list .desc .optBtn {
+	padding: 0px;
+}
+.articleArticle #list .desc .optBtn span:nth-child(2) {
+	float: none;
+	padding-left: 20px;
+	padding-right: 0px;
+}
+.finCnt img {
+	max-width: 100%!important;
+	overflow: hidden;
+}
+.finCnt p {
+	min-height: 27px;
+}
+#list .desc {
+	padding: 0px 10px 0px;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.content .desc .tag span {
+	margin-top: 5px;
+}
+#list .desc .optBtn .Num .talkNum::before {
+	top: 9px
+}
+.articleArticle #list .desc .title {
+	margin-top: 10px;
+	margin-bottom: 0px
+}
+.articleArticle #list .desc .bottons {
+	margin-top: 0px
+}
+#list .desc .optBtn .Num .priceNum img {
+	width: 15px;
+	height: 20px;
+	display: inline-block;
+	margin-top: -5px;
+}
+.articleArticle .content .desc .botton {
+	margin-bottom: 14px
+}
+.articleArticle #list .desc .optBtn {
+	margin-bottom: 3px
+}
+.articleArticle #list .desc .optBtn {
+	padding-bottom: 10px;
+	padding-top: 6px
+}
+/*************index************/
+.content .pl {
+	padding-top: 0px;
+}
+.content .list .surplusArticle {
+	color: #a0a0a0;
+	background: #fff;
+}
+#list .desc .optBtn span {
+	margin-left: 4px;
+}
+#list {
+	padding-top: 1px;
+	margin-top: -10px
+}
+#list dd {
+	margin-top: 21px;
+}
+.content .list .surplusArticle {
+	overflow: hidden;
+}
+.content .list dd, .content .list dt {
+	border: 1px solid #E4E4E4;
+}
+#list .desc .optBtn {
+	margin-top: 10px
+}
+.avt .name {
+	padding-left: 4px;
+}
+	/*************index************/

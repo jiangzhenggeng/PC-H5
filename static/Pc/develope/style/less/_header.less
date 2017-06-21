@@ -1,0 +1,622 @@
+
+@import "_variable";
+@import "_mixins";
+//头部专属文件
+.blank-header{
+  visibility: hidden;
+  height: @header-height + 3px ;
+}
+.header{
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 5;
+  font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  background: @bg-color;
+  height: @header-height + 1px;
+  border-top: 1px solid @border-top-color;
+
+  .header-warp{
+    height:@header-height;
+  }
+  @logo-width:160px;
+  .logo{
+    @h : 34px;
+    width: @logo-width;
+    margin-top: (@header-height - @h) / 2;
+    h1 {
+      a{
+        font-size: 0;
+        display: block;
+      }
+      img{
+        height: @h;
+      }
+    }
+  }
+  //菜单列表
+  .menu{
+    width: @main-width - @logo-width;
+    .menu-warp ul{
+      display:block;
+    }
+    .menu-warp li{
+      display: block;
+      float: left;
+      position: relative;
+      //padding-left: 20px;
+      line-height: @header-height;
+      text-align: left;
+      width: 80px;
+      &.experience-plus{
+        width: 95px;
+      }
+      &.app-download{
+        width: 80px;
+      }
+      a{
+        display: block;
+      }
+
+      @w-h : 16px;
+      i{
+        //背景图片
+        //.background-image();
+        //position: absolute;
+        //left: 0;
+        //top:50%;
+        //margin-top: -@w-h/2;
+        //width: @w-h;
+        //height: @w-h;
+        display: none;
+      }
+      @w : 30px;
+      &.home i{background-position: -@w * 0 0;}
+      &.newon i{background-position: -@w * 1 0;}
+      &.list i{background-position: -@w * 2 0;}
+      &.event i{background-position: -@w * 3 0;}
+      &.experience i{background-position: -@w * 4 0;}
+      &.discount i{background-position: -@w * 5 0;}
+      &.experience-plus i{background-position: -@w * 5 0;}
+      &.app-download i{background-position: -208px -29px;}
+
+      &.app-download.on,&.app-download:hover{
+        i{background-position: -238px -29px;}
+        a{ color: @header-hover-color;}
+      }
+      &.home.on,&.home:hover{
+        i{background-position: -@w * 0 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.newon.on,&.newon:hover {
+        i{background-position: -@w * 1 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.list.on,&.list:hover {
+        i{background-position: -@w * 2 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.event.on,&.event:hover {
+        i{background-position: -@w * 3 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.experience.on,&.experience:hover {
+        i{background-position: -@w * 4 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.experience-plus.on,&.experience-plus:hover {
+        i{background-position: -@w * 5 -@w;}
+        a{ color: @header-hover-color;}
+      }
+      &.discount.on,&.discount:hover {
+        i{background-position: -@w * 5 -@w;}
+        a{ color: @header-hover-color;}
+      }
+    }
+  }
+
+  //右侧搜索及用户登录按钮入口
+  .menu-user{
+    line-height: @header-height;
+    height: @header-height;
+    //搜索按钮
+    .search{
+
+      @h : 30px;
+
+      margin-top: (@header-height - @h) / 2;
+
+      .search-box{
+        .border-radius(3px);
+        background: @bg-color;
+        height: @h;
+        border: 1px solid transparent;
+        position: relative;
+        right: 0;
+        padding: 0 10px;
+        padding-right: 20px;
+        font-size: 14px;
+
+        .submit{
+          height: @h;
+          width: @h;
+          .background-image();
+          background-position: -207px 4px;
+          position: absolute;
+          text-indent: -99999px;
+          right:0;
+          top:0;
+          cursor: pointer;
+        }
+      }
+    }
+    //登录按钮
+    .login {
+
+      //未登陆状态
+      > a {
+        @mg-l: 20px;
+        font-size: 14px;
+        padding-left: @mg-l;
+        position: relative;
+        float: left;
+
+        &:after {
+          @h: 16px;
+          position: absolute;
+          content: '';
+          display: block;
+          left: @mg-l / 2;
+          height: @h;
+          width: 1px;
+          top: 50%;
+          margin-top: -@h / 2;
+          background: #e5e5e5;
+        }
+        &:first-child:after {
+          display: none;
+        }
+      }
+
+      //已登陆状态
+      ul{
+        @h : 36px;
+        margin-top: (@header-height - @h) / 2;
+      }
+      li{
+        float: left;
+        display: block;
+        margin-left: 30px;
+        position: relative;
+        a{
+          display: block;
+          width: 36px;
+          height: 36px;
+          overflow: hidden;
+          position: relative;
+        }
+        //邮件图标
+        .icon-header-info{
+          background-position: -180px 2px;
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: auto;
+          position: Absolute;
+          top: 50%;
+          margin-top: -10px;
+          left: 50%;
+          margin-left: -10px;
+        }
+        //用户头像
+        .user-face{
+          a{
+            .border-radius(50%);
+          }
+        }
+        img{
+          width: 100%;
+          display: block;
+        }
+
+        //鼠标进入
+        .i-warp:hover{
+          .header-user-down{
+            display: block;
+          }
+        }
+      }
+
+
+    }
+  }
+
+
+  //点击搜索按钮出现的样式
+  .search-input-warp{
+    display: none;
+    position: absolute;
+    .icon-search{
+      background-position: -207px 6px;
+    }
+    .icon-close{
+      background-position: -262px 8px;
+    }
+
+    .header-search-warp{
+      height: 30px;
+      line-height: 30px;
+      position: relative;
+      font-size: 14px;
+      width: 500px;
+      margin-left: 100px;
+      margin-top: @header-height/2 - 15px;
+    }
+    .search-submit,
+    .search-close{
+      left: 0;
+      top:0;
+      height: 100%;
+      width: 30px;
+      cursor: pointer;
+      //opacity:0.5;
+    }
+    .search-close{
+      left: auto;
+      right: 0;
+    }
+    .icon-search{
+      input[type=submit]{
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        text-indent: -9999px;
+      }
+    }
+    #keyword{
+      width: 100%;
+    }
+
+    .header-search-box{
+      padding: 0 30px 0 40px;
+      position: relative;
+      width: 450px;
+
+      input[name=keyword]{
+        line-height: 30px;
+        height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  //下拉菜单
+  .header-user-down{
+    display: none;
+    position: absolute;
+    width: 150px;
+    line-height: 50px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border:1px solid #f2f2f2;
+    left: -57px;
+    top: 45px;
+
+    .border-radius();
+
+    dl{
+      margin:0 15px;
+    }
+    dd{
+      border-bottom: 1px solid #f5f5f5;
+      position: relative;
+    }
+    a{
+      position: relative;
+      text-indent: 8px;
+      font-size: 14px;
+      color: #595959;
+      width: auto !important;
+      height: auto !important;
+    }
+    //箭头
+    .header-user-down-r-w{
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: 16px;
+      z-index: 1;
+    }
+    .icon-header-arrow{
+      position: absolute;
+      display: block;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      background-position: -240px 0;
+      margin-left: -8px;
+    }
+  }
+
+}
+
+
+.new-header{
+  background-color: #fff;
+  .header-warp{
+    overflow: hidden;
+  }
+
+  input,button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  .logo{
+    width: 160px;
+    margin-top: 15px;
+    h1 {
+      img {
+        height: 50px;
+      }
+    }
+  }
+  .new-search-warp{
+    width: 535px;
+    margin:auto;
+    margin-top: 20px;
+    position: relative;
+
+    .search-box{
+      border: 1px solid #fc584e;
+      width: 350px;
+      box-sizing: content-box;
+      padding: 7px 5px;
+      position: relative;
+      padding-right: 90px;
+      input{
+        width: 100%;
+        padding: 0 10px 0 5px;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+      }
+    }
+    .search-btn{
+      background-color:#fc584e;
+      right: 0;
+      top:0;
+      height: 100%;
+      width: 90px;
+      button{
+        color: #fff;
+        background-color:transparent;
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .search-category{
+      width: 80px;
+      text-align: center;
+      line-height: 36px;
+      vertical-align: middle;
+      font-size: 14px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      border: 1px solid #fc584e;
+      box-sizing: border-box;
+
+      a.category-show-btn{
+        color: #fc584e;
+        line-height: 34px;
+        display: block;
+      }
+    }
+
+    .hot-keywords{
+      height: 29px;
+      line-height: 29px;
+      a{
+        color: #b2b2b2;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.nav-warp{
+  background-color: #fff;
+  height: 34px;
+  border-bottom: 1px solid #fc584e;
+  border-top: 1px solid #f5f5f5;
+  line-height: 34px;
+}
+.nav{
+  a{
+    color: #2c2c2c;
+  }
+  li{
+    text-align: center;
+    display: inline-block;
+    *display: block;
+    zoom: 1;
+  }
+  .nav-menu,.nav-user{
+    li{
+      font-size: 0;
+      position: relative;
+      a{
+        font-size: 14px;
+        display: block;
+        &:hover{
+          color: #fc584e;
+        }
+      }
+    }
+  }
+  .nav-menu{
+    li {
+      width: 90px;
+      &:nth-last-child(2){
+        width: 110px;
+      }
+      a{
+        position: relative;
+        &:after{
+          position: absolute;
+          content: '';
+          display: block;
+          width: 0;
+          height: 0;
+          left: 50%;
+          top:50%;
+          background-color: red;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: transform .8s;
+          transition: transform .2s;
+          -webkit-transition: -webkit-transform .8s;
+          transition: -webkit-transform .8s;
+        }
+      }
+      &.on{
+        width: 100px;
+        background-color: #fc584e;
+        a{
+          color: #fff;
+          &:active:after {
+            -webkit-transform: scale(200px);
+            transform: scale(200px);
+          }
+        }
+      }
+    }
+  }
+  .nav-user{
+    li{
+      margin-left: 20px;
+      float: left;
+      &:hover{
+        .i-warp{
+          display: block !important;
+        }
+      }
+
+      .badge-number{
+        position: relative;
+        color: #fe5341;
+        font-size: 14px;
+        top: -1px;
+        .badge{
+          font-size: 14px;
+          padding: 0;
+          position: static;
+          color: #fe5341;
+          background: transparent;
+          &.dot{
+            padding: 3px;
+            background-color: #fe5341;
+          }
+        }
+      }
+      &:last-of-type{
+        a{
+          max-width: 200px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+    .line{
+      position: absolute;
+      left: -10px;
+      top: 10px;
+      width: 1px;
+      height: 14px;
+      display: block;
+      background-color: #e5e5e5;
+    }
+
+    .i-warp{
+      display: none;
+      background: #fff;
+      position: absolute;
+      width: 150px;
+      line-height: 50px;
+      z-index: 2;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border: 1px solid #f2f2f2;
+      left: -57px;
+      top: 45px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+    }
+    .header-user-down-r-w,
+    .icon-header-arrow{
+      position: absolute;
+      top: -21px;
+      width: 0;
+      height: 0;
+      display: block;
+      border: 10px solid transparent;
+      border-bottom-color: #efefef;
+      left: 50%;
+      margin-left: -15px;
+    }
+    .icon-header-arrow {
+      top: -9px;
+      border-bottom-color: #ffffff;
+      left: 5px;
+    }
+    .header-user-down {
+      dl {
+        margin: 0 15px;
+      }
+      dd {
+        border-bottom: 1px solid #f5f5f5;
+        position: relative;
+        text-align: left;
+      }
+      a{
+        position: relative;
+        text-indent: 8px;
+        font-size: 14px;
+        color: #595959;
+        width: auto !important;
+        height: auto !important;
+      }
+      + .over,
+      .over{
+        position: absolute;
+        top: -20px;
+        width: 100%;
+        background: transparent;
+        z-index: 1;
+        height: 20px;
+      }
+    }
+  }
+
+  .app-download-erweima{
+    top:34px !important;
+  }
+}
+
+
+
+
+
+
+
+

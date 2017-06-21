@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*导入主框架文件*/
+.jiguo-bar.jiguo-bar-nav .jiguo-title{
+	right: 50px;
+    left: 50px;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.jiguo-body-icon{
+	height: 18px;
+    width: 18px;
+	padding:3px;
+}
+
+.jiguo-body-bg{
+	background-color:#f7f7f7;
+}
+.jiguo-margin{
+	margin:10px;
+}
+.jiguo-padding{
+	padding:10px;
+}
+.jiguo-table-view-cell.jiguo-media .jiguo-left.jiguo-media-object{
+	padding:10px;
+	position:relative;
+}
+.jiguo-table-view-cell.jiguo-media>a,
+.jiguo-table-view-cell.jiguo-media>div{
+	display:block;
+}
+
+.jiguo-badge{
+	position: absolute;
+    right: -50%;
+    top: -50%;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.jiguo-badge font{
+	font-weight:bold;
+}
+.jiguo-badge.jiguo-badge-dian{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 3px;
+    margin-right: 15px;
+}
+.jiguo-badge.jiguo-badge-has{
+	padding: 6px;
+    margin-right: 25px;
+}
+
+ul.jiguo-table-view .jiguo-margin{
+	margin:10px 0;
+}
+.jiguo-table-view-cell.jiguo-media .jiguo-header-face .jiguo-left.jiguo-media-object{
+	width:44px;
+	height:44px;
+	padding:0;
+}
+.jiguo-left.jiguo-media-object ~ .jiguo-media-body{
+	margin-left:59px;
+}
+.jiguo-list-title.jiguo-ellipsis,
+.jiguo-list-title .jiguo-ellipsis{
+	-webkit-line-clamp: 1;
+}
+.jiguo-list-title .jiguo-ellipsis{
+	width:100%;
+	margin-bottom:5px;
+}
+.jiguo-list-desc ~ .jiguo-list-title:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+ul.jiguo-table-view .jiguo-replay-view.jiguo-margin{
+	margin:10px 0;
+	position:relative;
+	display:none;
+}
+.jiguo-replay-textarea{
+	background: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+	position: relative;
+}
+.jiguo-replay{
+	position:relative;
+	z-index:2;
+}
+.jiguo-replay-view .jiguo-replay-arrow{
+	display: block;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    background-image: url(../images/comment/icon-input-up-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    right: 0px;
+    background-size: auto 8px;
+    top: -15px;
+    z-index: 1;
+}
+.jiguo-replay-textarea textarea{
+	background-color: transparent;
+	width:100%;
+	height: 50px;
+	border:none;
+	outline:none;
+}
+p.jiguo-list-desc.jiguo-ellipsis.jiguo-ellipsis-3 ~ .jiguo-list-title {
+    margin-top: 10px;
+}
+
+.jiguo-text-right{
+	text-align:right;
+}
+.jiguo-text-center{
+	text-align:center;
+}
+.jiguo-text-left{
+	text-align:left;
+}
+
+.jiguo-no-margin{
+	margin:0;
+}
+.jiguo-list-desc.jiguo-no-margin{
+	margin:0;
+	line-height:44px;
+	margin-left:59px;
+	padding-right:50px;
+	color:#a3a3a3;
+}
+.jiguo-list-desc.jiguo-no-margin time{
+    position: absolute;
+    right: 10px;
+}
+.jiguo-list-desc.jiguo-no-margin a{
+	color:#a3a3a3;
+}
+.jiguo-integral-list{
+	padding-left:0 !important;
+	padding-right:0 !important;
+	padding-top:0px !important;
+}
+.jiguo-apply-stutas{
+	position:relative;
+}
+.jiguo-apply-stutas:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+	left:50%;
+	margin-left:-20px;
+	height:40px;
+	width:40px;
+	background-size:26px auto;
+	background-repeat:no-repeat;
+	background-position:center center; 
+}
+.jiguo-img-header{
+	height:40px;
+	line-height: 40px;
+	border-bottom:1px solid #e0e0e0;
+	color:#a3a3a3;
+	padding-right:10px;
+}
+.jiguo-img-header .jiguo-apply-stutas{
+	height:40px;
+	width:40px;
+	margin-right:10px;
+}
+.jiguo-integral-list .jiguo-media-body{
+	margin:10px;
+}
+.jiguo-click-a{
+	font-size:12px;
+	color:#a3a3a3;
+}
+
+.nomore p {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	color: #b9b9b9;
+	font-size: 12px
+}
+/***********************修饰部分******************************/
