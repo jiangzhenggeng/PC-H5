@@ -43,7 +43,9 @@ define("main",[
     'app/praise',
     'app/getPraiseList',
     'app/pay',
-
+    'app/event',
+    'app/function',
+    // 'app/wxShare',
     'index',
     'article'
 ],function (){

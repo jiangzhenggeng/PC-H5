@@ -14,7 +14,7 @@ define(['require','jquery','socket.io'],function (require,$,io){
      */
     function _pushNotification(userssid){
         // 连接服务端
-        var socket = io('http://msg.jiguo.com:2126');
+        var socket = io('http://io.jiguo.com:2126');
         // 连接后登录
         socket.on('connect', function(){
             socket.emit('login',userssid);
@@ -31,9 +31,21 @@ define(['require','jquery','socket.io'],function (require,$,io){
                 $(selecter).find('>.badge').remove();
                 $(selecter).parent('.badge-number').show();
                 if(tips=='tips'){
-                    $(selecter).append('<em class="badge dot"></em>');
+                    $(selecter).each(function () {
+                        if($(this).hasClass('badge-new')){
+                            $(this).append('<em class="badge badge-new-dot dot"></em>');
+                        }else{
+                            $(this).append('<em class="badge dot"></em>');
+                        }
+                    });
                 }else{
-                    $(selecter).append('<em class="badge number">'+html+'</em>');
+                    $(selecter).each(function () {
+                        if($(this).hasClass('badge-new')){
+                            $(this).append('<em class="badge number">('+html+')</em>');
+                        }else{
+                            $(this).append('<em class="badge number">'+html+'</em>');
+                        }
+                    });
                 }
             };
 

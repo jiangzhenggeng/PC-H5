@@ -1,4 +1,4 @@
-.event-notice{
+.event-notice {
   margin: 12px 0;
   padding: 12px;
   background-color: #fff2ca;
@@ -6,6 +6,7 @@
   line-height: 20px;
   font-size: 12px;
 }
+
 .main-container {
   background: #fff;
   z-index: 3;
@@ -30,7 +31,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  .banner-item{
+  .banner-item {
     position: relative;
   }
   .bd {
@@ -75,12 +76,24 @@
   h3 {
     font-size: 25px;
     padding-bottom: 5px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   p {
     color: #a3a3a3;
     padding: 0 12px;
     line-height: 20px;
     text-align: center;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -119,7 +132,7 @@
     padding: 9px 0;
   }
   p {
-    padding-bottom: 5px;
+    margin: 10px 0;
     line-height: 25px;
     img {
       width: 100%;
@@ -200,9 +213,10 @@
 }
 
 .meta-time {
+  text-align: center;
   color: #595959;
   font-size: 14px;
-  span{
+  span {
     color: #fe5341;
   }
 }
@@ -219,6 +233,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 34px;
+    border: 1px solid #595959;
     &.red {
       border: 1px solid #fe5341;
       color: #fe5341;
@@ -352,16 +367,16 @@
         font-size: 14px;
         margin-top: 5px;
         color: #3e3e3e;
-        span{
+        span {
           position: absolute;
         }
 
       }
-      .look-more{
+      .look-more {
         color: #4f81bd;
         font-size: 13px;
       }
-      .show-from{
+      .show-from {
         font-size: 12px;
         color: #a3a3a3;
       }
@@ -385,12 +400,13 @@
 .event-opera {
   position: fixed;
   bottom: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 50px;
   line-height: 50px;
   background-color: #fff;
   border-top: 1px solid #e3e3e3;
+  z-index: 10;
   li {
     text-align: center;
     cursor: pointer;
@@ -410,10 +426,10 @@
   .apply-btn {
     display: block;
     color: #fff;
-    &.bgred{
+    &.bgred {
       background-color: #fe5341;
     }
-    &.bggray{
+    &.bggray {
       background-color: #a3a3a3;
     }
   }
@@ -429,12 +445,12 @@
   background-color: #ffffd6;
   font-size: 14px;
   color: #5f5f5f;
-  a{
+  a {
     display: block;
   }
   .tips-btn {
     position: absolute;
-    top:11px;
+    top: 11px;
     right: 20px;
     height: 28px;
     line-height: 26px;
@@ -443,9 +459,9 @@
     border-radius: 5px;
     color: #fe5341;
   }
-  .close{
+  .close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     line-height: 17px;
     cursor: pointer;
@@ -514,7 +530,7 @@
       background-color: #fe5341;
       color: #fff;
     }
-    &.no{
+    &.no {
       color: #ccc;
       border: 1px dotted #ccc;
     }
@@ -522,7 +538,7 @@
   .info-box {
     padding: 0 12px;
   }
-  .textarea, .input-phone {
+  .textarea, .input-phone, .input-name {
     width: 100%;
     padding: 10px;
     border: 1px solid #e0e0e0;
@@ -532,19 +548,21 @@
   }
 
 }
+
 .apply-box {
   padding: 12px;
-  h3{
+  h3 {
     margin-bottom: 10px;
     color: #333;
     text-align: center;
   }
-  .remarks{
+  .remarks {
     display: block;
     margin-top: 5px;
     color: #a3a3a3;
   }
 }
+
 .submitBtn {
   width: 100%;
   height: 45px;
@@ -553,6 +571,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 //申请成功
 .apply-success {
   margin-top: 52px;
@@ -657,4 +676,24 @@
       background-color: #82c06e;
     }
   }
+}
+.event-desc{
+  position: relative;
+  overflow: hidden;
+}
+.read-more{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0,0,0,.5);
+  font-size: 16px;
+  cursor: pointer;
+  z-index:1;
+  background: -moz-linear-gradient(top, rgba(242,242,242,.84), rgba(242,242,242,1));
+  background: -webkit-linear-gradient(top, rgba(242,242,242,.84), rgba(242,242,242,1));
+  background: -o-linear-gradient(top, rgba(242,242,242,.84), rgba(242,242,242,1));
 }

@@ -44,7 +44,7 @@ define([
             lazyload.init('.main-box img');
 
             //卡片自适应大小
-            document['domain'] = 'jiguo.com';
+            // document['domain'] = 'jiguo.com';
             cardAuto.init();
 
             //获取相关文章

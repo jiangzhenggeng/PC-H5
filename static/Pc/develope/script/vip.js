@@ -5,7 +5,7 @@
  */
 
 define([
-    "http://cdn.jiguo.com/static/Pc/compression_2.9/script/app/upload.js?v=2","app/provinceArea",
+    "app/upload","app/provinceArea",
     "laydate",'app/tplEngine','layer',
     'app/unitTool'
 ],function (
@@ -251,17 +251,18 @@ define([
                 data:replayData.result?replayData.result.data:[]
             });
             $('#apply-question-item-wrap').html(html);
-
             // 领域图片上传
             window.uploadify();
+
 
         },'json');
     }
 
     window.uploadify = function () {
-        var ua = window.navigator.userAgent;
-        var isSafari = ua.indexOf("Safari") != -1 && ua.indexOf("Version") != -1;
-        if( isSafari ){
+        var _input = document.createElement('input');
+        _input.setAttribute('type','file');
+
+        if( 'multiple' in _input ){
             upload.uploadify('.apply-step3-item-image ul',{
                 uploadUrl:'/api/other/RepairUpload',
                 //上传成功

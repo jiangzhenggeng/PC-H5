@@ -127,11 +127,11 @@ define([
 
             $(_selector).each(function () {
 
-                var ua = window.navigator.userAgent;
-                var isSafari = ua.indexOf("Safari") != -1 && ua.indexOf("Version") != -1;
+                var _input = document.createElement('input');
+                _input.setAttribute('type','file');
 
                 var selector = $(this);
-                if( isSafari ){
+                if( 'multiple' in _input ){
                     var cacheFn = tplEngine.init( $('#uploadfile-item-safari-tpl').html() );
                 }else{
                     var cacheFn = tplEngine.init( $('#'+selector.attr('data-item-tpl-id')).html() );
@@ -158,13 +158,13 @@ define([
                     type     : 'zdm'
                 };
 
-                if( isSafari ){
+                if( 'multiple' in _input ){
 
-                    $('head').append('<style>input.webuploader-element-invisible{display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;-webkit-appearance: none;appearance: none;opacity: 0.01;}</style>');
+                    $('head').append('<style>.webuploader-container>div:not(.webuploader-pick){width:100%!important;height: 100%!important;} input.webuploader-element-invisible{display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;-webkit-appearance: none;appearance: none;opacity: 0.01;}</style>');
 
                     require(['http://'+window.location.host+'/protected/extensions/ueditor/third-party/webuploader/webuploader.min.js'],function ( WebUploader ) {
                         var data_string = 'type=zdm&timestamp=1467180227&token=50638c1f0d92428c0c0c5b0e55abdfbb';
-                        var uploader = WebUploader.create({
+                        var uploader = WebUploader.create($.extend({
                             auto:true,
                             pick: '#'+selector.attr('data-btn-id'),
                             formData:senData,
@@ -178,8 +178,7 @@ define([
                             },
                             swf: 'http://'+window.location.host+'/protected/extensions/ueditor/third-party/webuploader/Uploader.swf',
                             server: options.uploadUrl || window.URL['uploadifyUploadUrl'] + '?' + data_string,
-                        });
-
+                        },options));
                         uploader.on('fileQueued', function (file) {
                             selector.append( cacheFn({
                                 fileId:file.id,
@@ -187,7 +186,7 @@ define([
                         });
 
                         uploader.on('uploadProgress', function (file, percentage) {
-                            // $('#'+file.id+' .uploadify-progress-bar').width( percentage+'%' );
+                            $( '#'+file.id ).find('.uploadify-progress-bar').css( 'width', percentage * 100 + '%' );
                         });
 
                         uploader.on('uploadSuccess',function(file,response){
@@ -196,7 +195,9 @@ define([
                             }
                             uploader.removeFile( file );
                         });
-
+                        if(options.onDelPic){
+                            options.onDelPic.apply(uploader,[_selector,uploader]);
+                        }
                     });
                 }else{
                     selector.uploadify($.extend({
@@ -219,4 +220,5 @@ define([
         }
     };
 });
+
 

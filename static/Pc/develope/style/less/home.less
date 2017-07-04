@@ -6,13 +6,28 @@
 .main-hot-event{
   background-color: @bg-color;
   border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 37px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
-.hot-event-scorll{
+.event-scorll{
   margin-top: 20px;
-  height: 255px;
+  height: 620px;
   overflow: hidden;
+  position: relative;
+  &.no-more-event{
+    overflow-y: auto;
+    height: auto;
+  }
+  .event-box{
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  .pay-event-box{
+    .tag{
+      display: none;
+    }
+  }
 }
 
 
@@ -55,6 +70,74 @@
         opacity: 0.3;
         cursor: default;
       }
+    }
+  }
+  .common-cell-title{
+    >a{
+      display: inline-block;
+      width: 130px;
+      border-bottom: 1px solid #ededed;
+      position: relative;
+      bottom: -2px;
+      text-align: center;
+      &.on{
+        color: #2C2C2C;
+        border-bottom: 1px solid #FB594D;
+      }
+    }
+    .vertical-line{
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      background-color: #D8D8D8;
+    }
+  }
+  .load-hot-event-wrap{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+  }
+  .bg-shadow{
+    height: 20px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255, 255, 255, 1));
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=transprent,endcolorstr=#fff,gradientType=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=transprent,endcolorstr=#fff,gradientType=0);
+    background:#fff; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, rgba(255,255,255,0), rgba(255, 255, 255, 1));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+  }
+  .load-hot-event-more{
+    width: 100%;
+    display:block;
+    text-align: center;
+    background: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    color: #3f3f3f;
+    height: 40px;
+    padding-top: 10px;
+    img{
+      display: block;
+      width: 15px;
+      height:8px;
+      margin:0 auto;
+    }
+  }
+  .empty-event-wrap{
+    height: 296px;
+    padding-top: 0.1px;
+    img{
+      display: block;
+      width: 100px;
+      height: 62px;
+      margin:130px auto 10px auto;
+    }
+    .empty-content{
+      line-height: 20px;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
     }
   }
 }

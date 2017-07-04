@@ -9,7 +9,7 @@
     //findNestedDependencies设置为true表示将所有相关的依赖模块也合并进来，
     // 默认为false只会对main.js进行压缩合并的操作
     findNestedDependencies: false,
-    dir: "../compression_2.9",
+    dir: "../compression_3.0",
     optimizeCss:'standard',
     keepBuildDir: true,
     fileExclusionRegExp:'\.(less|html|php|psd|PSD|DS_Store)$',

@@ -97,14 +97,16 @@ define([
         var tplFunCache = tplEngine.init($(self.options.tplDom).html());
 
         //核心加载器
-        function loadData (subCallback){
+        function loadData (subCallback,data){
             if (self.load) {
                 //改变加载状态
                 self.load = false;
-
                 fireLoading.hide();
                 loading.show();
 
+                if(data){
+                    sendData=self.options.data;
+                }
                 sendData.limit = self.limit;
                 sendData.size = self.options.size;
 
@@ -154,16 +156,16 @@ define([
                     $(window).scroll(function(){
                         var scrollTop = $(document).scrollTop()+$(window).height() + 400 ;
                         if(self.load && scrollTop>self.options.fireDom.offset().top ){
-                            loadData();
+                            loadData(null,self.options.data);
                         }
                     });
-                });
+                },self.options.data);
             }else{
-                loadData();
+                loadData(null,self.options.data);
             }
         });
         //第一次加载
-        loadData();
+        loadData(null,self.options.data);
     }
 
 

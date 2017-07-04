@@ -184,13 +184,14 @@ define([
 
                 clickSendBtn.click(function () {
                     var content = String($(l).find('#input-replay-comment-centent').val()).replace(/^\s+|\s+$/,'');
-                    if(content=='' || !send){
-                        layer.open({content: '请先填写内容',skin: 'msg',time: 1.5});
-                        return;
-                    }
                     if(sending){
                         return;
                     }
+                    if(content.length<=0){
+                        layer.open({content: '请先填写内容',skin: 'msg',time: 1.5});
+                        return;
+                    }
+
                     sending = true;
                     $.get('/api/comment/PostComment',{
                         id:blogid,

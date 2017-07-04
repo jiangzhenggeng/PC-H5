@@ -44,12 +44,31 @@ define(['jquery'],function ($){
 
             if (!gt_ios9()) {
                 e.preventDefault();
-                if (isWeixinBrowser() || isQQBrowser()) {
+                if (isWeixinBrowser()) {
                     //生成遮罩
                     $('#goBrowser').removeClass('none');
                     $('.cancle img').on('click', function () {
                         $('#goBrowser').addClass('none');
                     });
+                }else if(isQQBrowser()){
+                    if(isAndroid){
+                        // alert(info);
+                        info=encodeURIComponent('jiguo://'+info);
+                        var ifr = document.createElement('iframe');
+                        ifr.src = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.jiguo.net&android_scheme="'+info+'"';
+                        ifr.style.display = 'none';
+                        document.body.appendChild(ifr);
+                        window.setTimeout(function () {
+                            document.body.removeChild(ifr);
+                            window.location = downloadUrl;
+                        }, 1200);
+                    }else{
+                        //生成遮罩
+                        $('#goBrowser').removeClass('none');
+                        $('.cancle img').on('click', function () {
+                            $('#goBrowser').addClass('none');
+                        });
+                    }
                 } else {
                     var ifr = document.createElement('iframe');
                     ifr.src = 'jiguo://' + info + '';
@@ -61,6 +80,7 @@ define(['jquery'],function ($){
                     }, 1200);
                 }
 
+            }else{
             }
         });
     }

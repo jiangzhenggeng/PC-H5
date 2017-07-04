@@ -13,7 +13,7 @@
 .list li:last-child {
   margin-bottom: 0;
 }
-.list li a {
+.list li .list-item {
   display: block;
   height: 80px;
   padding: 10px 12px;
@@ -21,18 +21,18 @@
   border-bottom: 1px solid #ededed;
   box-sizing: content-box;
 }
-.list li a img {
+.list li .list-item img {
   float: left;
   width: 80px;
   height: 80px;
   border-radius: 5px;
 }
-.list li a .text {
+.list li .list-item .text {
   position: relative;
   margin-left: 100px;
   height: 80px;
 }
-.list li a .title {
+.list li .list-item .title {
   height: 40px;
   line-height: 20px;
   font-size: 12px;
@@ -43,27 +43,27 @@
   text-overflow: ellipsis;
   word-break: break-all;
 }
-.list li a .meta {
+.list li .list-item .meta {
   position: relative;
 }
-.list li a .meta .meta-name {
+.list li .list-item .meta .meta-name {
   font-size: 12px;
   padding-right: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.list li a .meta .icon {
+.list li .list-item .meta .icon {
   position: absolute;
   right: 0;
   top: 0;
 }
-.list li a .meta .icon-arrow:before {
+.list li .list-item .meta .icon-arrow:before {
   background-position: -25px -154px;
   width: 16px;
   height: 16px;
 }
-.list li a .apply_num {
+.list li .list-item .apply_num {
   position: absolute;
   bottom: 0;
   font-size: 12px;

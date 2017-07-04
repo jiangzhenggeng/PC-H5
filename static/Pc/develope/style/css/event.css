@@ -26,6 +26,11 @@
   height: 28px;
   left: 20px;
   overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 .next-prev:after {
   display: none !important;
@@ -47,6 +52,9 @@
   right: 0;
   left: auto;
 }
+.main-banner .banner .hd {
+  width: 580px;
+}
 .main-banner .banner .hd ul li {
   opacity: 1;
 }
@@ -56,7 +64,7 @@
 .main-banner .banner .bd li {
   height: 362px;
 }
-.main-banner .banner .bd li .banner-img-bg img {
+.main-banner .banner .bd li .banner-img-box img {
   min-height: 362px;
   width: 580px;
   height: auto;
@@ -344,6 +352,9 @@
   font-weight: bold;
   color: #474747;
 }
+.event-content .content p img {
+  max-width: 100%;
+}
 .event-content .event-content-body {
   font-size: 16px;
 }
@@ -590,7 +601,7 @@
   color: #474747;
 }
 .event-apply-input-box {
-  padding: 25px;
+  padding: 12px 20px;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -601,7 +612,7 @@
   -moz-border-radius: 8px;
 }
 .event-apply-input-box .apply-input-arrow {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .event-apply-input-box .tips {
   color: #b2b2b2;
@@ -637,7 +648,7 @@
 .event-apply-input-box .submit-arrow {
   text-align: right;
   line-height: 42px;
-  margin-top: 30px !important;
+  margin-top: 10px !important;
   margin-bottom: 0 !important;
 }
 .event-apply-input-box .submit-arrow .submit-btn-warp {
@@ -655,18 +666,19 @@
   line-height: 30px;
 }
 .event-apply-input-box .apply-model-list {
-  max-height: 120px;
-  overflow-y: scroll;
+  width: 102%;
+  max-height: 84px;
+  overflow-y: auto;
 }
 .event-apply-input-box .apply-model-btn {
-  width: 85px;
+  width: 100px;
   height: 30px;
   line-height: 30px;
   border-radius: 5px;
   border: 1px solid #d9d9d9;
   text-align: center;
   float: left;
-  margin: 0 15px 10px 0;
+  margin: 0 14px 10px 0;
   cursor: pointer;
 }
 .event-apply-input-box .apply-model-btn.checked {
@@ -675,14 +687,17 @@
   color: #fff;
 }
 .event-apply-input-box .apply-model-btn.disabled-btn {
-  background-color: #bcbcbc;
-  border-color: #bcbcbc;
-  color: #fff;
+  color: #b2b2b2;
   cursor: auto;
 }
 .event-apply-input-box .event-intro-wrap {
-  height: 460px;
-  overflow-y: scroll;
+  height: 490px;
+  overflow-y: auto;
+  padding-right: 20px;
+  width: 100%;
+}
+.checkbox-warp input[type='checkbox'] {
+  vertical-align: middle;
 }
 .main-event-type {
   background: #fff;
@@ -809,26 +824,31 @@
   background-size: 14px auto;
   margin-left: 5px;
 }
-.card-link {
-  position: relative;
-}
-.card-link:hover .app-erweima {
-  display: block;
+.card-line {
+  width: 243px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #eee;
 }
 .app-erweima {
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  top: -154px;
-  left: -220px;
-  z-index: 3;
-  padding: 25px;
-  width: 165px;
-  height: 180px;
-  border-radius: 20px;
-  border: 1px solid #d9d9d9;
+  padding: 15px;
 }
-.app-erweima img {
-  width: 100%;
+.app-erweima .img-wrap {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+.app-erweima .img-wrap img {
+  width: 120%;
+  height: 120%;
+  margin: -12px 0 0 -12px;
+}
+.app-erweima .txt {
+  float: right;
+  width: 110px;
+  margin-top: 35px;
+  line-height: 20px;
+  color: #535353;
 }
 .buy-link {
   position: relative;

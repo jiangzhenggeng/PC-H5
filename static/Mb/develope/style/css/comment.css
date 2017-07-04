@@ -27,6 +27,7 @@
   margin-top: -7px;
   position: absolute;
   font-size: 14px;
+  cursor: pointer;
 }
 .comment-view .icon.icon-comment-zan-sub {
   position: relative;

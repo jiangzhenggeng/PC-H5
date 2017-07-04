@@ -4,7 +4,7 @@
  +----------------------------------------------------------
  */
 
-define(['require','jquery'],function (require,$){
+define(['require','jquery','layer'],function (require,$,layer){
 
     return {
         isArray:function (a) {
@@ -47,6 +47,13 @@ define(['require','jquery'],function (require,$){
                 Length++;
             }
             return Length;
+        },
+        msg:function (msg,time) {
+            layer.open({
+                skin: 'msg',
+                time: time || 2,
+                content: msg,
+            });
         }
     };
 });

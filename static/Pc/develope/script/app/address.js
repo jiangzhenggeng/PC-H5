@@ -126,12 +126,18 @@ define(['jquery','layer','app/tplEngine','app/provinceArea'], function ($,layer,
                         },
                         onCityChange: function () {
                             if( __country.find('option').length<=1){
-                                __country.parent().hide().end().hide();
-                            }else{
-                                __country.parent().show().end().show();
+                                var _city=__country.parent().prev().find('#city').val();
+                                var h='<option value="'+_city+'">'+_city+'</option>>';
+                                __country.append(h);
                             }
                         }
                     }).initProvince(option.province,option.city,option.country);
+                    //自动填充缺失的第三级
+                    if(__country.find('option').length<=1){
+                        var _city=__country.parent().prev().find('#city').val();
+                        var h='<option value="'+_city+'" selected="selected">'+_city+'</option>>';
+                        __country.append(h);
+                    }
                 }
             });
         }

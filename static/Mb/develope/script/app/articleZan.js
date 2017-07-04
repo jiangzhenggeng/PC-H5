@@ -12,9 +12,14 @@ define([
 
     return {
         praise:function () {
+            var sending;
             $('[data-article-zan]').click(function () {
+                if(sending){
+                    return false;
+                }
+                 sending=true;
                 var zanNumDom=$(this).find('o');
-                var zanNum=parseInt(zanNumDom.html());
+                var zanNum=zanNumDom.html();
                 if(!window.URL['login']){
                     login.login();
                     return;
@@ -34,10 +39,13 @@ define([
                         return;
                     }
                     if(replayData.resultCode==0){
+                        sending=false;
                         _this.find('.icon').addClass('on animate');
-                        var html = parseInt($('[data-praise-num]').html()) || 0;
-                        $('[data-praise-num]').html(html+1);
-
+                        
+                        if(zanNum==''){
+                            zanNum=0;
+                        }
+                        zanNum=parseInt(zanNum);
                         setTimeout(function () {
                             _this.find('.icon').removeClass('animate');
                         },2000);
@@ -56,10 +64,13 @@ define([
                 },'json');
             });
         },
-        // /api/praise/praise?id_value=3464&status=&type=4
-
         like:function () {
+            var sending;
             $('[data-article-like]').click(function () {
+                if(sending){
+                    return false;
+                }
+                sending=true;
                 if(!window.URL['login']){
                     login.login();
                     return;
@@ -77,6 +88,7 @@ define([
                     }
 
                     if(replayData.resultCode==0){
+                        sending=false;
                         if(replayData.result.zan==1){
                             _this.find('.icon').addClass('on animate');
                             setTimeout(function () {

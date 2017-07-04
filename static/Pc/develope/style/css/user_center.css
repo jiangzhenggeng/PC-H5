@@ -479,11 +479,11 @@ select {
   padding: 10px 0;
 }
 .user-write-article-warp .article-cover {
-  width: 320px;
+  width: 360px;
   background: #fafafa;
   border: 1px solid #f5f5f5;
   position: relative;
-  height: 220px;
+  height: 200px;
 }
 .user-write-article-warp .article-cover img {
   display: block;
@@ -500,8 +500,8 @@ select {
   height: auto;
 }
 .user-write-article-warp .article-cover img.success {
-  width: 320px !important;
-  height: 200px !important;
+  width: 360px !important;
+  height: 180px !important;
 }
 .user-write-article-warp .article-cover .upload-img-tips {
   color: #cccccc;

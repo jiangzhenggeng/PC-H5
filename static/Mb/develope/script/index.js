@@ -25,11 +25,10 @@ define([
             sendData:{},
             firstNoData:false,
             topic:false,
-            data:false,//返回数据为result中的data
+            data:false,//返回数据为result中的data否则为result
             touchBox:false,//data-touchBox的scroll事件
             callBack:function () {}
         },options);
-
         this.options = options;
 
         this.__box__ = options.boxDom;
@@ -80,7 +79,6 @@ define([
             }
             if(len){
                 var html = self.tplFunCache({data: repalyData.result});
-                
                 self.options.boxDom.append(html);
                 self.options.sendData.limit = unitTool.has(repalyData,'limit')?repalyData.limit:0;
                 if(len<self.options.sendData.size){
@@ -147,31 +145,25 @@ define([
             cacheData = localDataCache.getPageCacheData( sessionKey ),
             cacheLimit = localDataCache.getPageCacheData( sessionKey + 'limit' ),
             cacheBox = localDataCache.getPageCacheData( sessionKey + 'box' ),
-            scrollTopPoint = localDataCache.getPageCacheData( sessionKey + 'point' ),
-            hasLoad = true;
-
+            scrollTopPoint = localDataCache.getPageCacheData( sessionKey + 'point' );
         if( typeof window.__no_session_cache__=='undefined' && cacheBox && cacheData ){
 
             $(cacheBox).html(cacheData);
             o.options.sendData.limit = cacheLimit;
             if(scrollTopPoint>0){
                 setTimeout(function () {
-                    $('html,body').animate({'scrollTop':scrollTopPoint},160,function () {
-                        hasLoad = true;
-                    });
+                    $('html,body').animate({'scrollTop':scrollTopPoint},160);
                 },20);
             }
-            hasLoad = false;
         }else{
             o.run();
-            hasLoad = true;
         }
         if(o.options.touchBox){
             // 设置了-webkit-overflow-scroll:touch window.scroll不生效
             $('[data-touchBox]').scroll(function () {
                 var scrollTop = $('[data-touchBox]').scrollTop()+$('[data-touchBox]').height() + 200 ;
                 localDataCache.setPageCacheData( sessionKey + 'point', $(window).scrollTop() );
-                if(o.loading && o.options.fireDom.length && scrollTop>o.options.fireDom.offset().top && hasLoad ){
+                if(o.loading && o.options.fireDom.length && scrollTop>o.options.fireDom.offset().top ){
                     o.run();
                 }
             })
@@ -179,7 +171,7 @@ define([
             $(window).scroll(function(){
                 var scrollTop = $(window).scrollTop()+$(window).height() + 200 ;
                 localDataCache.setPageCacheData( sessionKey + 'point', $(window).scrollTop() );
-                if(o.loading && o.options.fireDom.length && scrollTop>o.options.fireDom.offset().top && hasLoad ){
+                if(o.loading && o.options.fireDom.length && scrollTop>o.options.fireDom.offset().top ){
                     o.run();
                 }
             });

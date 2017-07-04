@@ -68,12 +68,24 @@
 .info h3 {
   font-size: 25px;
   padding-bottom: 5px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .info p {
   color: #a3a3a3;
   padding: 0 12px;
   line-height: 20px;
   text-align: center;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .control-row li {
   height: 56px;
@@ -106,7 +118,7 @@
   padding: 9px 0;
 }
 .conTxt p {
-  padding-bottom: 5px;
+  margin: 10px 0;
   line-height: 25px;
 }
 .conTxt p img {
@@ -169,6 +181,7 @@
   line-height: 25px;
 }
 .meta-time {
+  text-align: center;
   color: #595959;
   font-size: 14px;
 }
@@ -188,6 +201,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 34px;
+  border: 1px solid #595959;
 }
 .meta-btn a.red {
   border: 1px solid #fe5341;
@@ -344,6 +358,7 @@
   line-height: 50px;
   background-color: #fff;
   border-top: 1px solid #e3e3e3;
+  z-index: 10;
 }
 .event-opera li {
   text-align: center;
@@ -471,7 +486,8 @@
   padding: 0 12px;
 }
 .apply-wrapper .textarea,
-.apply-wrapper .input-phone {
+.apply-wrapper .input-phone,
+.apply-wrapper .input-name {
   width: 100%;
   padding: 10px;
   border: 1px solid #e0e0e0;
@@ -586,4 +602,24 @@
 }
 .introduce-btn a.green {
   background-color: #82c06e;
+}
+.event-desc {
+  position: relative;
+  overflow: hidden;
+}
+.read-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(242, 242, 242, 0.84), #f2f2f2);
+  background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.84), #f2f2f2);
+  background: -o-linear-gradient(top, rgba(242, 242, 242, 0.84), #f2f2f2);
 }

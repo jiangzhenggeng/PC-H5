@@ -8,6 +8,11 @@ define(['jquery','app/login','layer'],function ($,login,layer){
     return {
         init:function () {
             $('body').on('click','[data-zan]',function(){
+                var sending;
+                if(sending){
+                    return false;
+                }
+                sending=true;
                 if(!window.URL['login']){
                     login.login();
                     return false;
@@ -21,6 +26,7 @@ define(['jquery','app/login','layer'],function ($,login,layer){
                         type:3,
                     },function (replayData) {
                         if(replayData.resultCode==0){
+                            sending=false;
                             if(replayData.result.zan==1){
                                 $this.addClass('zan-on').find('i').addClass('on animate');
                                 var num=parseInt($this.find('[data-praise-num]').text()||0)+1;

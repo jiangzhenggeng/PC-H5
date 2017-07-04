@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 .payment-card {
-  border-radius: 10px;
+  border-radius: 6px;
   background: #fff;
   padding: 20px 30px;
   margin-top: 20px;
@@ -32,8 +32,8 @@ body {
 }
 .payment-product-img {
   float: left;
-  width: 260px;
-  height: 150px;
+  width: 258px;
+  height: 155px;
   overflow: hidden;
 }
 .payment-product-desc {
@@ -634,14 +634,14 @@ body {
   background-size: 12px 12px;
 }
 .payment-model-cell {
-  width: 85px;
+  width: 120px;
   height: 30px;
   line-height: 30px;
   border-radius: 5px;
   border: 1px solid #d9d9d9;
   text-align: center;
   float: left;
-  margin: 0 15px 10px 0;
+  margin: 0 20px 10px 0;
   cursor: pointer;
 }
 .payment-model-cell.checked {
@@ -650,9 +650,7 @@ body {
   color: #fff;
 }
 .payment-model-cell.disabled-model {
-  background-color: #bcbcbc;
-  border-color: #bcbcbc;
-  color: #fff;
+  color: #b2b2b2;
   cursor: auto;
 }
 .payment-model-cell label {

@@ -64,6 +64,14 @@ define(['jquery','touchSwipe'],function ($){
                 var top=$($(this).attr('href')).offset().top-52;
                 $("html,body").animate({scrollTop: top}, 300);
             })
+        },
+        hrefInit:function () {
+            var hash=window.location.href.split('#')[1];
+            var top=0;
+            if($('#'+hash+'').length>0){
+                 top=$('#'+hash+'').offset().top-55;
+            }
+            $("html,body").animate({scrollTop: top}, 300);
         }
     }
 });

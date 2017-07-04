@@ -22,10 +22,6 @@ define(['jquery','global.fun'],function ($,global){
         }
     }
 
-    function preventDefault() {
-        event.preventDefault();
-    }
-
     return {
         init:function () {
 

@@ -35,6 +35,7 @@ define([
                 url:'/api/event/EventList',
                 boxDom:dom,
                 data:{
+                    type:type,
                     act:$(this).attr('data-type')
                 }
             });
@@ -98,7 +99,6 @@ define([
                     meta_id=$(this).closest('[data-metaid]').attr('data-metaid'),
                     remark=$(this).attr('data-remark'),
                     applydata={
-                        _apply_comment: $.cookie('_apply_comment'),
                         remark: remark
                     };
                 var lId = layer.open({
@@ -106,7 +106,7 @@ define([
                     title: false,
                     closeBtn: 0,
                     shadeClose: false,
-                    area:['490px'],
+                    area:['510px'],
                     content: '<div id="'+id+'">'+tplEngine.init(html,applydata)+'</div>',
                     success:function (layero, index) {
                         setTimeout(function () {
@@ -128,10 +128,12 @@ define([
                                     }else{
                                         o+='<li class="apply-model-btn disabled-btn"><span data-storageid="'+data.storage_list[i].id+'">'+data.storage_list[i].spec_name+'</span></li>';
                                     }
-
                                 }
                             }
                             Obj.find('.apply-model-list').html(o);
+                            if($(layero).find('.apply-model-btn:not(.disabled-btn)').length<=1){
+                                $(layero).find('.apply-model-btn:not(.disabled-btn)').trigger('click');
+                            }
                         },'json');
 
                         //选择型号
@@ -143,13 +145,12 @@ define([
                                 $(this).append(html).siblings().find('input').remove();
                             }
                         });
+
                         $(layero).find('.btn').click(function () {
                             var cookie_option = {
                                 path:'/',
                                 expires:36000000
                             }
-                            //保存数据
-                            $.cookie('_apply_comment',Obj.find('textarea[name=comment]').val(),cookie_option);
 
                             if(Obj.find('.apply-model-btn').length>0){
                                 if(Obj.find('.apply-model-btn.checked').length==0){
@@ -166,7 +167,10 @@ define([
                                 layer.msg('用户名不允许为空');
                                 return;
                             }
-
+                            if(!Obj.find('#agreement').prop('checked')){
+                                layer.msg('未勾选同意用户协议');
+                                return;
+                            }
                             var applyUrlAPI = window.applyUrlAPI?window.applyUrlAPI:'/api/event/Apply';
                             var applyStatus=Obj.find('input[name=status]');
                             var formData = Obj.serialize();
@@ -175,27 +179,15 @@ define([
                             }
 
                             $.post( applyUrlAPI ,formData,function (replayData) {
-                                if(typeof popularize!='undefined'){
-                                    if(replayData==1){
-                                        layer.msg('申请成功',{type: 1},function () {
-                                            layer.closeAll();
-                                            window.location.reload();
-                                        });
-                                    }else{
-                                        layer.msg('申请失败');
-                                    }
+                                if(replayData.resultCode==0){
+                                    layer.msg('申请成功',{type: 1},function () {
+                                        layer.closeAll();
+                                        window.location.reload();
+                                    });
                                 }else{
-                                    eval('var replayData =' + replayData);
-                                    if(replayData.resultCode==0){
-                                        layer.msg('申请成功',{type: 1},function () {
-                                            layer.closeAll();
-                                            window.location.reload();
-                                        });
-                                    }else{
-                                        layer.msg(replayData.errorMsg);
-                                    }
+                                    layer.msg(replayData.errorMsg);
                                 }
-                            });
+                            },'json');
                         });
 
                     }
@@ -340,26 +332,30 @@ define([
         }
         ,getEventIntro:function () {
             $('body').on('click','[data-metaintro]',function () {
-                var html=$(this).attr('data-metaintro');
+                var metaId=$(this).closest('[data-metaid]').attr('data-metaid');
                 var layerId=layer.open({
                     type: 1,
                     title: false,
                     closeBtn: 0,
                     scrollbar: false,
                     shadeClose: false,
-                    area:['490px','550px'],
+                    area:['510px','550px'],
                     content:'\
                     <div class="event-apply-input-box">\
-                        <div class="apply-input-header">\
+                        <div class="apply-input-header mb10">\
                             <h3>试用细则</h3>\
                             <div class="apply-input-close icon" data-closelayer></div>\
                         </div>\
-                        <div class="event-intro-wrap ft14 pdt5">'+html+'</div>\
-                        <div class="submit-btn-warp tc pdt5" data-closelayer>\
-                            <a href="javascript:;" style="width: 100px;margin: 0 auto;" class="btn">知道了</a>\
-                        </div>\
+                        <div class="event-intro-wrap ft14 pdt5"></div>\
                      </div>',
                     success:function (layero,index) {
+                        $.post('/api/event/GetMetaDetail',{'meta_id':metaId},function (replayData) {
+                            if(replayData.success){
+                                $(layero).find('.event-intro-wrap').html(replayData.result);
+                            }else{
+                                layer.msg(replayData.errorMsg||'操作失败');
+                            }
+                        },'json');
                         setTimeout(function () {
                             $(layero).find('[data-closelayer]').attr('onClick','layer.close(\''+layerId+'\')');
                         });
@@ -368,6 +364,7 @@ define([
             })
         }
         ,alertTips:function () {
+            console.log(window.URL['login']);
             $('body').on('click','[data-alert]',function () {
                 if(!window.URL['login']){
                     return;

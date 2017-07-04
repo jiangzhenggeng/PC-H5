@@ -2069,6 +2069,11 @@ p.open-btn {
 .btn.red:hover {
   background: #ec463b !important;
 }
+.btn.c-red {
+  color: #fe584d!important;
+  border: 1px solid #fe584d;
+  background: #fff !important;
+}
 .btn.gray {
   background: #c1c1c1 !important;
   color: #fff!important;
@@ -3022,6 +3027,17 @@ ul.event-show-card-warp .desc-box .e-item-hide .e-item-hide-cell {
   padding: 3px;
   background-color: #fe5341;
 }
+.nav .nav-user li .badge-number .badge.badge-new-dot {
+  position: relative;
+  right: -5px;
+  top: -10px;
+}
+.nav .nav-user li:last-of-type a {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .nav .nav-user .line {
   position: absolute;
   left: -10px;
@@ -3037,7 +3053,7 @@ ul.event-show-card-warp .desc-box .e-item-hide .e-item-hide-cell {
   position: absolute;
   width: 150px;
   line-height: 50px;
-  z-index: 1;
+  z-index: 2;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid #f2f2f2;
   left: -57px;

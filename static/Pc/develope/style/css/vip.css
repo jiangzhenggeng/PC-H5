@@ -675,6 +675,11 @@ input:-webkit-autofill {
   background-color: #fff;
   padding-bottom: 60px;
 }
+.main-hot-event.vip-event .hot-event-scorll {
+  margin-top: 20px;
+  height: 255px;
+  overflow: hidden;
+}
 .vip-common {
   width: 100%;
   margin: 0 auto;
